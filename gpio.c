@@ -49,6 +49,7 @@ typedef struct
 /************************************************************************************************
  * Global Variables
  ************************************************************************************************/
+//extern unsigned char count;
 
 /************************************************************************************************
  * Module Variables Definitions
@@ -84,12 +85,20 @@ static ARCH_ADDR_SIZE volatile * const GpioFunction[GPIO_PORT_COUNT] = {
         (ARCH_ADDR_SIZE *) ANSEL
 };
 
-static ARCH_ADDR_SIZE volatile * const GpioInterruptControl[GPIO_PORT_COUNT] = {
+static ARCH_ADDR_SIZE volatile * const InterruptControl[GPIO_PORT_COUNT] = {
         (ARCH_ADDR_SIZE *) INTCON
 };
 
 static ARCH_ADDR_SIZE volatile * const GpioOption[GPIO_PORT_COUNT] = {
         (ARCH_ADDR_SIZE *) OPTION
+};
+
+static ARCH_ADDR_SIZE volatile * const PeripheralInterruptRequest[GPIO_PORT_COUNT] = {
+        (ARCH_ADDR_SIZE *) PIR1
+};
+
+static ARCH_ADDR_SIZE volatile * const PeripheralInterruptEnable[GPIO_PORT_COUNT] = {
+        (ARCH_ADDR_SIZE *) PIE1
 };
 /************************************************************************************************
  * Functions Prototypes
@@ -146,46 +155,60 @@ void Gpio_Init(const GpioConfig_t * const Config)
 {
     /* This is for test only - this code must be moved */
     *SystemOscilator    = 0x70; /**< Switch to 8 MHz system clock */
+    //OSCCON = 0x70; /**< Switch to 8 MHz system clock */
     *SystemComparator   = 0x07; /**< Comparators off */
+    //CMCON0 = 0x07; /**< Comparators off */
     *SystemADConverter  = 0x00; /**< AD Converters off */
+    //ADCON0 = 0x00; /**< AD Converters off */
+            
+    // Disable all interrupts
+    *InterruptControl[GPIO_PORT] = 0x00;
+    *PeripheralInterruptEnable[GPIO_PORT] = 0x00;
+    *PeripheralInterruptRequest[GPIO_PORT] = 0x00;
     
     for (uint8_t port = 0; port < GPIO_PORT_COUNT; port++)
     {
-        *GpioDirection[port] = 0x3F; /**< All ports are inputs */
         *GpioPort[port]      = 0x00; /**< Resets all GPIO pins */
-    
+                
+        //OSCCON  = 0x70;                             /* switch to 8 MHz system clock */
+        //TRISIO  = 0x00;
+        //GPIO    = 0x00;                             /* all GPIO as low state */
+        //ANSEL   = 0x00;                             /* analog is disabled */
+        //ADCON0  = 0x00;                             /* ADC disabled */
+        //CMCON0  = 0x07;  
+        
         /* Sets the GPIOs */
         for (uint8_t i = 0; i < GPIO_CHANNEL_COUNT; i++)
         {
-           // Sets the pin direction as output (all pins are set like input previously)
-           if (Config[i].Direction == GPIO_PIN_DIRECTION_OUTPUT)
-           {
-              *GpioDirection[port] &= ~(HIGH << i);
-           }
-
-           *GpioPort[port] |= (Config[i].State << i);
-
+           // ANSEL: digital pins as I/O
+           *GpioFunction[port] = 0x00;
+           
            switch (Config[i].Function)
            {
-               case GPIO_PIN_FUNCTION_DIGITAL: break;
+               case GPIO_PIN_FUNCTION_DIGITAL:
+                   // TRISIO: set de pin direction mode
+                   if (Config[i].Direction == GPIO_PIN_DIRECTION_INPUT)
+                   {
+                       *GpioDirection[port] |= (Config[i].Direction << i);
+                   }
+                   else
+                   {
+                       *GpioDirection[port] &= ~(HIGH << i);
+                   }
+                   break;
                case GPIO_PIN_FUNCTION_CAPTURE_COMPARE: break;
                case GPIO_PIN_FUNCTION_COMPARATOR: break;
                case GPIO_PIN_FUNCTION_INTERRUPT_ON_CHANGE: break;
                case GPIO_PIN_FUNCTION_TIMER: break;
-               
                case GPIO_PIN_FUNCTION_ANALOG:
-                   if (Config[i].Direction == GPIO_PIN_DIRECTION_INPUT)
-                   {
-                       *GpioFunction[port] |= (unsigned char)(Config[i].Direction << i);
-                   }
-                   else
-                   {
-                       *GpioFunction[port] &= (unsigned char) ~(HIGH << i);
-                   }
-                   break;
+                   *GpioFunction[port] |= (HIGH << i);
+                   break;                   
                case GPIO_PIN_FUNCTION_EXTERNAL_INTERRUPT:
-
-                   // Enable the external interrupt on GP2/INT
+                   // ANSEL as digital I/O
+                   *GpioFunction[port] &= ~(HIGH << i);
+                   
+                   // TRISIO set de direction of pin as INPUT
+                   *GpioDirection[port] |= (Config[i].Direction << i);
 
                    // Sets the edge trigger of the interrupt
                    if (Config[i].InterruptEdge == GPIO_INTERRUPT_EDGE_FALLING)
@@ -202,19 +225,24 @@ void Gpio_Init(const GpioConfig_t * const Config)
                    }
 
                    // Clear the external interrupt flag INTF
-                   *GpioInterruptControl[port] &= ~INTF_BIT_MASK;
+                   *InterruptControl[port] &= ~INTF_BIT_MASK;
 
                    // Enable external interrupts
-                   *GpioInterruptControl[port] |= INTE_BIT_MASK;
+                   *InterruptControl[port] |= INTE_BIT_MASK;
 
                    // Enable global interrupts
-                   *GpioInterruptControl[port] |= GIE1_BIT_MASK;
+                   *InterruptControl[port] |= GIE1_BIT_MASK;
 
                    // Save the callback function executor address to the FSR register
-                   //*FSR = &Gpio_Interrupt_Callback_Executor;
+                   //*FSR = 
+                   //asm volatile ("JMP *%0" : : "r" (&Gpio_Interrupt_Callback_Executor));
                    
                    break;
            } // switch Config[i].Function
+           
+           // sets the GPIO initial state
+           *GpioPort[port] |= (Config[i].State << i);
+           
         } // for GPIO_CHANNEL_COUNT
     } // for GPIO_PORT_COUNT
 
@@ -339,9 +367,7 @@ GpioPinState_t Gpio_Read(GpioChannel_t channel)
  ************************************************************************************************/
 void Gpio_Toggle(GpioChannel_t channel)
 {
-    uint8_t gpio = (uint8_t) *GpioPort[GPIO_PORT];
-    //*GpioPort[GPIO_PORT] ^= (HIGH << channel);
-    gpio ^= (HIGH << channel);
+    *GpioPort[GPIO_PORT] ^= (HIGH << channel);
 }
 
 /************************************************************************************************
@@ -471,7 +497,7 @@ void Gpio_Callback_Register(GpioCallbackEvent_t Event, void (*CallbackFunction)(
 /************************************************************************************************
  * Auxiliary Functions
  ************************************************************************************************/
-static void Gpio_Interrupt_Callback_Executor(void)
+static void __interrupt() Gpio_Interrupt_Callback_Executor(void)
 {
     // Disable external interrupts (INTCON.INTE)
 
@@ -482,9 +508,10 @@ static void Gpio_Interrupt_Callback_Executor(void)
     // Verify interrupts flags to determine which callback function to call
 
     /*
-      if (INTCON.INF)
+      if (INTCON.INTF)
       {
            CallbackRegisterList[GPIO_EXTERNAL_INTERRUPT].CallbackFunction();
+     
            // Clear interrupt flag
       }
      */
@@ -497,6 +524,12 @@ static void Gpio_Interrupt_Callback_Executor(void)
     // Enable external interrupts (INTCON.INTE)
 
     // Enable global interrupts
+    
+    //count++;
+    
+    CallbackRegisterList[GPIO_EXTERNAL_INTERRUPT].CallbackFunction();
+    
+    *InterruptControl[GPIO_PORT] &= ~INTF_BIT_MASK;
 }
 
 /************************************************************************************************

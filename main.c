@@ -9,7 +9,7 @@
 	
 	Autor:           Eng. Jonnes Nascimento
 	Local, Data:     Santos, 16/12/2021
-	Data de Revisao: --
+	Data de Revisao: 29/12/2021
 	
 ================================================================================================*/
 
@@ -20,7 +20,7 @@
     #pragma config FOSC     = INTOSCCLK // Oscillator Selection bits (INTOSC oscillator: CLKOUT function on RA4/OSC2/CLKOUT pin, I/O function on RA5/OSC1/CLKIN)
     #pragma config WDTE     = OFF       // Watchdog Timer Enable bit (WDT disabled)
     #pragma config PWRTE    = OFF       // Power-up Timer Enable bit (PWRT disabled)
-    #pragma config MCLRE    = OFF       // MCLR Pin Function Select bit (MCLR pin function is disabled)
+    #pragma config MCLRE    = ON       // MCLR Pin Function Select bit (MCLR pin function is disabled)
     #pragma config CP       = OFF       // Code Protection bit (Program memory code protection is disabled)
     #pragma config CPD      = OFF       // Data Code Protection bit (Data memory code protection is disabled)
     #pragma config BOREN    = OFF       // Brown Out Detect (BOR enabled)
@@ -51,6 +51,7 @@
 	Variaveis Globais
 ================================================================================================*/
 uint8_t fg_blink = 1;
+//unsigned char count;
 
 /* ==============================================================================================
 	Prototipos de Funcoes Auxiliares
@@ -64,19 +65,22 @@ void f_toggle_led(void);
 ================================================================================================*/
 void main(void) 
 {
-    // register all ISR callback fucntions
+    // register all ISR callback functions
     Gpio_Callback_Register(GPIO_EXTERNAL_INTERRUPT, f_toggle_led);
     
     const GpioConfig_t * config = GpioConfigGet();
     Gpio_Init(config);
     
+    Gpio_Write(CHANNEL_GP0, GPIO_PIN_STATE_HIGH);
+    
     while (1)
     {
         if (fg_blink)
-        {
+       {
             Gpio_Toggle(CHANNEL_GP0);
-            delay_ms(1000);
-        }
+            delay_ms(500);
+       }
+
     }
 } /* main */
 
@@ -95,8 +99,9 @@ void delay_ms(uint16_t tempo)
 
 void f_toggle_led()
 {
-    //fg_blink ^= 1;
+    fg_blink ^= 1;
 }
+
 /* ==============================================================================================
 	Fim do Programa
 ================================================================================================*/
