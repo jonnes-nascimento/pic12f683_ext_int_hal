@@ -4,10 +4,10 @@
  * @Author         :    Eng. Jonnes F. Nascimento
  * @Origin Date    :    16/12/2021
  * @Version        :    0.0.1
- * @Compiler       :    GCC
- * @Target         :    --
+ * @Compiler       :    XC8
+ * @Target         :    PIC12F683
  * @Notes          :    None
- * @Revision Date  :    20/12/2021
+ * @Revision Date  :    30/12/2021
  ************************************************************************************************/
 /** **********************************************************************************************
  * @file gpio.c
@@ -149,6 +149,7 @@ static void Gpio_Interrupt_Callback_Executor(void);
  * <tr><td> Date       </td><td> Software Version </td><td> Initials </td><td> Description </td></tr>
  * <tr><td> 16/12/2021 </td><td> 0.0.1            </td><td> JFN      </td><td> Creation Date </td></tr>
  * <tr><td> 17/12/2021 </td><td> 0.0.1            </td><td> JFN      </td><td> Documentation Created </td></tr>
+ * <tr><td> 30/12/2021 </td><td> 0.0.1            </td><td> JFN      </td><td> Small adjustments </td></tr>
  * </table><br><br><hr>
  ************************************************************************************************/
 void Gpio_Init(const GpioConfig_t * const Config)
@@ -270,7 +271,7 @@ void Gpio_Init(const GpioConfig_t * const Config)
  * <tr><td> Date       </td><td> Software Version </td><td> Initials </td><td> Description </td></tr>
  * <tr><td> 16/12/2021 </td><td> 0.0.1            </td><td> JFN      </td><td> Creation Date </td></tr>
  * <tr><td> 17/12/2021 </td><td> 0.0.1            </td><td> JFN      </td><td> Documentation Created </td></tr>
- * <tr><td> 30/12/2021 </td><td> 0.0.1            </td><td> JFN      </td><td> Code reimplemented </td></tr>
+ * <tr><td> 30/12/2021 </td><td> 0.0.1            </td><td> JFN      </td><td> Small adjustments </td></tr>
  * </table><br><br><hr>
  ************************************************************************************************/
 void Gpio_Write(GpioChannel_t channel, GpioPinState_t state)

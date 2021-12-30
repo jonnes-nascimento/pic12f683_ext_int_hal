@@ -79,10 +79,10 @@ $(function() {
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * @Author         :    Eng. Jonnes F. Nascimento</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * @Origin Date    :    16/12/2021</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> * @Version        :    0.0.1</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * @Compiler       :    GCC</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> * @Target         :    --</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * @Compiler       :    XC8</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> * @Target         :    PIC12F683</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> * @Notes          :    None</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> * @Revision Date  :    20/12/2021</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> * @Revision Date  :    30/12/2021</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> ************************************************************************************************/</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">/************************************************************************************************</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> * Includes</span></div>
@@ -168,185 +168,185 @@ $(function() {
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment">/************************************************************************************************</span></div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment"> * Function: void Gpio_Init(const GpioConfig_t * const Config);</span></div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="group___drivers.html#gaba4bf0e9e96d49b2779b2eff918e05ab">  154</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___drivers.html#gaba4bf0e9e96d49b2779b2eff918e05ab">Gpio_Init</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_gpio_config__t.html">GpioConfig_t</a> * <span class="keyword">const</span> Config)</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>{</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    <span class="comment">/* This is for test only - this code must be moved */</span></div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    *SystemOscilator    = 0x70; </div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    *SystemComparator   = 0x07; </div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    *SystemADConverter  = 0x00; </div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="comment">// Disable all interrupts</span></div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    *InterruptControl[<a class="code hl_enumvalue" href="gpio__config_8h.html#a688b44052db0f30b560460cb5561065faba37cf01fcd9f7f891b31adefd05359c">GPIO_PORT</a>]           = 0x00;</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    *PeripheralInterruptEnable[<a class="code hl_enumvalue" href="gpio__config_8h.html#a688b44052db0f30b560460cb5561065faba37cf01fcd9f7f891b31adefd05359c">GPIO_PORT</a>]  = 0x00;</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    *PeripheralInterruptRequest[<a class="code hl_enumvalue" href="gpio__config_8h.html#a688b44052db0f30b560460cb5561065faba37cf01fcd9f7f891b31adefd05359c">GPIO_PORT</a>] = 0x00;</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    </div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <span class="keywordflow">for</span> (<a class="code hl_typedef" href="gpio__config_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> port = 0; port &lt; <a class="code hl_enumvalue" href="gpio__config_8h.html#a688b44052db0f30b560460cb5561065fac0b02c120a721090e427c92446baab7d">GPIO_PORT_COUNT</a>; port++)</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    {</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        *GpioPort[port]     = 0x00; </div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        *GpioFunction[port] = 0x00; </div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        <span class="comment">/* Sets the GPIOs */</span></div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        <span class="keywordflow">for</span> (<a class="code hl_typedef" href="gpio__config_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i = 0; i &lt; <a class="code hl_enumvalue" href="gpio__config_8h.html#ab7f6171645a4af1d01a6fa997f946197a2f01b3beda5d8076ff40a0716a0096dc">GPIO_CHANNEL_COUNT</a>; i++)</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        {</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>           <span class="keywordflow">switch</span> (Config[i].Function)</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>           {</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>               <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="gpio__config_8h.html#a643d8d39812c42261a1c8b2bd61b25f6aa945123e3a131aa2ee2c5f5b84d19752">GPIO_PIN_FUNCTION_DIGITAL</a>:</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>                   <span class="comment">// TRISIO: set de pin direction mode</span></div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>                   <span class="keywordflow">if</span> (Config[i].Direction == <a class="code hl_enumvalue" href="gpio__config_8h.html#a1036acfb2fdf09008e7fe31ae62919d2a3457bc5bf96e323a94a81c25166173f8">GPIO_PIN_DIRECTION_INPUT</a>)</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>                   {</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>                       *GpioDirection[port] |= (Config[i].<a class="code hl_variable" href="struct_gpio_config__t.html#a09cad70fd2c296d5865afc3da5b128b5">Direction</a> &lt;&lt; i);</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>                   }</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>                   <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>                   {</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>                       *GpioDirection[port] &amp;= ~(<a class="code hl_enumvalue" href="constants_8h.html#ae2946618e700f814e6147195c808f4c8a0c3a1dacf94061154b3ee354359c5893">HIGH</a> &lt;&lt; i);</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>                   }</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>                   <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>               <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="gpio__config_8h.html#a643d8d39812c42261a1c8b2bd61b25f6af495ab314910226145f7c73da54caa65">GPIO_PIN_FUNCTION_CAPTURE_COMPARE</a>: <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>               <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="gpio__config_8h.html#a643d8d39812c42261a1c8b2bd61b25f6aaece9bd16b8c41919709b662755db5be">GPIO_PIN_FUNCTION_COMPARATOR</a>: <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>               <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="gpio__config_8h.html#a643d8d39812c42261a1c8b2bd61b25f6a8c405b8622a6f3513227710950885c95">GPIO_PIN_FUNCTION_INTERRUPT_ON_CHANGE</a>: <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>               <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="gpio__config_8h.html#a643d8d39812c42261a1c8b2bd61b25f6aa58903bbfcf5ce6be72580fe444189a2">GPIO_PIN_FUNCTION_TIMER</a>: <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>               <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="gpio__config_8h.html#a643d8d39812c42261a1c8b2bd61b25f6ae7db4964bfabb52168f4dc1fabf3fdb7">GPIO_PIN_FUNCTION_ANALOG</a>:</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>                   *GpioFunction[port] |= (<a class="code hl_enumvalue" href="constants_8h.html#ae2946618e700f814e6147195c808f4c8a0c3a1dacf94061154b3ee354359c5893">HIGH</a> &lt;&lt; i);</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>                   <span class="keywordflow">break</span>;                   </div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>               <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="gpio__config_8h.html#a643d8d39812c42261a1c8b2bd61b25f6a8e1dcb386c6941c39312441b4773acc7">GPIO_PIN_FUNCTION_EXTERNAL_INTERRUPT</a>:</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>                   <span class="comment">// ANSEL as digital I/O</span></div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>                   *GpioFunction[port] &amp;= ~(<a class="code hl_enumvalue" href="constants_8h.html#ae2946618e700f814e6147195c808f4c8a0c3a1dacf94061154b3ee354359c5893">HIGH</a> &lt;&lt; i);</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>                   </div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>                   <span class="comment">// TRISIO set de direction of pin as INPUT</span></div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>                   *GpioDirection[port] |= (Config[i].<a class="code hl_variable" href="struct_gpio_config__t.html#a09cad70fd2c296d5865afc3da5b128b5">Direction</a> &lt;&lt; i);</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>                   <span class="comment">// Sets the edge trigger of the interrupt</span></div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>                   <span class="keywordflow">if</span> (Config[i].InterruptEdge == <a class="code hl_enumvalue" href="gpio__config_8h.html#a0b7686e46829530f57bad026831a8773aefe588b203be8ae9aeaf53e218743031">GPIO_INTERRUPT_EDGE_FALLING</a>)</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>                   {</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>                       *GpioOption[port] &amp;= ~INTEDG_BIT_MASK;</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>                   }</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>                   <span class="keywordflow">else</span> <span class="keywordflow">if</span> (Config[i].InterruptEdge == <a class="code hl_enumvalue" href="gpio__config_8h.html#a0b7686e46829530f57bad026831a8773ade9ee418a43058a706ad6669f474bec1">GPIO_INTERRUPT_EDGE_RISING</a>)</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>                   {</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>                       *GpioOption[port] |= <a class="code hl_variable" href="group___hardware.html#gab55c73ad9ddd3c5e58eb2b10e0921092">INTEDG_BIT_MASK</a>;</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>                   }</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>                   <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>                   {</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>                       <span class="comment">// do nothing</span></div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>                   }</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>                   <span class="comment">// Clear the external interrupt flag INTF</span></div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>                   *InterruptControl[port] &amp;= ~INTF_BIT_MASK;</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>                   <span class="comment">// Enable external interrupts</span></div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>                   *InterruptControl[port] |= <a class="code hl_variable" href="group___hardware.html#ga41766a230c0fe93f4d48d6df7d878f6e">INTE_BIT_MASK</a>;</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>                   <span class="comment">// Enable global interrupts</span></div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>                   *InterruptControl[port] |= <a class="code hl_variable" href="group___hardware.html#ga19e9b61c6d4ce1107febf493e239b2f6">GIE1_BIT_MASK</a>;</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>                   <span class="comment">// Save the callback function executor address to the FSR register</span></div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>                   <span class="comment">//*FSR = ?</span></div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>                   <span class="comment">//asm volatile (&quot;JMP *%0&quot; : : &quot;r&quot; (&amp;Gpio_Interrupt_Callback_Executor));</span></div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>                   </div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>                   <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>           } <span class="comment">// switch Config[i].Function</span></div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>           </div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>           <span class="comment">// sets the GPIO initial state</span></div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>           *GpioPort[port] |= (Config[i].<a class="code hl_variable" href="struct_gpio_config__t.html#aefd06a4bc59de833a7f054b5af3eeab4">State</a> &lt;&lt; i);</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>           </div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>        } <span class="comment">// for GPIO_CHANNEL_COUNT</span></div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    } <span class="comment">// for GPIO_PORT_COUNT</span></div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>} <span class="comment">// Gpio_Init</span></div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span><span class="comment">/************************************************************************************************</span></div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span><span class="comment"> * Function: void Gpio_Write(GpioChannel_t channel, GpioPinState_t state);</span></div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno"><a class="line" href="group___drivers.html#gaaad357fa85fa00542c5db89d2d867691">  276</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___drivers.html#gaaad357fa85fa00542c5db89d2d867691">Gpio_Write</a>(<a class="code hl_enumeration" href="gpio__config_8h.html#ab7f6171645a4af1d01a6fa997f946197">GpioChannel_t</a> channel, <a class="code hl_enumeration" href="gpio__config_8h.html#a40984b9819168ed55b8e8f43b4517be7">GpioPinState_t</a> state)</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>{</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    <span class="keywordflow">if</span> (state == <a class="code hl_enumvalue" href="gpio__config_8h.html#a40984b9819168ed55b8e8f43b4517be7a1e717dcccb09ed0083d8c844cf9ac4bd">GPIO_PIN_STATE_HIGH</a>)</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    {</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>        *GpioPort[<a class="code hl_enumvalue" href="gpio__config_8h.html#a688b44052db0f30b560460cb5561065faba37cf01fcd9f7f891b31adefd05359c">GPIO_PORT</a>] |= (<a class="code hl_enumvalue" href="constants_8h.html#ae2946618e700f814e6147195c808f4c8a0c3a1dacf94061154b3ee354359c5893">HIGH</a> &lt;&lt; channel);</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    }</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    {</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        *GpioPort[<a class="code hl_enumvalue" href="gpio__config_8h.html#a688b44052db0f30b560460cb5561065faba37cf01fcd9f7f891b31adefd05359c">GPIO_PORT</a>] &amp;= ~(<a class="code hl_enumvalue" href="constants_8h.html#ae2946618e700f814e6147195c808f4c8a0c3a1dacf94061154b3ee354359c5893">HIGH</a> &lt;&lt; channel);</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>    }</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>}</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span> </div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span><span class="comment">/************************************************************************************************</span></div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span><span class="comment"> * Function: GpioPinState_t Gpio_Read(GpioChannel_t channel);</span></div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno"><a class="line" href="group___drivers.html#gaa1c42596699c96a1b8b9244cdefe9421">  323</a></span><a class="code hl_enumeration" href="gpio__config_8h.html#a40984b9819168ed55b8e8f43b4517be7">GpioPinState_t</a> <a class="code hl_function" href="group___drivers.html#gaa1c42596699c96a1b8b9244cdefe9421">Gpio_Read</a>(<a class="code hl_enumeration" href="gpio__config_8h.html#ab7f6171645a4af1d01a6fa997f946197">GpioChannel_t</a> channel)</div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>{</div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    <span class="keywordflow">return</span> ((*GpioPort[<a class="code hl_enumvalue" href="gpio__config_8h.html#a688b44052db0f30b560460cb5561065faba37cf01fcd9f7f891b31adefd05359c">GPIO_PORT</a>] &amp; (<a class="code hl_enumvalue" href="constants_8h.html#ae2946618e700f814e6147195c808f4c8a0c3a1dacf94061154b3ee354359c5893">HIGH</a> &lt;&lt; channel)) &gt;= 1 ? <a class="code hl_enumvalue" href="gpio__config_8h.html#a40984b9819168ed55b8e8f43b4517be7a1e717dcccb09ed0083d8c844cf9ac4bd">GPIO_PIN_STATE_HIGH</a> : <a class="code hl_enumvalue" href="gpio__config_8h.html#a40984b9819168ed55b8e8f43b4517be7aed6c7c26ac95c7cddaf05a4ecfd335f4">GPIO_PIN_STATE_LOW</a>);</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>}</div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span><span class="comment">/************************************************************************************************</span></div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span><span class="comment"> * Function: void Gpio_Toggle(GpioChannel_t channel);</span></div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno"><a class="line" href="group___drivers.html#gab7f799e27e71520f7aeddfbd65220ae4">  363</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___drivers.html#gab7f799e27e71520f7aeddfbd65220ae4">Gpio_Toggle</a>(<a class="code hl_enumeration" href="gpio__config_8h.html#ab7f6171645a4af1d01a6fa997f946197">GpioChannel_t</a> channel)</div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>{</div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>    *GpioPort[<a class="code hl_enumvalue" href="gpio__config_8h.html#a688b44052db0f30b560460cb5561065faba37cf01fcd9f7f891b31adefd05359c">GPIO_PORT</a>] ^= (<a class="code hl_enumvalue" href="constants_8h.html#ae2946618e700f814e6147195c808f4c8a0c3a1dacf94061154b3ee354359c5893">HIGH</a> &lt;&lt; channel);</div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>}</div>
-<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span> </div>
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span><span class="comment">/************************************************************************************************</span></div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span><span class="comment"> * Function: void Gpio_Register_Write(GpioPort_t Port);</span></div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00404" name="l00404"></a><span class="lineno"><a class="line" href="group___drivers.html#gacdfdb42f0eda5599781e413e5384ec2a">  404</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___drivers.html#gacdfdb42f0eda5599781e413e5384ec2a">Gpio_Register_Write</a>(<a class="code hl_union" href="union_gpio_port__t.html">GpioPort_t</a> Port)</div>
-<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>{</div>
-<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>    *GpioPort[<a class="code hl_enumvalue" href="gpio__config_8h.html#a688b44052db0f30b560460cb5561065faba37cf01fcd9f7f891b31adefd05359c">GPIO_PORT</a>] = Port.<a class="code hl_variable" href="union_gpio_port__t.html#a3860f029df1c2a4558e0f105119caec6">BYTE</a>;</div>
-<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>}</div>
-<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span> </div>
-<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span><span class="comment">/************************************************************************************************</span></div>
-<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span><span class="comment"> * Function: GpioPort_t Gpio_Register_Read(void);</span></div>
-<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00444" name="l00444"></a><span class="lineno"><a class="line" href="group___drivers.html#ga72dd57bea8f99c5c66fa702c1b5bd499">  444</a></span><span class="keyword">volatile</span> <a class="code hl_union" href="union_gpio_port__t.html">GpioPort_t</a> <a class="code hl_function" href="group___drivers.html#ga72dd57bea8f99c5c66fa702c1b5bd499">Gpio_Register_Read</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span>{</div>
-<div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>    <span class="keywordflow">return</span> (<a class="code hl_union" href="union_gpio_port__t.html">GpioPort_t</a>) *GpioPort[<a class="code hl_enumvalue" href="gpio__config_8h.html#a688b44052db0f30b560460cb5561065faba37cf01fcd9f7f891b31adefd05359c">GPIO_PORT</a>];</div>
-<div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span>}</div>
-<div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span> </div>
-<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span><span class="comment">/************************************************************************************************</span></div>
-<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span><span class="comment"> * Function: void Gpio_Callback_Register(GpioCallbackEvent_t event, void (*CallbackFunction)(void));</span></div>
-<div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00486" name="l00486"></a><span class="lineno"><a class="line" href="group___drivers.html#gaf092e6147616d733f358ee902ccbaed7">  486</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___drivers.html#gaf092e6147616d733f358ee902ccbaed7">Gpio_Callback_Register</a>(<a class="code hl_enumeration" href="gpio__config_8h.html#ad4d537def96abcc822e21574875f5178">GpioCallbackEvent_t</a> Event, <span class="keywordtype">void</span> (*CallbackFunction)(<span class="keywordtype">void</span>))</div>
-<div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>{</div>
-<div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>    <a class="code hl_struct" href="struct_callback_register__t.html">CallbackRegister_t</a> CallbackFunctionReg = {.<a class="code hl_variable" href="struct_callback_register__t.html#a73f025bf599f83498f6659586065d8b0">Event</a> = Event, .CallbackFunction = CallbackFunction};</div>
-<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>    CallbackRegisterList[Event] = CallbackFunctionReg;</div>
-<div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>}</div>
-<div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span> </div>
-<div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span><span class="comment">/************************************************************************************************</span></div>
-<div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span><span class="comment"> * Auxiliary Functions</span></div>
-<div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span><span class="comment"> ************************************************************************************************/</span></div>
-<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span><span class="keyword">static</span> <span class="keywordtype">void</span> __interrupt() Gpio_Interrupt_Callback_Executor(<span class="keywordtype">void</span>)</div>
-<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>{</div>
-<div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span>    <span class="comment">// Disable external interrupts (INTCON.INTE)</span></div>
-<div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span> </div>
-<div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span>    <span class="comment">// Save W register</span></div>
-<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span> </div>
-<div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span>    <span class="comment">// Save STATUS register</span></div>
-<div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span> </div>
-<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>    <span class="comment">// Verify interrupts flags to determine which callback function to call</span></div>
-<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span> </div>
-<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>    <span class="comment">/*</span></div>
-<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span><span class="comment">      if (INTCON.INTF)</span></div>
-<div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span><span class="comment">      {</span></div>
-<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span><span class="comment">           CallbackRegisterList[GPIO_EXTERNAL_INTERRUPT].CallbackFunction();</span></div>
-<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span><span class="comment">     </span></div>
-<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span><span class="comment">           // Clear interrupt flag</span></div>
-<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span><span class="comment">      }</span></div>
-<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span>    <span class="comment">//</span></div>
-<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span> </div>
-<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span>    <span class="comment">// Restore W register</span></div>
-<div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span> </div>
-<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>    <span class="comment">// Restore STATUS register</span></div>
-<div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span> </div>
-<div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>    <span class="comment">// Enable external interrupts (INTCON.INTE)</span></div>
-<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span> </div>
-<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>    <span class="comment">// Enable global interrupts</span></div>
-<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>    </div>
-<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>    <span class="comment">//count++;</span></div>
-<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>    </div>
-<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>    CallbackRegisterList[<a class="code hl_enumvalue" href="gpio__config_8h.html#ad4d537def96abcc822e21574875f5178a692fc44a1ae41c2fd12b123fa9501a9d">GPIO_EXTERNAL_INTERRUPT</a>].<a class="code hl_variable" href="struct_callback_register__t.html#ac3155c32c2f945c662f554d7e1ac4fc7">CallbackFunction</a>();</div>
-<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span>    </div>
-<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>    *InterruptControl[<a class="code hl_enumvalue" href="gpio__config_8h.html#a688b44052db0f30b560460cb5561065faba37cf01fcd9f7f891b31adefd05359c">GPIO_PORT</a>] &amp;= ~INTF_BIT_MASK;</div>
-<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span>}</div>
-<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span> </div>
-<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span><span class="comment">/************************************************************************************************</span></div>
-<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span><span class="comment"> * EOF</span></div>
-<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span><span class="comment"> ************************************************************************************************/</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="group___drivers.html#gaba4bf0e9e96d49b2779b2eff918e05ab">  155</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___drivers.html#gaba4bf0e9e96d49b2779b2eff918e05ab">Gpio_Init</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_gpio_config__t.html">GpioConfig_t</a> * <span class="keyword">const</span> Config)</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>{</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    <span class="comment">/* This is for test only - this code must be moved */</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    *SystemOscilator    = 0x70; </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    *SystemComparator   = 0x07; </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    *SystemADConverter  = 0x00; </div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <span class="comment">// Disable all interrupts</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    *InterruptControl[<a class="code hl_enumvalue" href="gpio__config_8h.html#a688b44052db0f30b560460cb5561065faba37cf01fcd9f7f891b31adefd05359c">GPIO_PORT</a>]           = 0x00;</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    *PeripheralInterruptEnable[<a class="code hl_enumvalue" href="gpio__config_8h.html#a688b44052db0f30b560460cb5561065faba37cf01fcd9f7f891b31adefd05359c">GPIO_PORT</a>]  = 0x00;</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    *PeripheralInterruptRequest[<a class="code hl_enumvalue" href="gpio__config_8h.html#a688b44052db0f30b560460cb5561065faba37cf01fcd9f7f891b31adefd05359c">GPIO_PORT</a>] = 0x00;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    <span class="keywordflow">for</span> (<a class="code hl_typedef" href="gpio__config_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> port = 0; port &lt; <a class="code hl_enumvalue" href="gpio__config_8h.html#a688b44052db0f30b560460cb5561065fac0b02c120a721090e427c92446baab7d">GPIO_PORT_COUNT</a>; port++)</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    {</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        *GpioPort[port]     = 0x00; </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        *GpioFunction[port] = 0x00; </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        <span class="comment">/* Sets the GPIOs */</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        <span class="keywordflow">for</span> (<a class="code hl_typedef" href="gpio__config_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i = 0; i &lt; <a class="code hl_enumvalue" href="gpio__config_8h.html#ab7f6171645a4af1d01a6fa997f946197a2f01b3beda5d8076ff40a0716a0096dc">GPIO_CHANNEL_COUNT</a>; i++)</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        {</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>           <span class="keywordflow">switch</span> (Config[i].Function)</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>           {</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>               <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="gpio__config_8h.html#a643d8d39812c42261a1c8b2bd61b25f6aa945123e3a131aa2ee2c5f5b84d19752">GPIO_PIN_FUNCTION_DIGITAL</a>:</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>                   <span class="comment">// TRISIO: set de pin direction mode</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>                   <span class="keywordflow">if</span> (Config[i].Direction == <a class="code hl_enumvalue" href="gpio__config_8h.html#a1036acfb2fdf09008e7fe31ae62919d2a3457bc5bf96e323a94a81c25166173f8">GPIO_PIN_DIRECTION_INPUT</a>)</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>                   {</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>                       *GpioDirection[port] |= (Config[i].<a class="code hl_variable" href="struct_gpio_config__t.html#a09cad70fd2c296d5865afc3da5b128b5">Direction</a> &lt;&lt; i);</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>                   }</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>                   <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>                   {</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>                       *GpioDirection[port] &amp;= ~(<a class="code hl_enumvalue" href="constants_8h.html#ae2946618e700f814e6147195c808f4c8a0c3a1dacf94061154b3ee354359c5893">HIGH</a> &lt;&lt; i);</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>                   }</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>                   <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>               <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="gpio__config_8h.html#a643d8d39812c42261a1c8b2bd61b25f6af495ab314910226145f7c73da54caa65">GPIO_PIN_FUNCTION_CAPTURE_COMPARE</a>: <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>               <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="gpio__config_8h.html#a643d8d39812c42261a1c8b2bd61b25f6aaece9bd16b8c41919709b662755db5be">GPIO_PIN_FUNCTION_COMPARATOR</a>: <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>               <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="gpio__config_8h.html#a643d8d39812c42261a1c8b2bd61b25f6a8c405b8622a6f3513227710950885c95">GPIO_PIN_FUNCTION_INTERRUPT_ON_CHANGE</a>: <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>               <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="gpio__config_8h.html#a643d8d39812c42261a1c8b2bd61b25f6aa58903bbfcf5ce6be72580fe444189a2">GPIO_PIN_FUNCTION_TIMER</a>: <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>               <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="gpio__config_8h.html#a643d8d39812c42261a1c8b2bd61b25f6ae7db4964bfabb52168f4dc1fabf3fdb7">GPIO_PIN_FUNCTION_ANALOG</a>:</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>                   *GpioFunction[port] |= (<a class="code hl_enumvalue" href="constants_8h.html#ae2946618e700f814e6147195c808f4c8a0c3a1dacf94061154b3ee354359c5893">HIGH</a> &lt;&lt; i);</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>                   <span class="keywordflow">break</span>;                   </div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>               <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="gpio__config_8h.html#a643d8d39812c42261a1c8b2bd61b25f6a8e1dcb386c6941c39312441b4773acc7">GPIO_PIN_FUNCTION_EXTERNAL_INTERRUPT</a>:</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>                   <span class="comment">// ANSEL as digital I/O</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>                   *GpioFunction[port] &amp;= ~(<a class="code hl_enumvalue" href="constants_8h.html#ae2946618e700f814e6147195c808f4c8a0c3a1dacf94061154b3ee354359c5893">HIGH</a> &lt;&lt; i);</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>                   </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>                   <span class="comment">// TRISIO set de direction of pin as INPUT</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>                   *GpioDirection[port] |= (Config[i].<a class="code hl_variable" href="struct_gpio_config__t.html#a09cad70fd2c296d5865afc3da5b128b5">Direction</a> &lt;&lt; i);</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>                   <span class="comment">// Sets the edge trigger of the interrupt</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>                   <span class="keywordflow">if</span> (Config[i].InterruptEdge == <a class="code hl_enumvalue" href="gpio__config_8h.html#a0b7686e46829530f57bad026831a8773aefe588b203be8ae9aeaf53e218743031">GPIO_INTERRUPT_EDGE_FALLING</a>)</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>                   {</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>                       *GpioOption[port] &amp;= ~INTEDG_BIT_MASK;</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>                   }</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>                   <span class="keywordflow">else</span> <span class="keywordflow">if</span> (Config[i].InterruptEdge == <a class="code hl_enumvalue" href="gpio__config_8h.html#a0b7686e46829530f57bad026831a8773ade9ee418a43058a706ad6669f474bec1">GPIO_INTERRUPT_EDGE_RISING</a>)</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>                   {</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>                       *GpioOption[port] |= <a class="code hl_variable" href="group___hardware.html#gab55c73ad9ddd3c5e58eb2b10e0921092">INTEDG_BIT_MASK</a>;</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>                   }</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>                   <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>                   {</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>                       <span class="comment">// do nothing</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>                   }</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span> </div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>                   <span class="comment">// Clear the external interrupt flag INTF</span></div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>                   *InterruptControl[port] &amp;= ~INTF_BIT_MASK;</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>                   <span class="comment">// Enable external interrupts</span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>                   *InterruptControl[port] |= <a class="code hl_variable" href="group___hardware.html#ga41766a230c0fe93f4d48d6df7d878f6e">INTE_BIT_MASK</a>;</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>                   <span class="comment">// Enable global interrupts</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>                   *InterruptControl[port] |= <a class="code hl_variable" href="group___hardware.html#ga19e9b61c6d4ce1107febf493e239b2f6">GIE1_BIT_MASK</a>;</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> </div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>                   <span class="comment">// Save the callback function executor address to the FSR register</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>                   <span class="comment">//*FSR = ?</span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>                   <span class="comment">//asm volatile (&quot;JMP *%0&quot; : : &quot;r&quot; (&amp;Gpio_Interrupt_Callback_Executor));</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>                   </div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>                   <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>           } <span class="comment">// switch Config[i].Function</span></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>           </div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>           <span class="comment">// sets the GPIO initial state</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>           *GpioPort[port] |= (Config[i].<a class="code hl_variable" href="struct_gpio_config__t.html#aefd06a4bc59de833a7f054b5af3eeab4">State</a> &lt;&lt; i);</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>           </div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        } <span class="comment">// for GPIO_CHANNEL_COUNT</span></div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    } <span class="comment">// for GPIO_PORT_COUNT</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>} <span class="comment">// Gpio_Init</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span><span class="comment">/************************************************************************************************</span></div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span><span class="comment"> * Function: void Gpio_Write(GpioChannel_t channel, GpioPinState_t state);</span></div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno"><a class="line" href="group___drivers.html#gaaad357fa85fa00542c5db89d2d867691">  277</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___drivers.html#gaaad357fa85fa00542c5db89d2d867691">Gpio_Write</a>(<a class="code hl_enumeration" href="gpio__config_8h.html#ab7f6171645a4af1d01a6fa997f946197">GpioChannel_t</a> channel, <a class="code hl_enumeration" href="gpio__config_8h.html#a40984b9819168ed55b8e8f43b4517be7">GpioPinState_t</a> state)</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>{</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    <span class="keywordflow">if</span> (state == <a class="code hl_enumvalue" href="gpio__config_8h.html#a40984b9819168ed55b8e8f43b4517be7a1e717dcccb09ed0083d8c844cf9ac4bd">GPIO_PIN_STATE_HIGH</a>)</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    {</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        *GpioPort[<a class="code hl_enumvalue" href="gpio__config_8h.html#a688b44052db0f30b560460cb5561065faba37cf01fcd9f7f891b31adefd05359c">GPIO_PORT</a>] |= (<a class="code hl_enumvalue" href="constants_8h.html#ae2946618e700f814e6147195c808f4c8a0c3a1dacf94061154b3ee354359c5893">HIGH</a> &lt;&lt; channel);</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    }</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    {</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>        *GpioPort[<a class="code hl_enumvalue" href="gpio__config_8h.html#a688b44052db0f30b560460cb5561065faba37cf01fcd9f7f891b31adefd05359c">GPIO_PORT</a>] &amp;= ~(<a class="code hl_enumvalue" href="constants_8h.html#ae2946618e700f814e6147195c808f4c8a0c3a1dacf94061154b3ee354359c5893">HIGH</a> &lt;&lt; channel);</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    }</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>}</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span> </div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span><span class="comment">/************************************************************************************************</span></div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span><span class="comment"> * Function: GpioPinState_t Gpio_Read(GpioChannel_t channel);</span></div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno"><a class="line" href="group___drivers.html#gaa1c42596699c96a1b8b9244cdefe9421">  324</a></span><a class="code hl_enumeration" href="gpio__config_8h.html#a40984b9819168ed55b8e8f43b4517be7">GpioPinState_t</a> <a class="code hl_function" href="group___drivers.html#gaa1c42596699c96a1b8b9244cdefe9421">Gpio_Read</a>(<a class="code hl_enumeration" href="gpio__config_8h.html#ab7f6171645a4af1d01a6fa997f946197">GpioChannel_t</a> channel)</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>{</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    <span class="keywordflow">return</span> ((*GpioPort[<a class="code hl_enumvalue" href="gpio__config_8h.html#a688b44052db0f30b560460cb5561065faba37cf01fcd9f7f891b31adefd05359c">GPIO_PORT</a>] &amp; (<a class="code hl_enumvalue" href="constants_8h.html#ae2946618e700f814e6147195c808f4c8a0c3a1dacf94061154b3ee354359c5893">HIGH</a> &lt;&lt; channel)) &gt;= 1 ? <a class="code hl_enumvalue" href="gpio__config_8h.html#a40984b9819168ed55b8e8f43b4517be7a1e717dcccb09ed0083d8c844cf9ac4bd">GPIO_PIN_STATE_HIGH</a> : <a class="code hl_enumvalue" href="gpio__config_8h.html#a40984b9819168ed55b8e8f43b4517be7aed6c7c26ac95c7cddaf05a4ecfd335f4">GPIO_PIN_STATE_LOW</a>);</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>}</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span> </div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span><span class="comment">/************************************************************************************************</span></div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span><span class="comment"> * Function: void Gpio_Toggle(GpioChannel_t channel);</span></div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno"><a class="line" href="group___drivers.html#gab7f799e27e71520f7aeddfbd65220ae4">  364</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___drivers.html#gab7f799e27e71520f7aeddfbd65220ae4">Gpio_Toggle</a>(<a class="code hl_enumeration" href="gpio__config_8h.html#ab7f6171645a4af1d01a6fa997f946197">GpioChannel_t</a> channel)</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>{</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>    *GpioPort[<a class="code hl_enumvalue" href="gpio__config_8h.html#a688b44052db0f30b560460cb5561065faba37cf01fcd9f7f891b31adefd05359c">GPIO_PORT</a>] ^= (<a class="code hl_enumvalue" href="constants_8h.html#ae2946618e700f814e6147195c808f4c8a0c3a1dacf94061154b3ee354359c5893">HIGH</a> &lt;&lt; channel);</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>}</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span> </div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span><span class="comment">/************************************************************************************************</span></div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span><span class="comment"> * Function: void Gpio_Register_Write(GpioPort_t Port);</span></div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno"><a class="line" href="group___drivers.html#gacdfdb42f0eda5599781e413e5384ec2a">  405</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___drivers.html#gacdfdb42f0eda5599781e413e5384ec2a">Gpio_Register_Write</a>(<a class="code hl_union" href="union_gpio_port__t.html">GpioPort_t</a> Port)</div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>{</div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>    *GpioPort[<a class="code hl_enumvalue" href="gpio__config_8h.html#a688b44052db0f30b560460cb5561065faba37cf01fcd9f7f891b31adefd05359c">GPIO_PORT</a>] = Port.<a class="code hl_variable" href="union_gpio_port__t.html#a3860f029df1c2a4558e0f105119caec6">BYTE</a>;</div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>}</div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span> </div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span><span class="comment">/************************************************************************************************</span></div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span><span class="comment"> * Function: GpioPort_t Gpio_Register_Read(void);</span></div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00445" name="l00445"></a><span class="lineno"><a class="line" href="group___drivers.html#ga72dd57bea8f99c5c66fa702c1b5bd499">  445</a></span><span class="keyword">volatile</span> <a class="code hl_union" href="union_gpio_port__t.html">GpioPort_t</a> <a class="code hl_function" href="group___drivers.html#ga72dd57bea8f99c5c66fa702c1b5bd499">Gpio_Register_Read</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>{</div>
+<div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span>    <span class="keywordflow">return</span> (<a class="code hl_union" href="union_gpio_port__t.html">GpioPort_t</a>) *GpioPort[<a class="code hl_enumvalue" href="gpio__config_8h.html#a688b44052db0f30b560460cb5561065faba37cf01fcd9f7f891b31adefd05359c">GPIO_PORT</a>];</div>
+<div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>}</div>
+<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span> </div>
+<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span><span class="comment">/************************************************************************************************</span></div>
+<div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span><span class="comment"> * Function: void Gpio_Callback_Register(GpioCallbackEvent_t event, void (*CallbackFunction)(void));</span></div>
+<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00487" name="l00487"></a><span class="lineno"><a class="line" href="group___drivers.html#gaf092e6147616d733f358ee902ccbaed7">  487</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___drivers.html#gaf092e6147616d733f358ee902ccbaed7">Gpio_Callback_Register</a>(<a class="code hl_enumeration" href="gpio__config_8h.html#ad4d537def96abcc822e21574875f5178">GpioCallbackEvent_t</a> Event, <span class="keywordtype">void</span> (*CallbackFunction)(<span class="keywordtype">void</span>))</div>
+<div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>{</div>
+<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>    <a class="code hl_struct" href="struct_callback_register__t.html">CallbackRegister_t</a> CallbackFunctionReg = {.<a class="code hl_variable" href="struct_callback_register__t.html#a73f025bf599f83498f6659586065d8b0">Event</a> = Event, .CallbackFunction = CallbackFunction};</div>
+<div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>    CallbackRegisterList[Event] = CallbackFunctionReg;</div>
+<div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span>}</div>
+<div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span> </div>
+<div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span><span class="comment">/************************************************************************************************</span></div>
+<div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span><span class="comment"> * Auxiliary Functions</span></div>
+<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span><span class="comment"> ************************************************************************************************/</span></div>
+<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span><span class="keyword">static</span> <span class="keywordtype">void</span> __interrupt() Gpio_Interrupt_Callback_Executor(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span>{</div>
+<div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>    <span class="comment">// Disable external interrupts (INTCON.INTE)</span></div>
+<div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span> </div>
+<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>    <span class="comment">// Save W register</span></div>
+<div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span> </div>
+<div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span>    <span class="comment">// Save STATUS register</span></div>
+<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span> </div>
+<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span>    <span class="comment">// Verify interrupts flags to determine which callback function to call</span></div>
+<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span> </div>
+<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>    <span class="comment">/*</span></div>
+<div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span><span class="comment">      if (INTCON.INTF)</span></div>
+<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span><span class="comment">      {</span></div>
+<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span><span class="comment">           CallbackRegisterList[GPIO_EXTERNAL_INTERRUPT].CallbackFunction();</span></div>
+<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span><span class="comment">     </span></div>
+<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span><span class="comment">           // Clear interrupt flag</span></div>
+<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span><span class="comment">      }</span></div>
+<div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span> </div>
+<div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span>    <span class="comment">// Restore W register</span></div>
+<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span> </div>
+<div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span>    <span class="comment">// Restore STATUS register</span></div>
+<div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span> </div>
+<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>    <span class="comment">// Enable external interrupts (INTCON.INTE)</span></div>
+<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span> </div>
+<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>    <span class="comment">// Enable global interrupts</span></div>
+<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>    </div>
+<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>    <span class="comment">//count++;</span></div>
+<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>    </div>
+<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span>    CallbackRegisterList[<a class="code hl_enumvalue" href="gpio__config_8h.html#ad4d537def96abcc822e21574875f5178a692fc44a1ae41c2fd12b123fa9501a9d">GPIO_EXTERNAL_INTERRUPT</a>].<a class="code hl_variable" href="struct_callback_register__t.html#ac3155c32c2f945c662f554d7e1ac4fc7">CallbackFunction</a>();</div>
+<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>    </div>
+<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span>    *InterruptControl[<a class="code hl_enumvalue" href="gpio__config_8h.html#a688b44052db0f30b560460cb5561065faba37cf01fcd9f7f891b31adefd05359c">GPIO_PORT</a>] &amp;= ~INTF_BIT_MASK;</div>
+<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>}</div>
+<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span> </div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span><span class="comment">/************************************************************************************************</span></div>
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span><span class="comment"> * EOF</span></div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span><span class="comment"> ************************************************************************************************/</span></div>
 <div class="ttc" id="aconstants_8h_html_ae2946618e700f814e6147195c808f4c8a0c3a1dacf94061154b3ee354359c5893"><div class="ttname"><a href="constants_8h.html#ae2946618e700f814e6147195c808f4c8a0c3a1dacf94061154b3ee354359c5893">HIGH</a></div><div class="ttdeci">@ HIGH</div><div class="ttdef"><b>Definition:</b> <a href="constants_8h_source.html#l00031">constants.h:31</a></div></div>
 <div class="ttc" id="agpio_8h_html"><div class="ttname"><a href="gpio_8h.html">gpio.h</a></div><div class="ttdoc">Interface definition for general purpose input/output (GPIO)</div></div>
 <div class="ttc" id="agpio__config_8h_html_a0b7686e46829530f57bad026831a8773ade9ee418a43058a706ad6669f474bec1"><div class="ttname"><a href="gpio__config_8h.html#a0b7686e46829530f57bad026831a8773ade9ee418a43058a706ad6669f474bec1">GPIO_INTERRUPT_EDGE_RISING</a></div><div class="ttdeci">@ GPIO_INTERRUPT_EDGE_RISING</div><div class="ttdef"><b>Definition:</b> <a href="gpio__config_8h_source.html#l00149">gpio_config.h:149</a></div></div>
@@ -371,13 +371,13 @@ $(function() {
 <div class="ttc" id="agpio__config_8h_html_ad4d537def96abcc822e21574875f5178"><div class="ttname"><a href="gpio__config_8h.html#ad4d537def96abcc822e21574875f5178">GpioCallbackEvent_t</a></div><div class="ttdeci">GpioCallbackEvent_t</div><div class="ttdef"><b>Definition:</b> <a href="gpio__config_8h_source.html#l00156">gpio_config.h:157</a></div></div>
 <div class="ttc" id="agpio__config_8h_html_ad4d537def96abcc822e21574875f5178a3f9dceb409ca442ae9752a9180dc87b1"><div class="ttname"><a href="gpio__config_8h.html#ad4d537def96abcc822e21574875f5178a3f9dceb409ca442ae9752a9180dc87b1">GPIO_CALLBACK_EVENT_COUNT</a></div><div class="ttdeci">@ GPIO_CALLBACK_EVENT_COUNT</div><div class="ttdef"><b>Definition:</b> <a href="gpio__config_8h_source.html#l00160">gpio_config.h:159</a></div></div>
 <div class="ttc" id="agpio__config_8h_html_ad4d537def96abcc822e21574875f5178a692fc44a1ae41c2fd12b123fa9501a9d"><div class="ttname"><a href="gpio__config_8h.html#ad4d537def96abcc822e21574875f5178a692fc44a1ae41c2fd12b123fa9501a9d">GPIO_EXTERNAL_INTERRUPT</a></div><div class="ttdeci">@ GPIO_EXTERNAL_INTERRUPT</div><div class="ttdef"><b>Definition:</b> <a href="gpio__config_8h_source.html#l00158">gpio_config.h:158</a></div></div>
-<div class="ttc" id="agroup___drivers_html_ga72dd57bea8f99c5c66fa702c1b5bd499"><div class="ttname"><a href="group___drivers.html#ga72dd57bea8f99c5c66fa702c1b5bd499">Gpio_Register_Read</a></div><div class="ttdeci">volatile GpioPort_t Gpio_Register_Read(void)</div><div class="ttdef"><b>Definition:</b> <a href="gpio_8c_source.html#l00444">gpio.c:444</a></div></div>
-<div class="ttc" id="agroup___drivers_html_gaa1c42596699c96a1b8b9244cdefe9421"><div class="ttname"><a href="group___drivers.html#gaa1c42596699c96a1b8b9244cdefe9421">Gpio_Read</a></div><div class="ttdeci">GpioPinState_t Gpio_Read(GpioChannel_t channel)</div><div class="ttdef"><b>Definition:</b> <a href="gpio_8c_source.html#l00323">gpio.c:323</a></div></div>
-<div class="ttc" id="agroup___drivers_html_gaaad357fa85fa00542c5db89d2d867691"><div class="ttname"><a href="group___drivers.html#gaaad357fa85fa00542c5db89d2d867691">Gpio_Write</a></div><div class="ttdeci">void Gpio_Write(GpioChannel_t channel, GpioPinState_t state)</div><div class="ttdef"><b>Definition:</b> <a href="gpio_8c_source.html#l00276">gpio.c:276</a></div></div>
-<div class="ttc" id="agroup___drivers_html_gab7f799e27e71520f7aeddfbd65220ae4"><div class="ttname"><a href="group___drivers.html#gab7f799e27e71520f7aeddfbd65220ae4">Gpio_Toggle</a></div><div class="ttdeci">void Gpio_Toggle(GpioChannel_t channel)</div><div class="ttdef"><b>Definition:</b> <a href="gpio_8c_source.html#l00363">gpio.c:363</a></div></div>
-<div class="ttc" id="agroup___drivers_html_gaba4bf0e9e96d49b2779b2eff918e05ab"><div class="ttname"><a href="group___drivers.html#gaba4bf0e9e96d49b2779b2eff918e05ab">Gpio_Init</a></div><div class="ttdeci">void Gpio_Init(const GpioConfig_t *const Config)</div><div class="ttdef"><b>Definition:</b> <a href="gpio_8c_source.html#l00154">gpio.c:154</a></div></div>
-<div class="ttc" id="agroup___drivers_html_gacdfdb42f0eda5599781e413e5384ec2a"><div class="ttname"><a href="group___drivers.html#gacdfdb42f0eda5599781e413e5384ec2a">Gpio_Register_Write</a></div><div class="ttdeci">void Gpio_Register_Write(GpioPort_t Port)</div><div class="ttdef"><b>Definition:</b> <a href="gpio_8c_source.html#l00404">gpio.c:404</a></div></div>
-<div class="ttc" id="agroup___drivers_html_gaf092e6147616d733f358ee902ccbaed7"><div class="ttname"><a href="group___drivers.html#gaf092e6147616d733f358ee902ccbaed7">Gpio_Callback_Register</a></div><div class="ttdeci">void Gpio_Callback_Register(GpioCallbackEvent_t Event, void(*CallbackFunction)(void))</div><div class="ttdef"><b>Definition:</b> <a href="gpio_8c_source.html#l00486">gpio.c:486</a></div></div>
+<div class="ttc" id="agroup___drivers_html_ga72dd57bea8f99c5c66fa702c1b5bd499"><div class="ttname"><a href="group___drivers.html#ga72dd57bea8f99c5c66fa702c1b5bd499">Gpio_Register_Read</a></div><div class="ttdeci">volatile GpioPort_t Gpio_Register_Read(void)</div><div class="ttdef"><b>Definition:</b> <a href="gpio_8c_source.html#l00445">gpio.c:445</a></div></div>
+<div class="ttc" id="agroup___drivers_html_gaa1c42596699c96a1b8b9244cdefe9421"><div class="ttname"><a href="group___drivers.html#gaa1c42596699c96a1b8b9244cdefe9421">Gpio_Read</a></div><div class="ttdeci">GpioPinState_t Gpio_Read(GpioChannel_t channel)</div><div class="ttdef"><b>Definition:</b> <a href="gpio_8c_source.html#l00324">gpio.c:324</a></div></div>
+<div class="ttc" id="agroup___drivers_html_gaaad357fa85fa00542c5db89d2d867691"><div class="ttname"><a href="group___drivers.html#gaaad357fa85fa00542c5db89d2d867691">Gpio_Write</a></div><div class="ttdeci">void Gpio_Write(GpioChannel_t channel, GpioPinState_t state)</div><div class="ttdef"><b>Definition:</b> <a href="gpio_8c_source.html#l00277">gpio.c:277</a></div></div>
+<div class="ttc" id="agroup___drivers_html_gab7f799e27e71520f7aeddfbd65220ae4"><div class="ttname"><a href="group___drivers.html#gab7f799e27e71520f7aeddfbd65220ae4">Gpio_Toggle</a></div><div class="ttdeci">void Gpio_Toggle(GpioChannel_t channel)</div><div class="ttdef"><b>Definition:</b> <a href="gpio_8c_source.html#l00364">gpio.c:364</a></div></div>
+<div class="ttc" id="agroup___drivers_html_gaba4bf0e9e96d49b2779b2eff918e05ab"><div class="ttname"><a href="group___drivers.html#gaba4bf0e9e96d49b2779b2eff918e05ab">Gpio_Init</a></div><div class="ttdeci">void Gpio_Init(const GpioConfig_t *const Config)</div><div class="ttdef"><b>Definition:</b> <a href="gpio_8c_source.html#l00155">gpio.c:155</a></div></div>
+<div class="ttc" id="agroup___drivers_html_gacdfdb42f0eda5599781e413e5384ec2a"><div class="ttname"><a href="group___drivers.html#gacdfdb42f0eda5599781e413e5384ec2a">Gpio_Register_Write</a></div><div class="ttdeci">void Gpio_Register_Write(GpioPort_t Port)</div><div class="ttdef"><b>Definition:</b> <a href="gpio_8c_source.html#l00405">gpio.c:405</a></div></div>
+<div class="ttc" id="agroup___drivers_html_gaf092e6147616d733f358ee902ccbaed7"><div class="ttname"><a href="group___drivers.html#gaf092e6147616d733f358ee902ccbaed7">Gpio_Callback_Register</a></div><div class="ttdeci">void Gpio_Callback_Register(GpioCallbackEvent_t Event, void(*CallbackFunction)(void))</div><div class="ttdef"><b>Definition:</b> <a href="gpio_8c_source.html#l00487">gpio.c:487</a></div></div>
 <div class="ttc" id="agroup___hardware_html_ga074f0a4c5565aa2e8b19d8f8bb115983"><div class="ttname"><a href="group___hardware.html#ga074f0a4c5565aa2e8b19d8f8bb115983">ADCON0</a></div><div class="ttdeci">volatile unsigned char *const ADCON0</div><div class="ttdef"><b>Definition:</b> <a href="pic12f683_8h_source.html#l00035">pic12f683.h:35</a></div></div>
 <div class="ttc" id="agroup___hardware_html_ga09000b91860320c70521850c6151683b"><div class="ttname"><a href="group___hardware.html#ga09000b91860320c70521850c6151683b">OSCCON</a></div><div class="ttdeci">volatile unsigned char *const OSCCON</div><div class="ttdef"><b>Definition:</b> <a href="pic12f683_8h_source.html#l00039">pic12f683.h:39</a></div></div>
 <div class="ttc" id="agroup___hardware_html_ga124ad98b143d516ebd6443996ea83293"><div class="ttname"><a href="group___hardware.html#ga124ad98b143d516ebd6443996ea83293">ANSEL</a></div><div class="ttdeci">volatile unsigned char *const ANSEL</div><div class="ttdef"><b>Definition:</b> <a href="pic12f683_8h_source.html#l00040">pic12f683.h:40</a></div></div>

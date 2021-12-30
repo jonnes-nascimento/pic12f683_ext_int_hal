@@ -139,7 +139,7 @@ Functions</h2></td></tr>
 <p><b>Example:</b> </p>
 <div class="fragment"><div class="line"><a class="code hl_function" href="group___drivers.html#gaf092e6147616d733f358ee902ccbaed7">Gpio_Callback_Register</a>(<a class="code hl_enumvalue" href="gpio__config_8h.html#ad4d537def96abcc822e21574875f5178a692fc44a1ae41c2fd12b123fa9501a9d">GPIO_EXTERNAL_INTERRUPT</a>, BlinkLED);</div>
 <div class="ttc" id="agpio__config_8h_html_ad4d537def96abcc822e21574875f5178a692fc44a1ae41c2fd12b123fa9501a9d"><div class="ttname"><a href="gpio__config_8h.html#ad4d537def96abcc822e21574875f5178a692fc44a1ae41c2fd12b123fa9501a9d">GPIO_EXTERNAL_INTERRUPT</a></div><div class="ttdeci">@ GPIO_EXTERNAL_INTERRUPT</div><div class="ttdef"><b>Definition:</b> <a href="gpio__config_8h_source.html#l00158">gpio_config.h:158</a></div></div>
-<div class="ttc" id="agroup___drivers_html_gaf092e6147616d733f358ee902ccbaed7"><div class="ttname"><a href="group___drivers.html#gaf092e6147616d733f358ee902ccbaed7">Gpio_Callback_Register</a></div><div class="ttdeci">void Gpio_Callback_Register(GpioCallbackEvent_t Event, void(*CallbackFunction)(void))</div><div class="ttdef"><b>Definition:</b> <a href="gpio_8c_source.html#l00486">gpio.c:486</a></div></div>
+<div class="ttc" id="agroup___drivers_html_gaf092e6147616d733f358ee902ccbaed7"><div class="ttname"><a href="group___drivers.html#gaf092e6147616d733f358ee902ccbaed7">Gpio_Callback_Register</a></div><div class="ttdeci">void Gpio_Callback_Register(GpioCallbackEvent_t Event, void(*CallbackFunction)(void))</div><div class="ttdef"><b>Definition:</b> <a href="gpio_8c_source.html#l00487">gpio.c:487</a></div></div>
 </div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="group___drivers.html#gaba4bf0e9e96d49b2779b2eff918e05ab">Gpio_Init</a> </dd>
 <dd>
 <a class="el" href="group___drivers.html#gaaad357fa85fa00542c5db89d2d867691">Gpio_Write</a> </dd>
@@ -161,7 +161,7 @@ Functions</h2></td></tr>
 <br  />
 </p><hr  />
  
-<p class="definition">Definition at line <a class="el" href="gpio_8c_source.html#l00486">486</a> of file <a class="el" href="gpio_8c_source.html">gpio.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gpio_8c_source.html#l00487">487</a> of file <a class="el" href="gpio_8c_source.html">gpio.c</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -208,7 +208,7 @@ Here is the caller graph for this function:</div>
 <p><b>Example:</b> </p>
 <div class="fragment"><div class="line"><a class="code hl_function" href="group___drivers.html#gaba4bf0e9e96d49b2779b2eff918e05ab">Gpio_Init</a>(<a class="code hl_function" href="group___configurations.html#gafd1ae0c543cb31bdd2d0806bcbdb5d9b">GpioConfigGet</a>());</div>
 <div class="ttc" id="agroup___configurations_html_gafd1ae0c543cb31bdd2d0806bcbdb5d9b"><div class="ttname"><a href="group___configurations.html#gafd1ae0c543cb31bdd2d0806bcbdb5d9b">GpioConfigGet</a></div><div class="ttdeci">const GpioConfig_t *const GpioConfigGet(void)</div><div class="ttdef"><b>Definition:</b> <a href="gpio__config_8c_source.html#l00086">gpio_config.c:86</a></div></div>
-<div class="ttc" id="agroup___drivers_html_gaba4bf0e9e96d49b2779b2eff918e05ab"><div class="ttname"><a href="group___drivers.html#gaba4bf0e9e96d49b2779b2eff918e05ab">Gpio_Init</a></div><div class="ttdeci">void Gpio_Init(const GpioConfig_t *const Config)</div><div class="ttdef"><b>Definition:</b> <a href="gpio_8c_source.html#l00154">gpio.c:154</a></div></div>
+<div class="ttc" id="agroup___drivers_html_gaba4bf0e9e96d49b2779b2eff918e05ab"><div class="ttname"><a href="group___drivers.html#gaba4bf0e9e96d49b2779b2eff918e05ab">Gpio_Init</a></div><div class="ttdeci">void Gpio_Init(const GpioConfig_t *const Config)</div><div class="ttdef"><b>Definition:</b> <a href="gpio_8c_source.html#l00155">gpio.c:155</a></div></div>
 </div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="group___drivers.html#gaaad357fa85fa00542c5db89d2d867691">Gpio_Write</a> </dd>
 <dd>
 <a class="el" href="group___drivers.html#gaa1c42596699c96a1b8b9244cdefe9421">Gpio_Read</a> </dd>
@@ -227,6 +227,8 @@ Here is the caller graph for this function:</div>
 <td>16/12/2021 </td><td>0.0.1 </td><td>JFN </td><td>Creation Date  </td></tr>
 <tr>
 <td>17/12/2021 </td><td>0.0.1 </td><td>JFN </td><td>Documentation Created  </td></tr>
+<tr>
+<td>30/12/2021 </td><td>0.0.1 </td><td>JFN </td><td>Small adjustments  </td></tr>
 </table>
 <p><br  />
 <br  />
@@ -237,7 +239,7 @@ Here is the caller graph for this function:</div>
 <p >&lt; Resets all GPIO pins</p>
 <p >&lt; ANSEL: digital pins as I/O</p>
 
-<p class="definition">Definition at line <a class="el" href="gpio_8c_source.html#l00154">154</a> of file <a class="el" href="gpio_8c_source.html">gpio.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gpio_8c_source.html#l00155">155</a> of file <a class="el" href="gpio_8c_source.html">gpio.c</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -281,7 +283,7 @@ Here is the caller graph for this function:</div>
 <div class="fragment"><div class="line"><a class="code hl_enumeration" href="gpio__config_8h.html#a40984b9819168ed55b8e8f43b4517be7">GpioPinState_t</a> PinState = <a class="code hl_function" href="group___drivers.html#gaa1c42596699c96a1b8b9244cdefe9421">Gpio_Read</a>(<a class="code hl_enumvalue" href="gpio__config_8h.html#ab7f6171645a4af1d01a6fa997f946197a72bc303d926583fc04a2163650e8516a">CHANNEL_GP3</a>);</div>
 <div class="ttc" id="agpio__config_8h_html_a40984b9819168ed55b8e8f43b4517be7"><div class="ttname"><a href="gpio__config_8h.html#a40984b9819168ed55b8e8f43b4517be7">GpioPinState_t</a></div><div class="ttdeci">GpioPinState_t</div><div class="ttdef"><b>Definition:</b> <a href="gpio__config_8h_source.html#l00136">gpio_config.h:137</a></div></div>
 <div class="ttc" id="agpio__config_8h_html_ab7f6171645a4af1d01a6fa997f946197a72bc303d926583fc04a2163650e8516a"><div class="ttname"><a href="gpio__config_8h.html#ab7f6171645a4af1d01a6fa997f946197a72bc303d926583fc04a2163650e8516a">CHANNEL_GP3</a></div><div class="ttdeci">@ CHANNEL_GP3</div><div class="ttdef"><b>Definition:</b> <a href="gpio__config_8h_source.html#l00086">gpio_config.h:86</a></div></div>
-<div class="ttc" id="agroup___drivers_html_gaa1c42596699c96a1b8b9244cdefe9421"><div class="ttname"><a href="group___drivers.html#gaa1c42596699c96a1b8b9244cdefe9421">Gpio_Read</a></div><div class="ttdeci">GpioPinState_t Gpio_Read(GpioChannel_t channel)</div><div class="ttdef"><b>Definition:</b> <a href="gpio_8c_source.html#l00323">gpio.c:323</a></div></div>
+<div class="ttc" id="agroup___drivers_html_gaa1c42596699c96a1b8b9244cdefe9421"><div class="ttname"><a href="group___drivers.html#gaa1c42596699c96a1b8b9244cdefe9421">Gpio_Read</a></div><div class="ttdeci">GpioPinState_t Gpio_Read(GpioChannel_t channel)</div><div class="ttdef"><b>Definition:</b> <a href="gpio_8c_source.html#l00324">gpio.c:324</a></div></div>
 </div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="group___drivers.html#gaba4bf0e9e96d49b2779b2eff918e05ab">Gpio_Init</a> </dd>
 <dd>
 <a class="el" href="group___drivers.html#gaaad357fa85fa00542c5db89d2d867691">Gpio_Write</a> </dd>
@@ -303,7 +305,7 @@ Here is the caller graph for this function:</div>
 <br  />
 </p><hr  />
  
-<p class="definition">Definition at line <a class="el" href="gpio_8c_source.html#l00323">323</a> of file <a class="el" href="gpio_8c_source.html">gpio.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gpio_8c_source.html#l00324">324</a> of file <a class="el" href="gpio_8c_source.html">gpio.c</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -345,7 +347,7 @@ Here is the caller graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="union_gpio_port__t.html">GpioPort_t</a></dd></dl>
 <p><b>Example:</b> </p>
 <div class="fragment"><div class="line"><a class="code hl_union" href="union_gpio_port__t.html">GpioPort_t</a> Port = <a class="code hl_function" href="group___drivers.html#ga72dd57bea8f99c5c66fa702c1b5bd499">Gpio_Register_Read</a>();</div>
-<div class="ttc" id="agroup___drivers_html_ga72dd57bea8f99c5c66fa702c1b5bd499"><div class="ttname"><a href="group___drivers.html#ga72dd57bea8f99c5c66fa702c1b5bd499">Gpio_Register_Read</a></div><div class="ttdeci">volatile GpioPort_t Gpio_Register_Read(void)</div><div class="ttdef"><b>Definition:</b> <a href="gpio_8c_source.html#l00444">gpio.c:444</a></div></div>
+<div class="ttc" id="agroup___drivers_html_ga72dd57bea8f99c5c66fa702c1b5bd499"><div class="ttname"><a href="group___drivers.html#ga72dd57bea8f99c5c66fa702c1b5bd499">Gpio_Register_Read</a></div><div class="ttdeci">volatile GpioPort_t Gpio_Register_Read(void)</div><div class="ttdef"><b>Definition:</b> <a href="gpio_8c_source.html#l00445">gpio.c:445</a></div></div>
 <div class="ttc" id="aunion_gpio_port__t_html"><div class="ttname"><a href="union_gpio_port__t.html">GpioPort_t</a></div><div class="ttdef"><b>Definition:</b> <a href="gpio__config_8h_source.html#l00061">gpio_config.h:62</a></div></div>
 </div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="group___drivers.html#gaba4bf0e9e96d49b2779b2eff918e05ab">Gpio_Init</a> </dd>
 <dd>
@@ -368,7 +370,7 @@ Here is the caller graph for this function:</div>
 <br  />
 </p><hr  />
  
-<p class="definition">Definition at line <a class="el" href="gpio_8c_source.html#l00444">444</a> of file <a class="el" href="gpio_8c_source.html">gpio.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gpio_8c_source.html#l00445">445</a> of file <a class="el" href="gpio_8c_source.html">gpio.c</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -410,7 +412,7 @@ Here is the caller graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
 <p><b>Example:</b> </p>
 <div class="fragment"><div class="line"><a class="code hl_function" href="group___drivers.html#gacdfdb42f0eda5599781e413e5384ec2a">Gpio_Register_Write</a>(0x04);</div>
-<div class="ttc" id="agroup___drivers_html_gacdfdb42f0eda5599781e413e5384ec2a"><div class="ttname"><a href="group___drivers.html#gacdfdb42f0eda5599781e413e5384ec2a">Gpio_Register_Write</a></div><div class="ttdeci">void Gpio_Register_Write(GpioPort_t Port)</div><div class="ttdef"><b>Definition:</b> <a href="gpio_8c_source.html#l00404">gpio.c:404</a></div></div>
+<div class="ttc" id="agroup___drivers_html_gacdfdb42f0eda5599781e413e5384ec2a"><div class="ttname"><a href="group___drivers.html#gacdfdb42f0eda5599781e413e5384ec2a">Gpio_Register_Write</a></div><div class="ttdeci">void Gpio_Register_Write(GpioPort_t Port)</div><div class="ttdef"><b>Definition:</b> <a href="gpio_8c_source.html#l00405">gpio.c:405</a></div></div>
 </div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="group___drivers.html#gaba4bf0e9e96d49b2779b2eff918e05ab">Gpio_Init</a> </dd>
 <dd>
 <a class="el" href="group___drivers.html#gaaad357fa85fa00542c5db89d2d867691">Gpio_Write</a> </dd>
@@ -434,7 +436,7 @@ Here is the caller graph for this function:</div>
 <br  />
 </p><hr  />
  
-<p class="definition">Definition at line <a class="el" href="gpio_8c_source.html#l00404">404</a> of file <a class="el" href="gpio_8c_source.html">gpio.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gpio_8c_source.html#l00405">405</a> of file <a class="el" href="gpio_8c_source.html">gpio.c</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -476,7 +478,7 @@ Here is the caller graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
 <p><b>Example:</b> </p>
 <div class="fragment"><div class="line"><a class="code hl_function" href="group___drivers.html#gab7f799e27e71520f7aeddfbd65220ae4">Gpio_Toggle</a>(<a class="code hl_enumvalue" href="gpio__config_8h.html#ab7f6171645a4af1d01a6fa997f946197a72bc303d926583fc04a2163650e8516a">CHANNEL_GP3</a>);</div>
-<div class="ttc" id="agroup___drivers_html_gab7f799e27e71520f7aeddfbd65220ae4"><div class="ttname"><a href="group___drivers.html#gab7f799e27e71520f7aeddfbd65220ae4">Gpio_Toggle</a></div><div class="ttdeci">void Gpio_Toggle(GpioChannel_t channel)</div><div class="ttdef"><b>Definition:</b> <a href="gpio_8c_source.html#l00363">gpio.c:363</a></div></div>
+<div class="ttc" id="agroup___drivers_html_gab7f799e27e71520f7aeddfbd65220ae4"><div class="ttname"><a href="group___drivers.html#gab7f799e27e71520f7aeddfbd65220ae4">Gpio_Toggle</a></div><div class="ttdeci">void Gpio_Toggle(GpioChannel_t channel)</div><div class="ttdef"><b>Definition:</b> <a href="gpio_8c_source.html#l00364">gpio.c:364</a></div></div>
 </div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="group___drivers.html#gaba4bf0e9e96d49b2779b2eff918e05ab">Gpio_Init</a> </dd>
 <dd>
 <a class="el" href="group___drivers.html#gaaad357fa85fa00542c5db89d2d867691">Gpio_Write</a> </dd>
@@ -498,7 +500,7 @@ Here is the caller graph for this function:</div>
 <br  />
 </p><hr  />
  
-<p class="definition">Definition at line <a class="el" href="gpio_8c_source.html#l00363">363</a> of file <a class="el" href="gpio_8c_source.html">gpio.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gpio_8c_source.html#l00364">364</a> of file <a class="el" href="gpio_8c_source.html">gpio.c</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -552,7 +554,7 @@ Here is the caller graph for this function:</div>
 <p><b>Example:</b> </p>
 <div class="fragment"><div class="line"><a class="code hl_function" href="group___drivers.html#gaaad357fa85fa00542c5db89d2d867691">Gpio_Write</a>(<a class="code hl_enumvalue" href="gpio__config_8h.html#ab7f6171645a4af1d01a6fa997f946197a72bc303d926583fc04a2163650e8516a">CHANNEL_GP3</a>, <a class="code hl_enumvalue" href="gpio__config_8h.html#a40984b9819168ed55b8e8f43b4517be7a1e717dcccb09ed0083d8c844cf9ac4bd">GPIO_PIN_STATE_HIGH</a>);</div>
 <div class="ttc" id="agpio__config_8h_html_a40984b9819168ed55b8e8f43b4517be7a1e717dcccb09ed0083d8c844cf9ac4bd"><div class="ttname"><a href="gpio__config_8h.html#a40984b9819168ed55b8e8f43b4517be7a1e717dcccb09ed0083d8c844cf9ac4bd">GPIO_PIN_STATE_HIGH</a></div><div class="ttdeci">@ GPIO_PIN_STATE_HIGH</div><div class="ttdef"><b>Definition:</b> <a href="gpio__config_8h_source.html#l00139">gpio_config.h:139</a></div></div>
-<div class="ttc" id="agroup___drivers_html_gaaad357fa85fa00542c5db89d2d867691"><div class="ttname"><a href="group___drivers.html#gaaad357fa85fa00542c5db89d2d867691">Gpio_Write</a></div><div class="ttdeci">void Gpio_Write(GpioChannel_t channel, GpioPinState_t state)</div><div class="ttdef"><b>Definition:</b> <a href="gpio_8c_source.html#l00276">gpio.c:276</a></div></div>
+<div class="ttc" id="agroup___drivers_html_gaaad357fa85fa00542c5db89d2d867691"><div class="ttname"><a href="group___drivers.html#gaaad357fa85fa00542c5db89d2d867691">Gpio_Write</a></div><div class="ttdeci">void Gpio_Write(GpioChannel_t channel, GpioPinState_t state)</div><div class="ttdef"><b>Definition:</b> <a href="gpio_8c_source.html#l00277">gpio.c:277</a></div></div>
 </div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="group___drivers.html#gaba4bf0e9e96d49b2779b2eff918e05ab">Gpio_Init</a> </dd>
 <dd>
 <a class="el" href="group___drivers.html#gaa1c42596699c96a1b8b9244cdefe9421">Gpio_Read</a> </dd>
@@ -572,13 +574,13 @@ Here is the caller graph for this function:</div>
 <tr>
 <td>17/12/2021 </td><td>0.0.1 </td><td>JFN </td><td>Documentation Created  </td></tr>
 <tr>
-<td>30/12/2021 </td><td>0.0.1 </td><td>JFN </td><td>Code reimplemented  </td></tr>
+<td>30/12/2021 </td><td>0.0.1 </td><td>JFN </td><td>Small adjustments  </td></tr>
 </table>
 <p><br  />
 <br  />
 </p><hr  />
  
-<p class="definition">Definition at line <a class="el" href="gpio_8c_source.html#l00276">276</a> of file <a class="el" href="gpio_8c_source.html">gpio.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gpio_8c_source.html#l00277">277</a> of file <a class="el" href="gpio_8c_source.html">gpio.c</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">

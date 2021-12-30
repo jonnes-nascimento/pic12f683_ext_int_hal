@@ -4,8 +4,8 @@
  * @Author         :    Eng. Jonnes F. Nascimento
  * @Origin Date    :    16/12/2021
  * @Version        :    0.0.1
- * @Compiler       :    GCC
- * @Target         :    --
+ * @Compiler       :    XC8
+ * @Target         :    PIC12F683
  * @Notes          :    None
  * @Revision Date  :    20/12/2021
  ************************************************************************************************/
