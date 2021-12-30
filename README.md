@@ -4,14 +4,13 @@
 
 PIC12F683 External Interrupt HAL Example Project **(DRAFT)**
 
+*** Work in Progress *** <br />
 
 Wrote on MPLab X IDE v5.50
 Compiled with Microchip XC8 v2.32
 
-Note: 
-This is a work in progress.
-The code has been written as a basis of the study of microcontrollers drivers.
+This work has been written as a basis for the study of microcontrollers drivers and is based mainly on Jacob Beningo's book <a target="_blank" href="https://www.amazon.com/Reusable-Firmware-Development-Practical-Approach/dp/1484232968">Reusable Firmware Development</a>. Apress. 2017.
 
 
 
-Author: Eng. Jonnes Nascimento. 2021
+Author: Eng. Jonnes F. Nascimento. 2021
