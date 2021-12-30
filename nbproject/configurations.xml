@@ -4,10 +4,10 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>constants.h</itemPath>
-      <itemPath>gpio.h</itemPath>
-      <itemPath>gpio_config.h</itemPath>
-      <itemPath>pic12f683.h</itemPath>
+      <itemPath>hal/config/gpio/gpio_config.h</itemPath>
+      <itemPath>hal/drivers/gpio/gpio.h</itemPath>
+      <itemPath>hal/drivers/hardware/pic12f683.h</itemPath>
+      <itemPath>hal/library/constants.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -16,9 +16,9 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>gpio.c</itemPath>
-      <itemPath>gpio_config.c</itemPath>
       <itemPath>main.c</itemPath>
+      <itemPath>hal/config/gpio/gpio_config.c</itemPath>
+      <itemPath>hal/drivers/gpio/gpio.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

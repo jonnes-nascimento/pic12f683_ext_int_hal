@@ -1,0 +1,3728 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\info 
+{\title {\comment uC HAL Implementation  {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+0.0.1 \par
+}}uC HAL Implementation}
+{\comment Generated by doxygen1.9.2.}
+{\creatim \yr2021\mo12\dy30\hr12\min43\sec21}
+}\pard\plain 
+\sectd\pgnlcrm
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\vertalc\qc\par\par\par\par\par\par\par
+\pard\plain \s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid 
+{\field\fldedit {\*\fldinst TITLE \\*MERGEFORMAT}{\fldrslt uC HAL Implementation}}\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\par
+\par\par\par\par\par\par\par\par\par\par\par\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+{\field\fldedit {\*\fldinst AUTHOR \\*MERGEFORMAT}{\fldrslt AUTHOR}}\par
+Version 0.0.1\par{\field\fldedit {\*\fldinst CREATEDATE \\*MERGEFORMAT}{\fldrslt Thu Dec 30 2021 }}\par
+\page\page\vertalt
+\pard\plain 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Table of Contents\par
+\pard\plain \par
+{\field\fldedit {\*\fldinst TOC \\f \\*MERGEFORMAT}{\fldrslt Table of contents}}\par
+\pard\plain 
+\sect \sbkpage \pgndec \pgnrestart
+\sect \sectd \sbknone
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+uC HAL Implementation\par \pard\plain 
+{\tc \v uC HAL Implementation}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{\bkmkstart AAAAAAAAEQ}
+{\bkmkend AAAAAAAAEQ}
+{{\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Project Introduction
+\par}
+{\tc\tcl2 \v Project Introduction}
+Microcontroller HAL Reference Implementation \par
+*** Work in Progress *** \par
+This work has been written as a basis for the study of microcontrollers drivers and is based mainly on Jacob Beningo's book {\f2 Reusable Firmware Development}. Apress. 2017.\par
+Author: Eng. Jonnes F. Nascimento. 2021\par}
+{\bkmkstart AAAAAAAAER}
+{\bkmkend AAAAAAAAER}
+{{\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Version Log
+\par}
+{\tc\tcl2 \v Version Log}
+\par}
+{\bkmkstart AAAAAAAAES}
+{\bkmkend AAAAAAAAES}
+{{\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Acronyms
+\par}
+{\tc\tcl2 \v Acronyms}
+\par}
+{\bkmkstart AAAAAAAAET}
+{\bkmkend AAAAAAAAET}
+{{\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Software Architecture Overview
+\par}
+{\tc\tcl2 \v Software Architecture Overview}
+\par}
+{\bkmkstart AAAAAAAAEU}
+{\bkmkend AAAAAAAAEU}
+{{\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+APIs
+\par}
+{\tc\tcl2 \v APIs}
+\par}
+{\bkmkstart AAAAAAAAEV}
+{\bkmkend AAAAAAAAEV}
+{{\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+HALs
+\par}
+{\tc\tcl2 \v HALs}
+\par}
+{\bkmkstart AAAAAAAAEW}
+{\bkmkend AAAAAAAAEW}
+{{\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Middleware
+\par}
+{\tc\tcl2 \v Middleware}
+\par}
+{\bkmkstart AAAAAAAAEX}
+{\bkmkend AAAAAAAAEX}
+{{\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+OS Information
+\par}
+{\tc\tcl2 \v OS Information}
+\par}
+{\bkmkstart AAAAAAAAEY}
+{\bkmkend AAAAAAAAEY}
+{{\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Coding Standards
+\par}
+{\tc\tcl2 \v Coding Standards}
+\par}
+{\bkmkstart AAAAAAAAEZ}
+{\bkmkend AAAAAAAAEZ}
+{{\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Documentation
+\par}
+{\tc\tcl2 \v Documentation}
+\par}
+{\bkmkstart AAAAAAAAFA}
+{\bkmkend AAAAAAAAFA}
+{{\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Project Requirements
+\par}
+{\tc\tcl2 \v Project Requirements}
+\par}
+{\bkmkstart AAAAAAAAFB}
+{\bkmkend AAAAAAAAFB}
+{{\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Testing and Validation
+\par}
+{\tc\tcl2 \v Testing and Validation}
+\par
+ \par}
+{\bkmkstart AAAAAAAAFC}
+{\bkmkend AAAAAAAAFC}
+{{\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Tools
+\par}
+{\tc\tcl2 \v Tools}
+{\bkmkstart AAAAAAAAFD}
+{\bkmkend AAAAAAAAFD}
+{{\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Compiler
+\par}
+{\tc\tcl3 \v Compiler}
+GNU C Compiler (GCC) \par}
+\par}
+}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+PIC12F683 External Interrupt HAL Example Project{\tc \v PIC12F683 External Interrupt HAL Example Project}\par \pard\plain 
+{\bkmkstart AAAAAAAAEP}
+{\bkmkend AAAAAAAAEP}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+PIC12F683 External Interrupt HAL Example Project **(DRAFT)**\par
+Wrote on MPLab X IDE v5.50 Compiled with Microchip XC8 v2.32\par
+Note: This is a work in progress. The code has been written as a basis of the study of microcontrollers drivers.\par
+Author: Eng. Jonnes Nascimento. 2021 \par
+}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Module Index\par \pard\plain 
+{\tc \v Module Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Modules\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here is a list of all modules:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+Configurations\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACP \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+Drivers\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACR \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+Hardware\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACZ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Data Structure Index\par \pard\plain 
+{\tc \v Data Structure Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Data Structures\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here are the data structures with brief descriptions:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b CallbackRegister_t} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADP \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b GpioConfig_t} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADS \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b GpioPort_t} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADZ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+File Index\par \pard\plain 
+{\tc \v File Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+File List\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here is a list of all files with brief descriptions:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b D:/projects/PIC/pic12f683_ext_int_hal/{\b main.c} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Main program })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACG \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b D:/projects/PIC/pic12f683_ext_int_hal/hal/config/gpio/{\b gpio_config.c} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Interface implementation for general purpose input/output configurations })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAH \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b D:/projects/PIC/pic12f683_ext_int_hal/hal/config/gpio/{\b gpio_config.h} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Interface definition for general purpose input/output configurations })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAI \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b D:/projects/PIC/pic12f683_ext_int_hal/hal/drivers/gpio/{\b gpio.c} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Interface implementation for general purpose input/output (GPIO) })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABY \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b D:/projects/PIC/pic12f683_ext_int_hal/hal/drivers/gpio/{\b gpio.h} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Interface definition for general purpose input/output (GPIO) })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABZ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b D:/projects/PIC/pic12f683_ext_int_hal/hal/drivers/hardware/{\b pic12f683.h} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+PIC12F683 hardware definitions and specifications })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACA \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b D:/projects/PIC/pic12f683_ext_int_hal/hal/library/{\b constants.h} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Interface definition for support functions, types and constants })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACB \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Module Documentation{\tc \v Module Documentation}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Configurations\par \pard\plain 
+{\tc\tcl2 \v Configurations}
+{\xe \v Configurations}
+{\bkmkstart AAAAAAAACP}
+{\bkmkend AAAAAAAACP}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b GpioConfig_t} *const {\b GpioConfigGet} (void)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Peripheral configurations group. \par
+}{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v GpioConfigGet\:Configurations}
+{\xe \v Configurations\:GpioConfigGet}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const {\b GpioConfig_t} *const GpioConfigGet (void )}}
+\par
+{\bkmkstart AAAAAAAACQ}
+{\bkmkend AAAAAAAACQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b Description:}  \par
+Helper function to get GPIO configuration table.\par
+Pre-condition: Configuration table defined (sizeof > 0) \par
+Post-condition: Pointer with first item of the GPIO configurations table\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i []} \cell }{void\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+const {\b GpioConfig_t} *\par
+}}{\b Example:}  \par
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid {\cf17 const} GpioConfig_t Config = GpioConfigGet();\par
+}
+\par
+{\b HISTORY OF CHANGES}  \par
+\trowd \trgaph108\trleft-108\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx4374
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx6561
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{Date \cell }{Software Version \cell }{Initials \cell }{Description  \cell }
+\pard \widctlpar\intbl\adjustright
+{\row }
+\trowd \trgaph108\trleft-108\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx4374
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx6561
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{16/12/2021 \cell }{0.0.1 \cell }{JFN \cell }{Interface Created  \cell }
+\pard \widctlpar\intbl\adjustright
+{\row }
+\trowd \trgaph108\trleft-108\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx4374
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx6561
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{20/12/2021 \cell }{0.0.1 \cell }{JFN \cell }{Documentation Created  \cell }
+\pard \widctlpar\intbl\adjustright
+{\row }
+\pard\plain
+\par
+\par
+\par
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+ \par
+}{
+Definition at line {\b 86} of file {\b gpio_config.c}.}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "group___configurations_gafd1ae0c543cb31bdd2d0806bcbdb5d9b_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Drivers\par \pard\plain 
+{\tc\tcl2 \v Drivers}
+{\xe \v Drivers}
+{\bkmkstart AAAAAAAACR}
+{\bkmkend AAAAAAAACR}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Data Structures\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b CallbackRegister_t}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Gpio_Init} (const {\b GpioConfig_t} *const Config)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Gpio_Write} ({\b GpioChannel_t} channel, {\b GpioPinState_t} state)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b GpioPinState_t} {\b Gpio_Read} ({\b GpioChannel_t} channel)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Gpio_Toggle} ({\b GpioChannel_t} channel)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Gpio_Register_Write} ({\b GpioPort_t} Port)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+volatile {\b GpioPort_t} {\b Gpio_Register_Read} (void)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Gpio_Callback_Register} ({\b GpioCallbackEvent_t} Event, void(*CallbackFunction)(void))\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Peripheral drivers group (GPIO, TIMERS, SPI, etc). \par
+}{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v Gpio_Callback_Register\:Drivers}
+{\xe \v Drivers\:Gpio_Callback_Register}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Gpio_Callback_Register ({\b GpioCallbackEvent_t}  {\i Event}, void(*)(void)  {\i CallbackFunction})}}
+\par
+{\bkmkstart AAAAAAAACS}
+{\bkmkend AAAAAAAACS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b Description:}  \par
+This function is used to register a callback function to an interrupt event\par
+Pre-condition: GPIO port must have been initialized \par
+ Pre-condition: The GPIO port bit must have been configured to trigger the interrupt\par
+Post-condition: The callback function is called to handles the interrupt event\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i event} \cell }{is a pre-configured interrupt event \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i (*CallbackFunction)(void)} \cell }{is the callback function to call\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+void\par
+}}{\b Example:}  \par
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid Gpio_Callback_Register(GPIO_EXTERNAL_INTERRUPT, BlinkLED);\par
+}
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+See also\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+{\b Gpio_Init} \par
+{\b Gpio_Write} \par
+{\b Gpio_Read} \par
+{\b Gpio_Toggle} \par
+{\b Gpio_Register_Write} \par
+{\b Gpio_Register_Read}\par
+}}{\b HISTORY OF CHANGES}  \par
+\trowd \trgaph108\trleft-108\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx4374
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx6561
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{Date \cell }{Software Version \cell }{Initials \cell }{Description  \cell }
+\pard \widctlpar\intbl\adjustright
+{\row }
+\trowd \trgaph108\trleft-108\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx4374
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx6561
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{20/12/2021 \cell }{0.0.1 \cell }{JFN \cell }{Creation Date  \cell }
+\pard \widctlpar\intbl\adjustright
+{\row }
+\pard\plain
+\par
+\par
+\par
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+ \par
+}{
+Definition at line {\b 486} of file {\b gpio.c}.}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "group___drivers_gaf092e6147616d733f358ee902ccbaed7_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v Gpio_Init\:Drivers}
+{\xe \v Drivers\:Gpio_Init}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Gpio_Init (const {\b GpioConfig_t} *const  {\i Config})}}
+\par
+{\bkmkstart AAAAAAAACT}
+{\bkmkend AAAAAAAACT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b Description:}  \par
+This function is used to initializes the GPIO port based on the configuration table defined in gpio_config module.\par
+Pre-condition: Configuration table defined (sizeof > 0) \par
+ Pre-condition: NUMBER_OF_PORTS > 0 \par
+ Pre-condition: GPIO_MAX_PIN_NUMBER > 0 \par
+ Pre-condition: System's oscillator, comparator and A/D converters initialized \par
+ Pre-condition: All interrupts' callback functions registered (calling Gpio_Callback_Register function) \par
+Post-condition: GPIO port initialized and configured\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i Config} \cell }{is a pointer to configuration table for the GPIO peripheral.\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+void\par
+}}{\b Example:}  \par
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid Gpio_Init(GpioConfigGet());\par
+}
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+See also\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+{\b Gpio_Write} \par
+{\b Gpio_Read} \par
+{\b Gpio_Toggle} \par
+{\b Gpio_Register_Write} \par
+{\b Gpio_Register_Read} \par
+{\b Gpio_Callback_Register}\par
+}}{\b HISTORY OF CHANGES}  \par
+\trowd \trgaph108\trleft-108\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx4374
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx6561
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{Date \cell }{Software Version \cell }{Initials \cell }{Description  \cell }
+\pard \widctlpar\intbl\adjustright
+{\row }
+\trowd \trgaph108\trleft-108\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx4374
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx6561
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{16/12/2021 \cell }{0.0.1 \cell }{JFN \cell }{Creation Date  \cell }
+\pard \widctlpar\intbl\adjustright
+{\row }
+\trowd \trgaph108\trleft-108\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx4374
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx6561
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{17/12/2021 \cell }{0.0.1 \cell }{JFN \cell }{Documentation Created  \cell }
+\pard \widctlpar\intbl\adjustright
+{\row }
+\pard\plain
+\par
+\par
+\par
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+ \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+< Switch to 8 MHz system clock\par
+< Comparators off\par
+< AD Converters off\par
+< Resets all GPIO pins\par
+< ANSEL: digital pins as I/O\par
+}{
+Definition at line {\b 154} of file {\b gpio.c}.}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "group___drivers_gaba4bf0e9e96d49b2779b2eff918e05ab_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v Gpio_Read\:Drivers}
+{\xe \v Drivers\:Gpio_Read}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b GpioPinState_t} Gpio_Read ({\b GpioChannel_t}  {\i channel})}}
+\par
+{\bkmkstart AAAAAAAACU}
+{\bkmkend AAAAAAAACU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b Description:}  \par
+This function is used to read a pin state, specified by a channel, from GPIO port.\par
+Pre-condition: GPIO port must have been initialized \par
+Post-condition: GPIO port state is returned\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i channel} \cell }{is a GpioChannel_t that represents a bit on GPIO port\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+GpioPinState_t\par
+}}{\b Example:}  \par
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid GpioPinState_t PinState = Gpio_Read(CHANNEL_GP3);\par
+}
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+See also\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+{\b Gpio_Init} \par
+{\b Gpio_Write} \par
+{\b Gpio_Toggle} \par
+{\b Gpio_Register_Write} \par
+{\b Gpio_Register_Read} \par
+{\b Gpio_Callback_Register}\par
+}}{\b HISTORY OF CHANGES}  \par
+\trowd \trgaph108\trleft-108\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx4374
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx6561
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{Date \cell }{Software Version \cell }{Initials \cell }{Description  \cell }
+\pard \widctlpar\intbl\adjustright
+{\row }
+\trowd \trgaph108\trleft-108\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx4374
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx6561
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{20/12/2021 \cell }{0.0.1 \cell }{JFN \cell }{Creation Date  \cell }
+\pard \widctlpar\intbl\adjustright
+{\row }
+\pard\plain
+\par
+\par
+\par
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+ \par
+}{
+Definition at line {\b 323} of file {\b gpio.c}.}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "group___drivers_gaa1c42596699c96a1b8b9244cdefe9421_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v Gpio_Register_Read\:Drivers}
+{\xe \v Drivers\:Gpio_Register_Read}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+volatile {\b GpioPort_t} Gpio_Register_Read (void )}}
+\par
+{\bkmkstart AAAAAAAACV}
+{\bkmkend AAAAAAAACV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b Description:}  \par
+This function is used to read GPIO port byte.\par
+Pre-condition: GPIO port must have been initialized \par
+Post-condition: None\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i void} \cell }{\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+{\b GpioPort_t}\par
+}}{\b Example:}  \par
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid GpioPort_t Port = Gpio_Register_Read();\par
+}
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+See also\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+{\b Gpio_Init} \par
+{\b Gpio_Write} \par
+{\b Gpio_Read} \par
+{\b Gpio_Toggle} \par
+{\b Gpio_Register_Write} \par
+{\b Gpio_Callback_Register}\par
+}}{\b HISTORY OF CHANGES}  \par
+\trowd \trgaph108\trleft-108\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx4374
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx6561
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{Date \cell }{Software Version \cell }{Initials \cell }{Description  \cell }
+\pard \widctlpar\intbl\adjustright
+{\row }
+\trowd \trgaph108\trleft-108\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx4374
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx6561
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{20/12/2021 \cell }{0.0.1 \cell }{JFN \cell }{Creation Date  \cell }
+\pard \widctlpar\intbl\adjustright
+{\row }
+\pard\plain
+\par
+\par
+\par
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+ \par
+}{
+Definition at line {\b 444} of file {\b gpio.c}.}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "group___drivers_ga72dd57bea8f99c5c66fa702c1b5bd499_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v Gpio_Register_Write\:Drivers}
+{\xe \v Drivers\:Gpio_Register_Write}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Gpio_Register_Write ({\b GpioPort_t}  {\i Port})}}
+\par
+{\bkmkstart AAAAAAAACW}
+{\bkmkend AAAAAAAACW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b Description:}  \par
+This function is used to write a byte that represents all GPIO port bits to GPIO port.\par
+Pre-condition: GPIO port must have been initialized \par
+Post-condition: All GPIO port bits sets according to the byte parameter\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i Port} \cell }{is a {\b GpioPort_t} that represents all GPIO bits\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+void\par
+}}{\b Example:}  \par
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid Gpio_Register_Write(0x04);\par
+}
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+See also\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+{\b Gpio_Init} \par
+{\b Gpio_Write} \par
+{\b Gpio_Read} \par
+{\b Gpio_Toggle} \par
+{\b Gpio_Register_Read} \par
+{\b Gpio_Callback_Register}\par
+}}{\b HISTORY OF CHANGES}  \par
+\trowd \trgaph108\trleft-108\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx4374
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx6561
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{Date \cell }{Software Version \cell }{Initials \cell }{Description  \cell }
+\pard \widctlpar\intbl\adjustright
+{\row }
+\trowd \trgaph108\trleft-108\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx4374
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx6561
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{16/12/2021 \cell }{0.0.1 \cell }{JFN \cell }{Creation Date  \cell }
+\pard \widctlpar\intbl\adjustright
+{\row }
+\trowd \trgaph108\trleft-108\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx4374
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx6561
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{17/12/2021 \cell }{0.0.1 \cell }{JFN \cell }{Documentation Created  \cell }
+\pard \widctlpar\intbl\adjustright
+{\row }
+\pard\plain
+\par
+\par
+\par
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+ \par
+}{
+Definition at line {\b 404} of file {\b gpio.c}.}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "group___drivers_gacdfdb42f0eda5599781e413e5384ec2a_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v Gpio_Toggle\:Drivers}
+{\xe \v Drivers\:Gpio_Toggle}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Gpio_Toggle ({\b GpioChannel_t}  {\i channel})}}
+\par
+{\bkmkstart AAAAAAAACX}
+{\bkmkend AAAAAAAACX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b Description:}  \par
+This function is used to toggle a pin state, specified by a channel, from GPIO port.\par
+Pre-condition: GPIO port must have been initialized \par
+Post-condition: GPIO port state is toggled\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i channel} \cell }{is a GpioChannel_t that represents a bit on GPIO port\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+void\par
+}}{\b Example:}  \par
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid Gpio_Toggle(CHANNEL_GP3);\par
+}
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+See also\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+{\b Gpio_Init} \par
+{\b Gpio_Write} \par
+{\b Gpio_Read} \par
+{\b Gpio_Register_Write} \par
+{\b Gpio_Register_Read} \par
+{\b Gpio_Callback_Register}\par
+}}{\b HISTORY OF CHANGES}  \par
+\trowd \trgaph108\trleft-108\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx4374
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx6561
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{Date \cell }{Software Version \cell }{Initials \cell }{Description  \cell }
+\pard \widctlpar\intbl\adjustright
+{\row }
+\trowd \trgaph108\trleft-108\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx4374
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx6561
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{20/12/2021 \cell }{0.0.1 \cell }{JFN \cell }{Creation Date  \cell }
+\pard \widctlpar\intbl\adjustright
+{\row }
+\pard\plain
+\par
+\par
+\par
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+ \par
+}{
+Definition at line {\b 363} of file {\b gpio.c}.}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "group___drivers_gab7f799e27e71520f7aeddfbd65220ae4_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v Gpio_Write\:Drivers}
+{\xe \v Drivers\:Gpio_Write}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Gpio_Write ({\b GpioChannel_t}  {\i channel}, {\b GpioPinState_t}  {\i state})}}
+\par
+{\bkmkstart AAAAAAAACY}
+{\bkmkend AAAAAAAACY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b Description:}  \par
+This function is used to write a bit, specified by a channel, to GPIO port.\par
+Pre-condition: GPIO port must have been initialized \par
+Post-condition: GPIO port bit setted or cleared\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i channel} \cell }{is a GpioChannel_t that represents a bit on GPIO port \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i state} \cell }{is a GpioPinState_t that represents a state of the bit on GPIO port\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+void\par
+}}{\b Example:}  \par
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid Gpio_Write(CHANNEL_GP3, GPIO_PIN_STATE_HIGH);\par
+}
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+See also\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+{\b Gpio_Init} \par
+{\b Gpio_Read} \par
+{\b Gpio_Toggle} \par
+{\b Gpio_Register_Write} \par
+{\b Gpio_Register_Read} \par
+{\b Gpio_Callback_Register}\par
+}}{\b HISTORY OF CHANGES}  \par
+\trowd \trgaph108\trleft-108\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx4374
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx6561
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{Date \cell }{Software Version \cell }{Initials \cell }{Description  \cell }
+\pard \widctlpar\intbl\adjustright
+{\row }
+\trowd \trgaph108\trleft-108\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx4374
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx6561
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{16/12/2021 \cell }{0.0.1 \cell }{JFN \cell }{Creation Date  \cell }
+\pard \widctlpar\intbl\adjustright
+{\row }
+\trowd \trgaph108\trleft-108\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx4374
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx6561
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{17/12/2021 \cell }{0.0.1 \cell }{JFN \cell }{Documentation Created  \cell }
+\pard \widctlpar\intbl\adjustright
+{\row }
+\trowd \trgaph108\trleft-108\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx4374
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx6561
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{30/12/2021 \cell }{0.0.1 \cell }{JFN \cell }{Code reimplemented  \cell }
+\pard \widctlpar\intbl\adjustright
+{\row }
+\pard\plain
+\par
+\par
+\par
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+ \par
+}{
+Definition at line {\b 276} of file {\b gpio.c}.}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "group___drivers_gaaad357fa85fa00542c5db89d2d867691_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Hardware\par \pard\plain 
+{\tc\tcl2 \v Hardware}
+{\xe \v Hardware}
+{\bkmkstart AAAAAAAACZ}
+{\bkmkend AAAAAAAACZ}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Variables\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+unsigned char const {\b GIE1_BIT_MASK} = (unsigned char) 0x80\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+unsigned char const {\b INTE_BIT_MASK} = (unsigned char) 0x10\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+unsigned char const {\b INTF_BIT_MASK} = (unsigned char) 0x02\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+unsigned char const {\b INTEDG_BIT_MASK} = (unsigned char) 0x40\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+volatile unsigned char *const {\b FSR} = (unsigned char *) 0x04\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+volatile unsigned char *const {\b GPIO} = (unsigned char *) 0x05\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+volatile unsigned char *const {\b INTCON} = (unsigned char *) 0x0B\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+volatile unsigned char *const {\b PIR1} = (unsigned char *) 0x0C\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+volatile unsigned char *const {\b CMCON0} = (unsigned char *) 0x19\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+volatile unsigned char *const {\b ADCON0} = (unsigned char *) 0x1F\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+volatile unsigned char *const {\b OPTION} = (unsigned char *) 0x85\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+volatile unsigned char *const {\b TRISIO} = (unsigned char *) 0x85\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+volatile unsigned char *const {\b PIE1} = (unsigned char *) 0x8C\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+volatile unsigned char *const {\b OSCCON} = (unsigned char *) 0x8F\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+volatile unsigned char *const {\b ANSEL} = (unsigned char *) 0x9F\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Peripheral hardware and registers configuration group. \par
+}{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Variable Documentation\par
+\pard\plain 
+{\xe \v ADCON0\:Hardware}
+{\xe \v Hardware\:ADCON0}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+volatile unsigned char* const ADCON0 = (unsigned char *) 0x1F}}
+\par
+{\bkmkstart AAAAAAAADA}
+{\bkmkend AAAAAAAADA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Analog/Digital converter register \par
+}{
+Definition at line {\b 35} of file {\b pic12f683.h}.}\par
+}
+{\xe \v ANSEL\:Hardware}
+{\xe \v Hardware\:ANSEL}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+volatile unsigned char* const ANSEL = (unsigned char *) 0x9F}}
+\par
+{\bkmkstart AAAAAAAADB}
+{\bkmkend AAAAAAAADB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+General purpose I/O port analog mode register \par
+}{
+Definition at line {\b 40} of file {\b pic12f683.h}.}\par
+}
+{\xe \v CMCON0\:Hardware}
+{\xe \v Hardware\:CMCON0}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+volatile unsigned char* const CMCON0 = (unsigned char *) 0x19}}
+\par
+{\bkmkstart AAAAAAAADC}
+{\bkmkend AAAAAAAADC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Comparator configuration register \par
+}{
+Definition at line {\b 34} of file {\b pic12f683.h}.}\par
+}
+{\xe \v FSR\:Hardware}
+{\xe \v Hardware\:FSR}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+volatile unsigned char* const FSR = (unsigned char *) 0x04}}
+\par
+{\bkmkstart AAAAAAAADD}
+{\bkmkend AAAAAAAADD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Indirect data memory adrress pointer \par
+ \par
+}{
+Definition at line {\b 30} of file {\b pic12f683.h}.}\par
+}
+{\xe \v GIE1_BIT_MASK\:Hardware}
+{\xe \v Hardware\:GIE1_BIT_MASK}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+unsigned char const GIE1_BIT_MASK = (unsigned char) 0x80}}
+\par
+{\bkmkstart AAAAAAAADE}
+{\bkmkend AAAAAAAADE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+INTCON GIE1 (global interrupt enable) bit mask \par
+}{
+Definition at line {\b 25} of file {\b pic12f683.h}.}\par
+}
+{\xe \v GPIO\:Hardware}
+{\xe \v Hardware\:GPIO}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+volatile unsigned char* const GPIO = (unsigned char *) 0x05}}
+\par
+{\bkmkstart AAAAAAAADF}
+{\bkmkend AAAAAAAADF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+General purpose I/O port register \par
+}{
+Definition at line {\b 31} of file {\b pic12f683.h}.}\par
+}
+{\xe \v INTCON\:Hardware}
+{\xe \v Hardware\:INTCON}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+volatile unsigned char* const INTCON = (unsigned char *) 0x0B}}
+\par
+{\bkmkstart AAAAAAAADG}
+{\bkmkend AAAAAAAADG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Interrupt control register \par
+}{
+Definition at line {\b 32} of file {\b pic12f683.h}.}\par
+}
+{\xe \v INTE_BIT_MASK\:Hardware}
+{\xe \v Hardware\:INTE_BIT_MASK}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+unsigned char const INTE_BIT_MASK = (unsigned char) 0x10}}
+\par
+{\bkmkstart AAAAAAAADH}
+{\bkmkend AAAAAAAADH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+INTCON INTE (GP2/INT - external interrupt enable) bit mask \par
+}{
+Definition at line {\b 26} of file {\b pic12f683.h}.}\par
+}
+{\xe \v INTEDG_BIT_MASK\:Hardware}
+{\xe \v Hardware\:INTEDG_BIT_MASK}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+unsigned char const INTEDG_BIT_MASK = (unsigned char) 0x40}}
+\par
+{\bkmkstart AAAAAAAADI}
+{\bkmkend AAAAAAAADI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+OPTION INTEDG (GP2/INT - external interrupt edge trigger) bit mask \par
+}{
+Definition at line {\b 28} of file {\b pic12f683.h}.}\par
+}
+{\xe \v INTF_BIT_MASK\:Hardware}
+{\xe \v Hardware\:INTF_BIT_MASK}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+unsigned char const INTF_BIT_MASK = (unsigned char) 0x02}}
+\par
+{\bkmkstart AAAAAAAADJ}
+{\bkmkend AAAAAAAADJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+INTCON INTF (GP2/INT - external interrupt flag) bit mask \par
+}{
+Definition at line {\b 27} of file {\b pic12f683.h}.}\par
+}
+{\xe \v OPTION\:Hardware}
+{\xe \v Hardware\:OPTION}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+volatile unsigned char* const OPTION = (unsigned char *) 0x85}}
+\par
+{\bkmkstart AAAAAAAADK}
+{\bkmkend AAAAAAAADK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Control bits register \par
+}{
+Definition at line {\b 36} of file {\b pic12f683.h}.}\par
+}
+{\xe \v OSCCON\:Hardware}
+{\xe \v Hardware\:OSCCON}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+volatile unsigned char* const OSCCON = (unsigned char *) 0x8F}}
+\par
+{\bkmkstart AAAAAAAADL}
+{\bkmkend AAAAAAAADL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+System oscillator control register \par
+}{
+Definition at line {\b 39} of file {\b pic12f683.h}.}\par
+}
+{\xe \v PIE1\:Hardware}
+{\xe \v Hardware\:PIE1}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+volatile unsigned char* const PIE1 = (unsigned char *) 0x8C}}
+\par
+{\bkmkstart AAAAAAAADM}
+{\bkmkend AAAAAAAADM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Peripheral interrupt enable register 1 \par
+}{
+Definition at line {\b 38} of file {\b pic12f683.h}.}\par
+}
+{\xe \v PIR1\:Hardware}
+{\xe \v Hardware\:PIR1}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+volatile unsigned char* const PIR1 = (unsigned char *) 0x0C}}
+\par
+{\bkmkstart AAAAAAAADN}
+{\bkmkend AAAAAAAADN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Peripheral interrupt request register 1 \par
+}{
+Definition at line {\b 33} of file {\b pic12f683.h}.}\par
+}
+{\xe \v TRISIO\:Hardware}
+{\xe \v Hardware\:TRISIO}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+volatile unsigned char* const TRISIO = (unsigned char *) 0x85}}
+\par
+{\bkmkstart AAAAAAAADO}
+{\bkmkend AAAAAAAADO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+General purpose I/O pin direction register \par
+}{
+Definition at line {\b 37} of file {\b pic12f683.h}.}\par
+}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Data Structure Documentation{\tc \v Data Structure Documentation}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+CallbackRegister_t Struct Reference\par \pard\plain 
+{\tc\tcl2 \v CallbackRegister_t}
+{\xe \v CallbackRegister_t}
+{\bkmkstart AAAAAAAADP}
+{\bkmkend AAAAAAAADP}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Data Fields\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b GpioCallbackEvent_t} {\b Event}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void(* {\b CallbackFunction} )(void)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Define a helper type to store the event's callback function \par
+}{
+Definition at line {\b 43} of file {\b gpio.c}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Field Documentation\par
+\pard\plain 
+{\xe \v CallbackFunction\:CallbackRegister_t}
+{\xe \v CallbackRegister_t\:CallbackFunction}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void(* CallbackFunction) (void)}}
+\par
+{\bkmkstart AAAAAAAADQ}
+{\bkmkend AAAAAAAADQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function to callback on interruption \par
+}{
+Definition at line {\b 46} of file {\b gpio.c}.}\par
+}
+{\xe \v Event\:CallbackRegister_t}
+{\xe \v CallbackRegister_t\:Event}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b GpioCallbackEvent_t} Event}}
+\par
+{\bkmkstart AAAAAAAADR}
+{\bkmkend AAAAAAAADR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Event that triggers the interruption \par
+}{
+Definition at line {\b 45} of file {\b gpio.c}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this struct was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+D:/projects/PIC/pic12f683_ext_int_hal/hal/drivers/gpio/{\b gpio.c}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+GpioConfig_t Struct Reference\par \pard\plain 
+{\tc\tcl2 \v GpioConfig_t}
+{\xe \v GpioConfig_t}
+{\bkmkstart AAAAAAAADS}
+{\bkmkend AAAAAAAADS}
+\par
+{
+{\f2 #include <gpio_config.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Data Fields\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b GpioChannel_t} {\b Channel}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b GpioPinFunction_t} {\b Function}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b GpioPinDirection_t} {\b Direction}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b GpioPinPullUp_t} {\b PullUp}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b GpioPinState_t} {\b State}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b GpioInterruptEdge_t} {\b InterruptEdge}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+GPIO configurations. \par
+}{
+Definition at line {\b 165} of file {\b gpio_config.h}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Field Documentation\par
+\pard\plain 
+{\xe \v Channel\:GpioConfig_t}
+{\xe \v GpioConfig_t\:Channel}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b GpioChannel_t} Channel}}
+\par
+{\bkmkstart AAAAAAAADT}
+{\bkmkend AAAAAAAADT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Name of gpio pin \par
+}{
+Definition at line {\b 167} of file {\b gpio_config.h}.}\par
+}
+{\xe \v Direction\:GpioConfig_t}
+{\xe \v GpioConfig_t\:Direction}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b GpioPinDirection_t} Direction}}
+\par
+{\bkmkstart AAAAAAAADU}
+{\bkmkend AAAAAAAADU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Direction of gpio pin \par
+}{
+Definition at line {\b 169} of file {\b gpio_config.h}.}\par
+}
+{\xe \v Function\:GpioConfig_t}
+{\xe \v GpioConfig_t\:Function}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b GpioPinFunction_t} Function}}
+\par
+{\bkmkstart AAAAAAAADV}
+{\bkmkend AAAAAAAADV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Function of gpio pin \par
+}{
+Definition at line {\b 168} of file {\b gpio_config.h}.}\par
+}
+{\xe \v InterruptEdge\:GpioConfig_t}
+{\xe \v GpioConfig_t\:InterruptEdge}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b GpioInterruptEdge_t} InterruptEdge}}
+\par
+{\bkmkstart AAAAAAAADW}
+{\bkmkend AAAAAAAADW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Interrupt edge trigger \par
+}{
+Definition at line {\b 172} of file {\b gpio_config.h}.}\par
+}
+{\xe \v PullUp\:GpioConfig_t}
+{\xe \v GpioConfig_t\:PullUp}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b GpioPinPullUp_t} PullUp}}
+\par
+{\bkmkstart AAAAAAAADX}
+{\bkmkend AAAAAAAADX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Pull-Up resistor of gpio pin \par
+}{
+Definition at line {\b 170} of file {\b gpio_config.h}.}\par
+}
+{\xe \v State\:GpioConfig_t}
+{\xe \v GpioConfig_t\:State}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b GpioPinState_t} State}}
+\par
+{\bkmkstart AAAAAAAADY}
+{\bkmkend AAAAAAAADY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Pin state \par
+}{
+Definition at line {\b 171} of file {\b gpio_config.h}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this struct was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+D:/projects/PIC/pic12f683_ext_int_hal/hal/config/gpio/{\b gpio_config.h}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+GpioPort_t Union Reference\par \pard\plain 
+{\tc\tcl2 \v GpioPort_t}
+{\xe \v GpioPort_t}
+{\bkmkstart AAAAAAAADZ}
+{\bkmkend AAAAAAAADZ}
+\par
+{
+{\f2 #include <gpio_config.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Data Fields\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b uint8_t} {\b BYTE}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct \{\par
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+\~ {\b uint8_t} {\b BIT0}: 1\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+\~ {\b uint8_t} {\b BIT1}: 1\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+\~ {\b uint8_t} {\b BIT2}: 1\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+\~ {\b uint8_t} {\b BIT3}: 1\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+\~ {\b uint8_t} {\b BIT4}: 1\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+\~ {\b uint8_t} {\b BIT5}: 1\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+\~ {\b uint8_t} {\b __pad0__}: 2\par
+}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+\}; \par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Union that represents the GPIO port. \par
+}{
+Definition at line {\b 61} of file {\b gpio_config.h}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Field Documentation\par
+\pard\plain 
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+struct  \{ ... \}  @1}}
+\par
+{\bkmkstart AAAAAAAAEA}
+{\bkmkend AAAAAAAAEA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v __pad0__\:GpioPort_t}
+{\xe \v GpioPort_t\:__pad0__}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b uint8_t} __pad0__}}
+\par
+{\bkmkstart AAAAAAAAEB}
+{\bkmkend AAAAAAAAEB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Gpio port unused bits (reads 0) \par
+}{
+Definition at line {\b 73} of file {\b gpio_config.h}.}\par
+}
+{\xe \v BIT0\:GpioPort_t}
+{\xe \v GpioPort_t\:BIT0}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b uint8_t} BIT0}}
+\par
+{\bkmkstart AAAAAAAAEC}
+{\bkmkend AAAAAAAAEC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Gpio port bit 5 (GP0) \par
+}{
+Definition at line {\b 67} of file {\b gpio_config.h}.}\par
+}
+{\xe \v BIT1\:GpioPort_t}
+{\xe \v GpioPort_t\:BIT1}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b uint8_t} BIT1}}
+\par
+{\bkmkstart AAAAAAAAED}
+{\bkmkend AAAAAAAAED}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Gpio port bit 4 (GP1) \par
+}{
+Definition at line {\b 68} of file {\b gpio_config.h}.}\par
+}
+{\xe \v BIT2\:GpioPort_t}
+{\xe \v GpioPort_t\:BIT2}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b uint8_t} BIT2}}
+\par
+{\bkmkstart AAAAAAAAEE}
+{\bkmkend AAAAAAAAEE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Gpio port bit 3 (GP2) \par
+}{
+Definition at line {\b 69} of file {\b gpio_config.h}.}\par
+}
+{\xe \v BIT3\:GpioPort_t}
+{\xe \v GpioPort_t\:BIT3}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b uint8_t} BIT3}}
+\par
+{\bkmkstart AAAAAAAAEF}
+{\bkmkend AAAAAAAAEF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Gpio port bit 2 (GP3) \par
+}{
+Definition at line {\b 70} of file {\b gpio_config.h}.}\par
+}
+{\xe \v BIT4\:GpioPort_t}
+{\xe \v GpioPort_t\:BIT4}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b uint8_t} BIT4}}
+\par
+{\bkmkstart AAAAAAAAEG}
+{\bkmkend AAAAAAAAEG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Gpio port bit 1 (GP4) \par
+}{
+Definition at line {\b 71} of file {\b gpio_config.h}.}\par
+}
+{\xe \v BIT5\:GpioPort_t}
+{\xe \v GpioPort_t\:BIT5}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b uint8_t} BIT5}}
+\par
+{\bkmkstart AAAAAAAAEH}
+{\bkmkend AAAAAAAAEH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Gpio port bit 0 (GP5) \par
+}{
+Definition at line {\b 72} of file {\b gpio_config.h}.}\par
+}
+{\xe \v BYTE\:GpioPort_t}
+{\xe \v GpioPort_t\:BYTE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b uint8_t} BYTE}}
+\par
+{\bkmkstart AAAAAAAAEI}
+{\bkmkend AAAAAAAAEI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Gpio port byte \par
+}{
+Definition at line {\b 63} of file {\b gpio_config.h}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this union was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+D:/projects/PIC/pic12f683_ext_int_hal/hal/config/gpio/{\b gpio_config.h}\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+File Documentation{\tc \v File Documentation}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+D:/projects/PIC/pic12f683_ext_int_hal/hal/config/gpio/gpio_config.c File Reference\par \pard\plain 
+{\tc\tcl2 \v D:/projects/PIC/pic12f683_ext_int_hal/hal/config/gpio/gpio_config.c}
+{\xe \v D:/projects/PIC/pic12f683_ext_int_hal/hal/config/gpio/gpio_config.c}
+{\bkmkstart AAAAAAAAAH}
+{\bkmkend AAAAAAAAAH}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Interface implementation for general purpose input/output configurations. }}\par
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "gpio_config.h"}\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Include dependency graph for gpio_config.c:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "gpio__config_8c__incl.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b GpioConfig_t} *const {\b GpioConfigGet} (void)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Interface implementation for general purpose input/output configurations. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+This is the implementation file for the configurations of a digital input / output peripheral. \par
+}{
+Definition in file {\b gpio_config.c}.}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+gpio_config.c\par \pard\plain 
+{\tc\tcl2 \v D:/projects/PIC/pic12f683_ext_int_hal/hal/config/gpio/gpio_config.c}
+{\xe \v D:/projects/PIC/pic12f683_ext_int_hal/hal/config/gpio/gpio_config.c}
+{\bkmkstart AAAAAAAAAA}
+{\bkmkend AAAAAAAAAA}
+Go to the documentation of this file.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf20 /************************************************************************************************}\par
+00002 {\cf20  * @Title          :    General purpose input/output configurations}\par
+00003 {\cf20  * @Filename       :    gpio_config.c}\par
+00004 {\cf20  * @Author         :    Eng. Jonnes F. Nascimento}\par
+00005 {\cf20  * @Origin Date    :    16/12/2021}\par
+00006 {\cf20  * @Version        :    0.0.1}\par
+00007 {\cf20  * @Compiler       :    GCC}\par
+00008 {\cf20  * @Target         :    --}\par
+00009 {\cf20  * @Notes          :    None}\par
+00010 {\cf20  * @Revision Date  :    20/12/2021}\par
+00011 {\cf20  ************************************************************************************************/}\par
+00024 {\cf20 /************************************************************************************************}\par
+00025 {\cf20  * Includes}\par
+00026 {\cf20  ************************************************************************************************/}\par
+00027 {\cf21 #include "gpio_config.h"}\par
+00028 \par
+00029 {\cf20 /************************************************************************************************}\par
+00030 {\cf20  * Defines and Macros}\par
+00031 {\cf20  ************************************************************************************************/}\par
+00032 \par
+00033 {\cf20 /************************************************************************************************}\par
+00034 {\cf20  * Static Typedefs}\par
+00035 {\cf20  ************************************************************************************************/}\par
+00036 \par
+00037 {\cf20 /************************************************************************************************}\par
+00038 {\cf20  * Global Variables}\par
+00039 {\cf20  ************************************************************************************************/}\par
+00040 \par
+00044 {\cf17 static} {\cf17 const} GpioConfig_t GpioConfig[] = \{\par
+00045         \{CHANNEL_GP0, GPIO_PIN_FUNCTION_DIGITAL,            GPIO_PIN_DIRECTION_OUTPUT, GPIO_PIN_PULLUP_DISABLED, GPIO_PIN_STATE_HIGH, GPIO_INTERRUPT_EDGE_NONE\},\par
+00046         \{CHANNEL_GP1, GPIO_PIN_FUNCTION_DIGITAL,            GPIO_PIN_DIRECTION_OUTPUT, GPIO_PIN_PULLUP_DISABLED, GPIO_PIN_STATE_LOW,  GPIO_INTERRUPT_EDGE_NONE\},\par
+00047         \{CHANNEL_GP2, GPIO_PIN_FUNCTION_EXTERNAL_INTERRUPT, GPIO_PIN_DIRECTION_INPUT,  GPIO_PIN_PULLUP_ENABLED,  GPIO_PIN_STATE_HIGH, GPIO_INTERRUPT_EDGE_FALLING\},\par
+00048         \{CHANNEL_GP3, GPIO_PIN_FUNCTION_DIGITAL,            GPIO_PIN_DIRECTION_INPUT,  GPIO_PIN_PULLUP_ENABLED,  GPIO_PIN_STATE_HIGH, GPIO_INTERRUPT_EDGE_NONE\},\par
+00049         \{CHANNEL_GP4, GPIO_PIN_FUNCTION_DIGITAL,            GPIO_PIN_DIRECTION_OUTPUT, GPIO_PIN_PULLUP_DISABLED, GPIO_PIN_STATE_LOW,  GPIO_INTERRUPT_EDGE_NONE\},\par
+00050         \{CHANNEL_GP5, GPIO_PIN_FUNCTION_DIGITAL,            GPIO_PIN_DIRECTION_OUTPUT, GPIO_PIN_PULLUP_DISABLED, GPIO_PIN_STATE_LOW,  GPIO_INTERRUPT_EDGE_NONE\}\par
+00051 \};\par
+00052 \par
+00053 {\cf20 /************************************************************************************************}\par
+00054 {\cf20  * Functions Definitions}\par
+00055 {\cf20  ************************************************************************************************/}\par
+00056 \par
+00057 {\cf20 /************************************************************************************************}\par
+00058 {\cf20 * Function: const GpioConfig_t * const GpioConfigGet(void);}\par
+00059 {\cf20 */}\par
+00086 {\cf17 const} GpioConfig_t * {\cf17 const} GpioConfigGet({\cf18 void})\par
+00087 \{\par
+00088     {\cf19 return} ({\cf17 const} GpioConfig_t *) &GpioConfig[0];\par
+00089 \}\par
+00090 \par
+00091 {\cf20 /************************************************************************************************}\par
+00092 {\cf20  * EOF}\par
+00093 {\cf20  ************************************************************************************************/}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+D:/projects/PIC/pic12f683_ext_int_hal/hal/config/gpio/gpio_config.h File Reference\par \pard\plain 
+{\tc\tcl2 \v D:/projects/PIC/pic12f683_ext_int_hal/hal/config/gpio/gpio_config.h}
+{\xe \v D:/projects/PIC/pic12f683_ext_int_hal/hal/config/gpio/gpio_config.h}
+{\bkmkstart AAAAAAAAAI}
+{\bkmkend AAAAAAAAAI}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Interface definition for general purpose input/output configurations. }}\par
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid This graph shows which files directly or indirectly include this file:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "gpio__config_8h__dep__incl.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Data Structures\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+union {\b GpioPort_t}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b GpioConfig_t}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macros\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b ARCH_ADDR_SIZE}\~ unsigned char\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Typedefs\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+typedef unsigned char {\b uint8_t}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Enumerations\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+enum {\b Port_t} \{ {\b GPIO_PORT}
+, {\b GPIO_PORT_COUNT}
+ \}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+enum {\b GpioChannel_t} \{ {\b CHANNEL_GP0}
+, {\b CHANNEL_GP1}
+, {\b CHANNEL_GP2}
+, {\b CHANNEL_GP3}
+, {\b CHANNEL_GP4}
+, {\b CHANNEL_GP5}
+, {\b GPIO_CHANNEL_COUNT}
+ \}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+enum {\b GpioPinDirection_t} \{ {\b GPIO_PIN_DIRECTION_OUTPUT}
+, {\b GPIO_PIN_DIRECTION_INPUT}
+ \}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+enum {\b GpioPinFunction_t} \{ {\b GPIO_PIN_FUNCTION_DIGITAL}
+, {\b GPIO_PIN_FUNCTION_ANALOG}
+, {\b GPIO_PIN_FUNCTION_COMPARATOR}
+, {\b GPIO_PIN_FUNCTION_TIMER}
+, {\b GPIO_PIN_FUNCTION_CAPTURE_COMPARE}
+, {\b GPIO_PIN_FUNCTION_INTERRUPT_ON_CHANGE}
+, {\b GPIO_PIN_FUNCTION_EXTERNAL_INTERRUPT}
+ \}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+enum {\b GpioPinPullUp_t} \{ {\b GPIO_PIN_PULLUP_DISABLED}
+, {\b GPIO_PIN_PULLUP_ENABLED}
+ \}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+enum {\b GpioPinInterruptOnChange_t} \{ {\b GPIO_PIN_INTERRUPT_ON_CHANGE_DISABLED}
+, {\b GPIO_PIN_INTERRUPT_ON_CHANGE_ENABLED}
+ \}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+enum {\b GpioPinState_t} \{ {\b GPIO_PIN_STATE_LOW}
+, {\b GPIO_PIN_STATE_HIGH}
+, {\b GPIO_PIN_MAX_STATES}
+ \}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+enum {\b GpioInterruptEdge_t} \{ {\b GPIO_INTERRUPT_EDGE_FALLING}
+, {\b GPIO_INTERRUPT_EDGE_RISING}
+, {\b GPIO_INTERRUPT_EDGE_NONE}
+ \}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+enum {\b GpioCallbackEvent_t} \{ {\b GPIO_EXTERNAL_INTERRUPT}
+, {\b GPIO_CALLBACK_EVENT_COUNT}
+ \}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b GpioConfig_t} *const {\b GpioConfigGet} (void)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Interface definition for general purpose input/output configurations. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+This is the header file for the definition of the configuration for a digital input / output peripheral.\par
+{\b INTERFACE CHANGE LIST}  \par
+\trowd \trgaph108\trleft-108\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx4374
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx6561
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{Date \cell }{Software Version \cell }{Initials \cell }{Description  \cell }
+\pard \widctlpar\intbl\adjustright
+{\row }
+\trowd \trgaph108\trleft-108\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx4374
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx6561
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{16/12/2021 \cell }{0.0.1 \cell }{JFN \cell }{Interface Created  \cell }
+\pard \widctlpar\intbl\adjustright
+{\row }
+\trowd \trgaph108\trleft-108\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx4374
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx6561
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{20/12/2021 \cell }{0.0.1 \cell }{JFN \cell }{Documentation Created  \cell }
+\pard \widctlpar\intbl\adjustright
+{\row }
+\pard\plain
+\par
+\par
+\par
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+ \par
+}{
+Definition in file {\b gpio_config.h}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macro Definition Documentation\par
+\pard\plain 
+{\xe \v ARCH_ADDR_SIZE\:gpio_config.h}
+{\xe \v gpio_config.h\:ARCH_ADDR_SIZE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define ARCH_ADDR_SIZE\~ unsigned char}}
+\par
+{\bkmkstart AAAAAAAAAJ}
+{\bkmkend AAAAAAAAAJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Microcontroller's architecture memory address size. \par
+}{
+Definition at line {\b 39} of file {\b gpio_config.h}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Typedef Documentation\par
+\pard\plain 
+{\xe \v uint8_t\:gpio_config.h}
+{\xe \v gpio_config.h\:uint8_t}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+typedef unsigned char {\b uint8_t}}}
+\par
+{\bkmkstart AAAAAAAAAK}
+{\bkmkend AAAAAAAAAK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Byte type definition. \par
+}{
+Definition at line {\b 47} of file {\b gpio_config.h}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Enumeration Type Documentation\par
+\pard\plain 
+{\xe \v GpioCallbackEvent_t\:gpio_config.h}
+{\xe \v gpio_config.h\:GpioCallbackEvent_t}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+enum {\b GpioCallbackEvent_t}}}
+\par
+{\bkmkstart AAAAAAAAAL}
+{\bkmkend AAAAAAAAAL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+GPIO callback events \par
+}{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Enumerator:\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{\xe \v GPIO_EXTERNAL_INTERRUPT\:gpio_config.h}
+{\xe \v gpio_config.h\:GPIO_EXTERNAL_INTERRUPT}
+{\qr GPIO_EXTERNAL_INTERRUPT{\bkmkstart AAAAAAAAAM}
+{\bkmkend AAAAAAAAAM}
+\cell }{\cell }{\row }
+{\xe \v GPIO_CALLBACK_EVENT_COUNT\:gpio_config.h}
+{\xe \v gpio_config.h\:GPIO_CALLBACK_EVENT_COUNT}
+{\qr GPIO_CALLBACK_EVENT_COUNT{\bkmkstart AAAAAAAAAN}
+{\bkmkend AAAAAAAAAN}
+\cell }{\cell }{\row }
+}
+\par
+{
+Definition at line {\b 156} of file {\b gpio_config.h}.}\par
+}
+{\xe \v GpioChannel_t\:gpio_config.h}
+{\xe \v gpio_config.h\:GpioChannel_t}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+enum {\b GpioChannel_t}}}
+\par
+{\bkmkstart AAAAAAAAAO}
+{\bkmkend AAAAAAAAAO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Channels definitions for each GPIO pins. GPIO_MAX_PIN_NUMBER is the control item for pin quantity. \par
+}{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Enumerator:\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{\xe \v CHANNEL_GP0\:gpio_config.h}
+{\xe \v gpio_config.h\:CHANNEL_GP0}
+{\qr CHANNEL_GP0{\bkmkstart AAAAAAAAAP}
+{\bkmkend AAAAAAAAAP}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Channel for GP0 \par
+}\cell }{\row }
+{\xe \v CHANNEL_GP1\:gpio_config.h}
+{\xe \v gpio_config.h\:CHANNEL_GP1}
+{\qr CHANNEL_GP1{\bkmkstart AAAAAAAAAQ}
+{\bkmkend AAAAAAAAAQ}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Channel for GP1 \par
+}\cell }{\row }
+{\xe \v CHANNEL_GP2\:gpio_config.h}
+{\xe \v gpio_config.h\:CHANNEL_GP2}
+{\qr CHANNEL_GP2{\bkmkstart AAAAAAAAAR}
+{\bkmkend AAAAAAAAAR}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Channel for GP2 \par
+}\cell }{\row }
+{\xe \v CHANNEL_GP3\:gpio_config.h}
+{\xe \v gpio_config.h\:CHANNEL_GP3}
+{\qr CHANNEL_GP3{\bkmkstart AAAAAAAAAS}
+{\bkmkend AAAAAAAAAS}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Channel for GP3 \par
+}\cell }{\row }
+{\xe \v CHANNEL_GP4\:gpio_config.h}
+{\xe \v gpio_config.h\:CHANNEL_GP4}
+{\qr CHANNEL_GP4{\bkmkstart AAAAAAAAAT}
+{\bkmkend AAAAAAAAAT}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Channel for GP4 \par
+}\cell }{\row }
+{\xe \v CHANNEL_GP5\:gpio_config.h}
+{\xe \v gpio_config.h\:CHANNEL_GP5}
+{\qr CHANNEL_GP5{\bkmkstart AAAAAAAAAU}
+{\bkmkend AAAAAAAAAU}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Channel for GP5 \par
+}\cell }{\row }
+{\xe \v GPIO_CHANNEL_COUNT\:gpio_config.h}
+{\xe \v gpio_config.h\:GPIO_CHANNEL_COUNT}
+{\qr GPIO_CHANNEL_COUNT{\bkmkstart AAAAAAAAAV}
+{\bkmkend AAAAAAAAAV}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Number of gpio channels \par
+}\cell }{\row }
+}
+{
+Definition at line {\b 81} of file {\b gpio_config.h}.}\par
+}
+{\xe \v GpioInterruptEdge_t\:gpio_config.h}
+{\xe \v gpio_config.h\:GpioInterruptEdge_t}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+enum {\b GpioInterruptEdge_t}}}
+\par
+{\bkmkstart AAAAAAAAAW}
+{\bkmkend AAAAAAAAAW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+GPIO interrupt trigger edge types \par
+}{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Enumerator:\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{\xe \v GPIO_INTERRUPT_EDGE_FALLING\:gpio_config.h}
+{\xe \v gpio_config.h\:GPIO_INTERRUPT_EDGE_FALLING}
+{\qr GPIO_INTERRUPT_EDGE_FALLING{\bkmkstart AAAAAAAAAX}
+{\bkmkend AAAAAAAAAX}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Interrupt is enabled on falling edge (0) \par
+}\cell }{\row }
+{\xe \v GPIO_INTERRUPT_EDGE_RISING\:gpio_config.h}
+{\xe \v gpio_config.h\:GPIO_INTERRUPT_EDGE_RISING}
+{\qr GPIO_INTERRUPT_EDGE_RISING{\bkmkstart AAAAAAAAAY}
+{\bkmkend AAAAAAAAAY}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Interrupt is enabled on rising edge (1) \par
+}\cell }{\row }
+{\xe \v GPIO_INTERRUPT_EDGE_NONE\:gpio_config.h}
+{\xe \v gpio_config.h\:GPIO_INTERRUPT_EDGE_NONE}
+{\qr GPIO_INTERRUPT_EDGE_NONE{\bkmkstart AAAAAAAAAZ}
+{\bkmkend AAAAAAAAAZ}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Interrupts are disabled \par
+}\cell }{\row }
+}
+{
+Definition at line {\b 146} of file {\b gpio_config.h}.}\par
+}
+{\xe \v GpioPinDirection_t\:gpio_config.h}
+{\xe \v gpio_config.h\:GpioPinDirection_t}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+enum {\b GpioPinDirection_t}}}
+\par
+{\bkmkstart AAAAAAAABA}
+{\bkmkend AAAAAAAABA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+GPIO pin directions definitions. \par
+}{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Enumerator:\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{\xe \v GPIO_PIN_DIRECTION_OUTPUT\:gpio_config.h}
+{\xe \v gpio_config.h\:GPIO_PIN_DIRECTION_OUTPUT}
+{\qr GPIO_PIN_DIRECTION_OUTPUT{\bkmkstart AAAAAAAABB}
+{\bkmkend AAAAAAAABB}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Pin is output \par
+}\cell }{\row }
+{\xe \v GPIO_PIN_DIRECTION_INPUT\:gpio_config.h}
+{\xe \v gpio_config.h\:GPIO_PIN_DIRECTION_INPUT}
+{\qr GPIO_PIN_DIRECTION_INPUT{\bkmkstart AAAAAAAABC}
+{\bkmkend AAAAAAAABC}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Pin is input \par
+}\cell }{\row }
+}
+{
+Definition at line {\b 95} of file {\b gpio_config.h}.}\par
+}
+{\xe \v GpioPinFunction_t\:gpio_config.h}
+{\xe \v gpio_config.h\:GpioPinFunction_t}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+enum {\b GpioPinFunction_t}}}
+\par
+{\bkmkstart AAAAAAAABD}
+{\bkmkend AAAAAAAABD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+GPIO pin functions definitions. \par
+}{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Enumerator:\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{\xe \v GPIO_PIN_FUNCTION_DIGITAL\:gpio_config.h}
+{\xe \v gpio_config.h\:GPIO_PIN_FUNCTION_DIGITAL}
+{\qr GPIO_PIN_FUNCTION_DIGITAL{\bkmkstart AAAAAAAABE}
+{\bkmkend AAAAAAAABE}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Pin is digital mode \par
+}\cell }{\row }
+{\xe \v GPIO_PIN_FUNCTION_ANALOG\:gpio_config.h}
+{\xe \v gpio_config.h\:GPIO_PIN_FUNCTION_ANALOG}
+{\qr GPIO_PIN_FUNCTION_ANALOG{\bkmkstart AAAAAAAABF}
+{\bkmkend AAAAAAAABF}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Pin is analog mode \par
+}\cell }{\row }
+{\xe \v GPIO_PIN_FUNCTION_COMPARATOR\:gpio_config.h}
+{\xe \v gpio_config.h\:GPIO_PIN_FUNCTION_COMPARATOR}
+{\qr GPIO_PIN_FUNCTION_COMPARATOR{\bkmkstart AAAAAAAABG}
+{\bkmkend AAAAAAAABG}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Pin is comparator mode \par
+}\cell }{\row }
+{\xe \v GPIO_PIN_FUNCTION_TIMER\:gpio_config.h}
+{\xe \v gpio_config.h\:GPIO_PIN_FUNCTION_TIMER}
+{\qr GPIO_PIN_FUNCTION_TIMER{\bkmkstart AAAAAAAABH}
+{\bkmkend AAAAAAAABH}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Pin is timer enabled \par
+}\cell }{\row }
+{\xe \v GPIO_PIN_FUNCTION_CAPTURE_COMPARE\:gpio_config.h}
+{\xe \v gpio_config.h\:GPIO_PIN_FUNCTION_CAPTURE_COMPARE}
+{\qr GPIO_PIN_FUNCTION_CAPTURE_COMPARE{\bkmkstart AAAAAAAABI}
+{\bkmkend AAAAAAAABI}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Pin is capture/compare mode \par
+}\cell }{\row }
+{\xe \v GPIO_PIN_FUNCTION_INTERRUPT_ON_CHANGE\:gpio_config.h}
+{\xe \v gpio_config.h\:GPIO_PIN_FUNCTION_INTERRUPT_ON_CHANGE}
+{\qr GPIO_PIN_FUNCTION_INTERRUPT_ON_CHANGE{\bkmkstart AAAAAAAABJ}
+{\bkmkend AAAAAAAABJ}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Pin is interrupt-on-change enabled \par
+}\cell }{\row }
+{\xe \v GPIO_PIN_FUNCTION_EXTERNAL_INTERRUPT\:gpio_config.h}
+{\xe \v gpio_config.h\:GPIO_PIN_FUNCTION_EXTERNAL_INTERRUPT}
+{\qr GPIO_PIN_FUNCTION_EXTERNAL_INTERRUPT{\bkmkstart AAAAAAAABK}
+{\bkmkend AAAAAAAABK}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Pin is external interrupt enabled \par
+}\cell }{\row }
+}
+{
+Definition at line {\b 104} of file {\b gpio_config.h}.}\par
+}
+{\xe \v GpioPinInterruptOnChange_t\:gpio_config.h}
+{\xe \v gpio_config.h\:GpioPinInterruptOnChange_t}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+enum {\b GpioPinInterruptOnChange_t}}}
+\par
+{\bkmkstart AAAAAAAABL}
+{\bkmkend AAAAAAAABL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+GPIO pin interrupts definitions. \par
+}{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Enumerator:\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{\xe \v GPIO_PIN_INTERRUPT_ON_CHANGE_DISABLED\:gpio_config.h}
+{\xe \v gpio_config.h\:GPIO_PIN_INTERRUPT_ON_CHANGE_DISABLED}
+{\qr GPIO_PIN_INTERRUPT_ON_CHANGE_DISABLED{\bkmkstart AAAAAAAABM}
+{\bkmkend AAAAAAAABM}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Pin interrupts disabled \par
+}\cell }{\row }
+{\xe \v GPIO_PIN_INTERRUPT_ON_CHANGE_ENABLED\:gpio_config.h}
+{\xe \v gpio_config.h\:GPIO_PIN_INTERRUPT_ON_CHANGE_ENABLED}
+{\qr GPIO_PIN_INTERRUPT_ON_CHANGE_ENABLED{\bkmkstart AAAAAAAABN}
+{\bkmkend AAAAAAAABN}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Pin interrupts enabled \par
+}\cell }{\row }
+}
+{
+Definition at line {\b 127} of file {\b gpio_config.h}.}\par
+}
+{\xe \v GpioPinPullUp_t\:gpio_config.h}
+{\xe \v gpio_config.h\:GpioPinPullUp_t}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+enum {\b GpioPinPullUp_t}}}
+\par
+{\bkmkstart AAAAAAAABO}
+{\bkmkend AAAAAAAABO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+GPIO pin pullup resistors definitions. \par
+}{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Enumerator:\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{\xe \v GPIO_PIN_PULLUP_DISABLED\:gpio_config.h}
+{\xe \v gpio_config.h\:GPIO_PIN_PULLUP_DISABLED}
+{\qr GPIO_PIN_PULLUP_DISABLED{\bkmkstart AAAAAAAABP}
+{\bkmkend AAAAAAAABP}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Pin pull-up is disabled \par
+}\cell }{\row }
+{\xe \v GPIO_PIN_PULLUP_ENABLED\:gpio_config.h}
+{\xe \v gpio_config.h\:GPIO_PIN_PULLUP_ENABLED}
+{\qr GPIO_PIN_PULLUP_ENABLED{\bkmkstart AAAAAAAABQ}
+{\bkmkend AAAAAAAABQ}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Pin pull-up is enabled \par
+}\cell }{\row }
+}
+{
+Definition at line {\b 118} of file {\b gpio_config.h}.}\par
+}
+{\xe \v GpioPinState_t\:gpio_config.h}
+{\xe \v gpio_config.h\:GpioPinState_t}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+enum {\b GpioPinState_t}}}
+\par
+{\bkmkstart AAAAAAAABR}
+{\bkmkend AAAAAAAABR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+GPIO pin states definitions. \par
+}{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Enumerator:\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{\xe \v GPIO_PIN_STATE_LOW\:gpio_config.h}
+{\xe \v gpio_config.h\:GPIO_PIN_STATE_LOW}
+{\qr GPIO_PIN_STATE_LOW{\bkmkstart AAAAAAAABS}
+{\bkmkend AAAAAAAABS}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Low pin state \par
+}\cell }{\row }
+{\xe \v GPIO_PIN_STATE_HIGH\:gpio_config.h}
+{\xe \v gpio_config.h\:GPIO_PIN_STATE_HIGH}
+{\qr GPIO_PIN_STATE_HIGH{\bkmkstart AAAAAAAABT}
+{\bkmkend AAAAAAAABT}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+High pin state \par
+}\cell }{\row }
+{\xe \v GPIO_PIN_MAX_STATES\:gpio_config.h}
+{\xe \v gpio_config.h\:GPIO_PIN_MAX_STATES}
+{\qr GPIO_PIN_MAX_STATES{\bkmkstart AAAAAAAABU}
+{\bkmkend AAAAAAAABU}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Max pin states \par
+}\cell }{\row }
+}
+{
+Definition at line {\b 136} of file {\b gpio_config.h}.}\par
+}
+{\xe \v Port_t\:gpio_config.h}
+{\xe \v gpio_config.h\:Port_t}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+enum {\b Port_t}}}
+\par
+{\bkmkstart AAAAAAAABV}
+{\bkmkend AAAAAAAABV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Microcontroller's GPIO ports. \par
+}{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Enumerator:\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{\xe \v GPIO_PORT\:gpio_config.h}
+{\xe \v gpio_config.h\:GPIO_PORT}
+{\qr GPIO_PORT{\bkmkstart AAAAAAAABW}
+{\bkmkend AAAAAAAABW}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Gpio port \par
+}\cell }{\row }
+{\xe \v GPIO_PORT_COUNT\:gpio_config.h}
+{\xe \v gpio_config.h\:GPIO_PORT_COUNT}
+{\qr GPIO_PORT_COUNT{\bkmkstart AAAAAAAABX}
+{\bkmkend AAAAAAAABX}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Number of ports on microcontroller \par
+}\cell }{\row }
+}
+{
+Definition at line {\b 52} of file {\b gpio_config.h}.}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+gpio_config.h\par \pard\plain 
+{\tc\tcl2 \v D:/projects/PIC/pic12f683_ext_int_hal/hal/config/gpio/gpio_config.h}
+{\xe \v D:/projects/PIC/pic12f683_ext_int_hal/hal/config/gpio/gpio_config.h}
+{\bkmkstart AAAAAAAAAB}
+{\bkmkend AAAAAAAAAB}
+Go to the documentation of this file.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf20 /************************************************************************************************}\par
+00002 {\cf20  * @Title          :    General purpose input/output configuration interface}\par
+00003 {\cf20  * @Filename       :    gpio_config.h}\par
+00004 {\cf20  * @Author         :    Eng. Jonnes F. Nascimento}\par
+00005 {\cf20  * @Origin Date    :    16/12/2021}\par
+00006 {\cf20  * @Version        :    0.0.1}\par
+00007 {\cf20  * @Compiler       :    GCC}\par
+00008 {\cf20  * @Target         :    --}\par
+00009 {\cf20  * @Notes          :    None}\par
+00010 {\cf20  * @Revision Date  :    20/12/2021}\par
+00011 {\cf20  ************************************************************************************************/}\par
+00026 {\cf21 #ifndef _GPIO_CFG_H_}\par
+00027 {\cf21 #define _GPIO_CFG_H_}\par
+00028 \par
+00029 {\cf20 /************************************************************************************************}\par
+00030 {\cf20  * Includes}\par
+00031 {\cf20  ************************************************************************************************/}\par
+00032 \par
+00033 {\cf20 /************************************************************************************************}\par
+00034 {\cf20  * Defines and Macros}\par
+00035 {\cf20  ************************************************************************************************/}\par
+00039 {\cf21 #define ARCH_ADDR_SIZE  unsigned char}\par
+00040 \par
+00041 {\cf20 /************************************************************************************************}\par
+00042 {\cf20  * Typedefs}\par
+00043 {\cf20  ************************************************************************************************/}\par
+00047 {\cf17 typedef} {\cf18 unsigned} {\cf18 char} uint8_t;\par
+00048 \par
+00052 {\cf17 typedef} {\cf17 enum}\par
+00053 \{\par
+00054     GPIO_PORT,       \par
+00055     GPIO_PORT_COUNT  \par
+00056 \} Port_t;\par
+00057 \par
+00061 {\cf17 typedef} {\cf17 union}\par
+00062 \{\par
+00063     uint8_t BYTE;        \par
+00065     {\cf17 struct}\par
+00066     \{        \par
+00067         uint8_t BIT0 : 1;    \par
+00068         uint8_t BIT1 : 1;    \par
+00069         uint8_t BIT2 : 1;    \par
+00070         uint8_t BIT3 : 1;    \par
+00071         uint8_t BIT4 : 1;    \par
+00072         uint8_t BIT5 : 1;    \par
+00073         uint8_t      : 2;    \par
+00074     \};\par
+00075 \} GpioPort_t;\par
+00076 \par
+00081 {\cf17 typedef} {\cf17 enum}\par
+00082 \{\par
+00083     CHANNEL_GP0,        \par
+00084     CHANNEL_GP1,        \par
+00085     CHANNEL_GP2,        \par
+00086     CHANNEL_GP3,        \par
+00087     CHANNEL_GP4,        \par
+00088     CHANNEL_GP5,        \par
+00089     GPIO_CHANNEL_COUNT  \par
+00090 \} GpioChannel_t;\par
+00091 \par
+00095 {\cf17 typedef} {\cf17 enum}\par
+00096 \{\par
+00097     GPIO_PIN_DIRECTION_OUTPUT,  \par
+00098     GPIO_PIN_DIRECTION_INPUT    \par
+00099 \} GpioPinDirection_t;\par
+00100 \par
+00104 {\cf17 typedef} {\cf17 enum}\par
+00105 \{\par
+00106     GPIO_PIN_FUNCTION_DIGITAL,               \par
+00107     GPIO_PIN_FUNCTION_ANALOG,                \par
+00108     GPIO_PIN_FUNCTION_COMPARATOR,            \par
+00109     GPIO_PIN_FUNCTION_TIMER,                 \par
+00110     GPIO_PIN_FUNCTION_CAPTURE_COMPARE,       \par
+00111     GPIO_PIN_FUNCTION_INTERRUPT_ON_CHANGE,   \par
+00112     GPIO_PIN_FUNCTION_EXTERNAL_INTERRUPT     \par
+00113 \} GpioPinFunction_t;\par
+00114 \par
+00118 {\cf17 typedef} {\cf17 enum}\par
+00119 \{\par
+00120     GPIO_PIN_PULLUP_DISABLED,  \par
+00121     GPIO_PIN_PULLUP_ENABLED    \par
+00122 \} GpioPinPullUp_t;\par
+00123 \par
+00127 {\cf17 typedef} {\cf17 enum}\par
+00128 \{\par
+00129     GPIO_PIN_INTERRUPT_ON_CHANGE_DISABLED,  \par
+00130     GPIO_PIN_INTERRUPT_ON_CHANGE_ENABLED    \par
+00131 \} GpioPinInterruptOnChange_t;\par
+00132 \par
+00136 {\cf17 typedef} {\cf17 enum}\par
+00137 \{\par
+00138     GPIO_PIN_STATE_LOW,    \par
+00139     GPIO_PIN_STATE_HIGH,   \par
+00140     GPIO_PIN_MAX_STATES    \par
+00141 \} GpioPinState_t;\par
+00142 \par
+00146 {\cf17 typedef} {\cf17 enum}\par
+00147 \{\par
+00148     GPIO_INTERRUPT_EDGE_FALLING,    \par
+00149     GPIO_INTERRUPT_EDGE_RISING,     \par
+00150     GPIO_INTERRUPT_EDGE_NONE        \par
+00151 \} GpioInterruptEdge_t;\par
+00152 \par
+00156 {\cf17 typedef} {\cf17 enum}\par
+00157 \{\par
+00158     GPIO_EXTERNAL_INTERRUPT,\par
+00159     GPIO_CALLBACK_EVENT_COUNT\par
+00160 \} GpioCallbackEvent_t;\par
+00161 \par
+00165 {\cf17 typedef} {\cf17 struct}\par
+00166 \{\par
+00167     GpioChannel_t       Channel;         \par
+00168     GpioPinFunction_t   Function;        \par
+00169     GpioPinDirection_t  Direction;       \par
+00170     GpioPinPullUp_t     PullUp;          \par
+00171     GpioPinState_t      State;           \par
+00172     GpioInterruptEdge_t InterruptEdge;   \par
+00173 \} GpioConfig_t;\par
+00174 \par
+00175 {\cf20 /************************************************************************************************}\par
+00176 {\cf20  * Global Variables}\par
+00177 {\cf20  ************************************************************************************************/}\par
+00178 \par
+00179 {\cf20 /************************************************************************************************}\par
+00180 {\cf20  * Functions Prototypes}\par
+00181 {\cf20  ************************************************************************************************/}\par
+00185 {\cf17 const} GpioConfig_t * {\cf17 const} GpioConfigGet({\cf18 void});\par
+00186 \par
+00187 {\cf21 #endif }{\cf20 //_GPIO_CFG_H_}\par
+00188 {\cf20 /************************************************************************************************}\par
+00189 {\cf20  * EOF}\par
+00190 {\cf20  ************************************************************************************************/}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+D:/projects/PIC/pic12f683_ext_int_hal/hal/drivers/gpio/gpio.c File Reference\par \pard\plain 
+{\tc\tcl2 \v D:/projects/PIC/pic12f683_ext_int_hal/hal/drivers/gpio/gpio.c}
+{\xe \v D:/projects/PIC/pic12f683_ext_int_hal/hal/drivers/gpio/gpio.c}
+{\bkmkstart AAAAAAAABY}
+{\bkmkend AAAAAAAABY}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Interface implementation for general purpose input/output (GPIO) }}\par
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <stdio.h>}\par
+{\f2 #include "pic12f683.h"}\par
+{\f2 #include "gpio.h"}\par
+{\f2 #include "constants.h"}\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Include dependency graph for gpio.c:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "gpio_8c__incl.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Data Structures\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b CallbackRegister_t}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Gpio_Init} (const {\b GpioConfig_t} *const Config)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Gpio_Write} ({\b GpioChannel_t} channel, {\b GpioPinState_t} state)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b GpioPinState_t} {\b Gpio_Read} ({\b GpioChannel_t} channel)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Gpio_Toggle} ({\b GpioChannel_t} channel)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Gpio_Register_Write} ({\b GpioPort_t} Port)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+volatile {\b GpioPort_t} {\b Gpio_Register_Read} (void)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Gpio_Callback_Register} ({\b GpioCallbackEvent_t} Event, void(*CallbackFunction)(void))\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Interface implementation for general purpose input/output (GPIO) \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+This is the implementation file for the interface of a digital input / output peripheral on a standard microcontroller. Some microcontrollers call this digital I/O as PORT_x. In this case, this is called GPIO. \par
+}{
+Definition in file {\b gpio.c}.}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+gpio.c\par \pard\plain 
+{\tc\tcl2 \v D:/projects/PIC/pic12f683_ext_int_hal/hal/drivers/gpio/gpio.c}
+{\xe \v D:/projects/PIC/pic12f683_ext_int_hal/hal/drivers/gpio/gpio.c}
+{\bkmkstart AAAAAAAAAC}
+{\bkmkend AAAAAAAAAC}
+Go to the documentation of this file.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf20 /************************************************************************************************}\par
+00002 {\cf20  * @Title          :    General purpose input/output (GPIO)}\par
+00003 {\cf20  * @Filename       :    gpio.c}\par
+00004 {\cf20  * @Author         :    Eng. Jonnes F. Nascimento}\par
+00005 {\cf20  * @Origin Date    :    16/12/2021}\par
+00006 {\cf20  * @Version        :    0.0.1}\par
+00007 {\cf20  * @Compiler       :    GCC}\par
+00008 {\cf20  * @Target         :    --}\par
+00009 {\cf20  * @Notes          :    None}\par
+00010 {\cf20  * @Revision Date  :    20/12/2021}\par
+00011 {\cf20  ************************************************************************************************/}\par
+00025 {\cf20 /************************************************************************************************}\par
+00026 {\cf20  * Includes}\par
+00027 {\cf20  ************************************************************************************************/}\par
+00028 {\cf21 #include <stdio.h>}\par
+00029 {\cf21 #include "pic12f683.h"}\par
+00030 {\cf21 #include "gpio.h"}\par
+00031 {\cf21 #include "constants.h"}\par
+00032 \par
+00033 {\cf20 /************************************************************************************************}\par
+00034 {\cf20  * Defines and Macros}\par
+00035 {\cf20  ************************************************************************************************/}\par
+00036 \par
+00037 {\cf20 /************************************************************************************************}\par
+00038 {\cf20  * Static Typedefs}\par
+00039 {\cf20  ************************************************************************************************/}\par
+00043 {\cf17 typedef} {\cf17 struct}\par
+00044 \{\par
+00045     GpioCallbackEvent_t Event;          \par
+00046     void (*CallbackFunction)(void);     \par
+00047 \} CallbackRegister_t;\par
+00048 \par
+00049 {\cf20 /************************************************************************************************}\par
+00050 {\cf20  * Global Variables}\par
+00051 {\cf20  ************************************************************************************************/}\par
+00052 {\cf20 //extern unsigned char count;}\par
+00053 \par
+00054 {\cf20 /************************************************************************************************}\par
+00055 {\cf20  * Module Variables Definitions}\par
+00056 {\cf20  ************************************************************************************************/}\par
+00060 {\cf17 static} CallbackRegister_t CallbackRegisterList[GPIO_CALLBACK_EVENT_COUNT];\par
+00061 \par
+00062 {\cf20 /* This is for test only - this code must be moved */}\par
+00063 {\cf17 static} ARCH_ADDR_SIZE {\cf17 volatile} * {\cf17 const} SystemOscilator = \{\par
+00064         (ARCH_ADDR_SIZE *) OSCCON\par
+00065 \};\par
+00066 \par
+00067 {\cf17 static} ARCH_ADDR_SIZE {\cf17 volatile} * {\cf17 const} SystemComparator = \{\par
+00068         (ARCH_ADDR_SIZE *) CMCON0\par
+00069 \};\par
+00070 \par
+00071 {\cf17 static} ARCH_ADDR_SIZE {\cf17 volatile} * {\cf17 const} SystemADConverter = \{\par
+00072         (ARCH_ADDR_SIZE *) ADCON0\par
+00073 \};\par
+00074 {\cf20 /* *************************************************************************/}\par
+00075 \par
+00076 {\cf17 static} ARCH_ADDR_SIZE {\cf17 volatile} * {\cf17 const} GpioPort[GPIO_PORT_COUNT] = \{\par
+00077         (ARCH_ADDR_SIZE *) GPIO\par
+00078 \};\par
+00079 \par
+00080 {\cf17 static} ARCH_ADDR_SIZE {\cf17 volatile} * {\cf17 const} GpioDirection[GPIO_PORT_COUNT] = \{\par
+00081         (ARCH_ADDR_SIZE *) TRISIO\par
+00082 \};\par
+00083 \par
+00084 {\cf17 static} ARCH_ADDR_SIZE {\cf17 volatile} * {\cf17 const} GpioFunction[GPIO_PORT_COUNT] = \{\par
+00085         (ARCH_ADDR_SIZE *) ANSEL\par
+00086 \};\par
+00087 \par
+00088 {\cf17 static} ARCH_ADDR_SIZE {\cf17 volatile} * {\cf17 const} InterruptControl[GPIO_PORT_COUNT] = \{\par
+00089         (ARCH_ADDR_SIZE *) INTCON\par
+00090 \};\par
+00091 \par
+00092 {\cf17 static} ARCH_ADDR_SIZE {\cf17 volatile} * {\cf17 const} GpioOption[GPIO_PORT_COUNT] = \{\par
+00093         (ARCH_ADDR_SIZE *) OPTION\par
+00094 \};\par
+00095 \par
+00096 {\cf17 static} ARCH_ADDR_SIZE {\cf17 volatile} * {\cf17 const} PeripheralInterruptRequest[GPIO_PORT_COUNT] = \{\par
+00097         (ARCH_ADDR_SIZE *) PIR1\par
+00098 \};\par
+00099 \par
+00100 {\cf17 static} ARCH_ADDR_SIZE {\cf17 volatile} * {\cf17 const} PeripheralInterruptEnable[GPIO_PORT_COUNT] = \{\par
+00101         (ARCH_ADDR_SIZE *) PIE1\par
+00102 \};\par
+00103 {\cf20 /************************************************************************************************}\par
+00104 {\cf20  * Functions Prototypes}\par
+00105 {\cf20  ************************************************************************************************/}\par
+00106 {\cf17 static} {\cf18 void} Gpio_Interrupt_Callback_Executor({\cf18 void});\par
+00107 \par
+00108 {\cf20 /************************************************************************************************}\par
+00109 {\cf20  * Functions Definitions}\par
+00110 {\cf20  ************************************************************************************************/}\par
+00111 \par
+00112 {\cf20 /************************************************************************************************}\par
+00113 {\cf20  * Function: void Gpio_Init(const GpioConfig_t * const Config);}\par
+00114 {\cf20  */}\par
+00154 {\cf18 void} Gpio_Init({\cf17 const} GpioConfig_t * {\cf17 const} Config)\par
+00155 \{\par
+00156     {\cf20 /* This is for test only - this code must be moved */}\par
+00157     *SystemOscilator    = 0x70; \par
+00158     *SystemComparator   = 0x07; \par
+00159     *SystemADConverter  = 0x00; \par
+00161     {\cf20 // Disable all interrupts}\par
+00162     *InterruptControl[GPIO_PORT]           = 0x00;\par
+00163     *PeripheralInterruptEnable[GPIO_PORT]  = 0x00;\par
+00164     *PeripheralInterruptRequest[GPIO_PORT] = 0x00;\par
+00165     \par
+00166     {\cf19 for} (uint8_t port = 0; port < GPIO_PORT_COUNT; port++)\par
+00167     \{\par
+00168         *GpioPort[port]     = 0x00; \par
+00169         *GpioFunction[port] = 0x00; \par
+00171         {\cf20 /* Sets the GPIOs */}\par
+00172         {\cf19 for} (uint8_t i = 0; i < GPIO_CHANNEL_COUNT; i++)\par
+00173         \{\par
+00174            {\cf19 switch} (Config[i].Function)\par
+00175            \{\par
+00176                {\cf19 case} GPIO_PIN_FUNCTION_DIGITAL:\par
+00177                    {\cf20 // TRISIO: set de pin direction mode}\par
+00178                    {\cf19 if} (Config[i].Direction == GPIO_PIN_DIRECTION_INPUT)\par
+00179                    \{\par
+00180                        *GpioDirection[port] |= (Config[i].Direction << i);\par
+00181                    \}\par
+00182                    {\cf19 else}\par
+00183                    \{\par
+00184                        *GpioDirection[port] &= ~(HIGH << i);\par
+00185                    \}\par
+00186                    {\cf19 break};\par
+00187                {\cf19 case} GPIO_PIN_FUNCTION_CAPTURE_COMPARE: {\cf19 break};\par
+00188                {\cf19 case} GPIO_PIN_FUNCTION_COMPARATOR: {\cf19 break};\par
+00189                {\cf19 case} GPIO_PIN_FUNCTION_INTERRUPT_ON_CHANGE: {\cf19 break};\par
+00190                {\cf19 case} GPIO_PIN_FUNCTION_TIMER: {\cf19 break};\par
+00191                {\cf19 case} GPIO_PIN_FUNCTION_ANALOG:\par
+00192                    *GpioFunction[port] |= (HIGH << i);\par
+00193                    {\cf19 break};                   \par
+00194                {\cf19 case} GPIO_PIN_FUNCTION_EXTERNAL_INTERRUPT:\par
+00195                    {\cf20 // ANSEL as digital I/O}\par
+00196                    *GpioFunction[port] &= ~(HIGH << i);\par
+00197                    \par
+00198                    {\cf20 // TRISIO set de direction of pin as INPUT}\par
+00199                    *GpioDirection[port] |= (Config[i].Direction << i);\par
+00200 \par
+00201                    {\cf20 // Sets the edge trigger of the interrupt}\par
+00202                    {\cf19 if} (Config[i].InterruptEdge == GPIO_INTERRUPT_EDGE_FALLING)\par
+00203                    \{\par
+00204                        *GpioOption[port] &= ~INTEDG_BIT_MASK;\par
+00205                    \}\par
+00206                    {\cf19 else} {\cf19 if} (Config[i].InterruptEdge == GPIO_INTERRUPT_EDGE_RISING)\par
+00207                    \{\par
+00208                        *GpioOption[port] |= INTEDG_BIT_MASK;\par
+00209                    \}\par
+00210                    {\cf19 else}\par
+00211                    \{\par
+00212                        {\cf20 // do nothing}\par
+00213                    \}\par
+00214 \par
+00215                    {\cf20 // Clear the external interrupt flag INTF}\par
+00216                    *InterruptControl[port] &= ~INTF_BIT_MASK;\par
+00217 \par
+00218                    {\cf20 // Enable external interrupts}\par
+00219                    *InterruptControl[port] |= INTE_BIT_MASK;\par
+00220 \par
+00221                    {\cf20 // Enable global interrupts}\par
+00222                    *InterruptControl[port] |= GIE1_BIT_MASK;\par
+00223 \par
+00224                    {\cf20 // Save the callback function executor address to the FSR register}\par
+00225                    {\cf20 //*FSR = ?}\par
+00226                    {\cf20 //asm volatile ("JMP *%0" : : "r" (&Gpio_Interrupt_Callback_Executor));}\par
+00227                    \par
+00228                    {\cf19 break};\par
+00229            \} {\cf20 // switch Config[i].Function}\par
+00230            \par
+00231            {\cf20 // sets the GPIO initial state}\par
+00232            *GpioPort[port] |= (Config[i].State << i);\par
+00233            \par
+00234         \} {\cf20 // for GPIO_CHANNEL_COUNT}\par
+00235     \} {\cf20 // for GPIO_PORT_COUNT}\par
+00236 \} {\cf20 // Gpio_Init}\par
+00237 \par
+00238 {\cf20 /************************************************************************************************}\par
+00239 {\cf20  * Function: void Gpio_Write(GpioChannel_t channel, GpioPinState_t state);}\par
+00240 {\cf20  */}\par
+00276 {\cf18 void} Gpio_Write(GpioChannel_t channel, GpioPinState_t state)\par
+00277 \{\par
+00278     {\cf19 if} (state == GPIO_PIN_STATE_HIGH)\par
+00279     \{\par
+00280         *GpioPort[GPIO_PORT] |= (HIGH << channel);\par
+00281     \}\par
+00282     {\cf19 else}\par
+00283     \{\par
+00284         *GpioPort[GPIO_PORT] &= ~(HIGH << channel);\par
+00285     \}\par
+00286 \}\par
+00287 \par
+00288 {\cf20 /************************************************************************************************}\par
+00289 {\cf20  * Function: GpioPinState_t Gpio_Read(GpioChannel_t channel);}\par
+00290 {\cf20  */}\par
+00323 GpioPinState_t Gpio_Read(GpioChannel_t channel)\par
+00324 \{\par
+00325     {\cf19 return} ((*GpioPort[GPIO_PORT] & (HIGH << channel)) >= 1 ? GPIO_PIN_STATE_HIGH : GPIO_PIN_STATE_LOW);\par
+00326 \}\par
+00327 \par
+00328 {\cf20 /************************************************************************************************}\par
+00329 {\cf20  * Function: void Gpio_Toggle(GpioChannel_t channel);}\par
+00330 {\cf20  */}\par
+00363 {\cf18 void} Gpio_Toggle(GpioChannel_t channel)\par
+00364 \{\par
+00365     *GpioPort[GPIO_PORT] ^= (HIGH << channel);\par
+00366 \}\par
+00367 \par
+00368 {\cf20 /************************************************************************************************}\par
+00369 {\cf20  * Function: void Gpio_Register_Write(GpioPort_t Port);}\par
+00370 {\cf20  */}\par
+00404 {\cf18 void} Gpio_Register_Write(GpioPort_t Port)\par
+00405 \{\par
+00406     *GpioPort[GPIO_PORT] = Port.BYTE;\par
+00407 \}\par
+00408 \par
+00409 {\cf20 /************************************************************************************************}\par
+00410 {\cf20  * Function: GpioPort_t Gpio_Register_Read(void);}\par
+00411 {\cf20  */}\par
+00444 {\cf17 volatile} GpioPort_t Gpio_Register_Read({\cf18 void})\par
+00445 \{\par
+00446     {\cf19 return} (GpioPort_t) *GpioPort[GPIO_PORT];\par
+00447 \}\par
+00448 \par
+00449 {\cf20 /************************************************************************************************}\par
+00450 {\cf20  * Function: void Gpio_Callback_Register(GpioCallbackEvent_t event, void (*CallbackFunction)(void));}\par
+00451 {\cf20  */}\par
+00486 {\cf18 void} Gpio_Callback_Register(GpioCallbackEvent_t Event, {\cf18 void} (*CallbackFunction)({\cf18 void}))\par
+00487 \{\par
+00488     CallbackRegister_t CallbackFunctionReg = \{.Event = Event, .CallbackFunction = CallbackFunction\};\par
+00489     CallbackRegisterList[Event] = CallbackFunctionReg;\par
+00490 \}\par
+00491 \par
+00492 {\cf20 /************************************************************************************************}\par
+00493 {\cf20  * Auxiliary Functions}\par
+00494 {\cf20  ************************************************************************************************/}\par
+00495 {\cf17 static} {\cf18 void} __interrupt() Gpio_Interrupt_Callback_Executor({\cf18 void})\par
+00496 \{\par
+00497     {\cf20 // Disable external interrupts (INTCON.INTE)}\par
+00498 \par
+00499     {\cf20 // Save W register}\par
+00500 \par
+00501     {\cf20 // Save STATUS register}\par
+00502 \par
+00503     {\cf20 // Verify interrupts flags to determine which callback function to call}\par
+00504 \par
+00505     {\cf20 /*}\par
+00506 {\cf20       if (INTCON.INTF)}\par
+00507 {\cf20       \{}\par
+00508 {\cf20            CallbackRegisterList[GPIO_EXTERNAL_INTERRUPT].CallbackFunction();}\par
+00509 {\cf20      }\par
+00510 {\cf20            // Clear interrupt flag}\par
+00511 {\cf20       \}}\par
+00512 {\cf20      */}\par
+00513     {\cf20 //}\par
+00514 \par
+00515     {\cf20 // Restore W register}\par
+00516 \par
+00517     {\cf20 // Restore STATUS register}\par
+00518 \par
+00519     {\cf20 // Enable external interrupts (INTCON.INTE)}\par
+00520 \par
+00521     {\cf20 // Enable global interrupts}\par
+00522     \par
+00523     {\cf20 //count++;}\par
+00524     \par
+00525     CallbackRegisterList[GPIO_EXTERNAL_INTERRUPT].CallbackFunction();\par
+00526     \par
+00527     *InterruptControl[GPIO_PORT] &= ~INTF_BIT_MASK;\par
+00528 \}\par
+00529 \par
+00530 {\cf20 /************************************************************************************************}\par
+00531 {\cf20  * EOF}\par
+00532 {\cf20  ************************************************************************************************/}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+D:/projects/PIC/pic12f683_ext_int_hal/hal/drivers/gpio/gpio.h File Reference\par \pard\plain 
+{\tc\tcl2 \v D:/projects/PIC/pic12f683_ext_int_hal/hal/drivers/gpio/gpio.h}
+{\xe \v D:/projects/PIC/pic12f683_ext_int_hal/hal/drivers/gpio/gpio.h}
+{\bkmkstart AAAAAAAABZ}
+{\bkmkend AAAAAAAABZ}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Interface definition for general purpose input/output (GPIO) }}\par
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "gpio_config.h"}\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Include dependency graph for gpio.h:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "gpio_8h__incl.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid This graph shows which files directly or indirectly include this file:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "gpio_8h__dep__incl.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Gpio_Init} (const {\b GpioConfig_t} *const Config)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Gpio_Write} ({\b GpioChannel_t} channel, {\b GpioPinState_t} state)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b GpioPinState_t} {\b Gpio_Read} ({\b GpioChannel_t} channel)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Gpio_Toggle} ({\b GpioChannel_t} channel)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Gpio_Register_Write} ({\b GpioPort_t} port)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+volatile {\b GpioPort_t} {\b Gpio_Register_Read} (void)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Gpio_Callback_Register} ({\b GpioCallbackEvent_t} Event, void(*CallbackFunction)(void))\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Interface definition for general purpose input/output (GPIO) \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+This is the header file for the definition of the interface for a digital input / output peripheral on a standard microcontroller. Some microcontrollers call this digital I/O as PORT_x. In this case, this is called GPIO.\par
+{\b INTERFACE CHANGE LIST}  \par
+\trowd \trgaph108\trleft-108\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx4374
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx6561
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{Date \cell }{Software Version \cell }{Initials \cell }{Description  \cell }
+\pard \widctlpar\intbl\adjustright
+{\row }
+\trowd \trgaph108\trleft-108\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx4374
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx6561
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{16/12/2021 \cell }{0.0.1 \cell }{JFN \cell }{Interface Created  \cell }
+\pard \widctlpar\intbl\adjustright
+{\row }
+\trowd \trgaph108\trleft-108\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx4374
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx6561
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{20/12/2021 \cell }{0.0.1 \cell }{JFN \cell }{Documentation Created  \cell }
+\pard \widctlpar\intbl\adjustright
+{\row }
+\pard\plain
+\par
+\par
+\par
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+ \par
+}{
+Definition in file {\b gpio.h}.}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+gpio.h\par \pard\plain 
+{\tc\tcl2 \v D:/projects/PIC/pic12f683_ext_int_hal/hal/drivers/gpio/gpio.h}
+{\xe \v D:/projects/PIC/pic12f683_ext_int_hal/hal/drivers/gpio/gpio.h}
+{\bkmkstart AAAAAAAAAD}
+{\bkmkend AAAAAAAAAD}
+Go to the documentation of this file.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf20 /************************************************************************************************}\par
+00002 {\cf20  * @Title          :    General purpose input/output interface}\par
+00003 {\cf20  * @Filename       :    gpio.h}\par
+00004 {\cf20  * @Author         :    Eng. Jonnes F. Nascimento}\par
+00005 {\cf20  * @Origin Date    :    16/12/2021}\par
+00006 {\cf20  * @Version        :    0.0.1}\par
+00007 {\cf20  * @Compiler       :    GCC}\par
+00008 {\cf20  * @Target         :    --}\par
+00009 {\cf20  * @Notes          :    None}\par
+00010 {\cf20  * @Revision Date  :    20/12/2021}\par
+00011 {\cf20  ************************************************************************************************/}\par
+00027 {\cf21 #ifndef _GPIO_H_}\par
+00028 {\cf21 #define _GPIO_H_}\par
+00029 \par
+00030 {\cf20 /************************************************************************************************}\par
+00031 {\cf20  * Includes}\par
+00032 {\cf20  ************************************************************************************************/}\par
+00033 {\cf21 #include "gpio_config.h"}\par
+00034 \par
+00035 {\cf20 /************************************************************************************************}\par
+00036 {\cf20  * Defines and Macros}\par
+00037 {\cf20  ************************************************************************************************/}\par
+00038 \par
+00039 {\cf20 /************************************************************************************************}\par
+00040 {\cf20  * Typedefs}\par
+00041 {\cf20  ************************************************************************************************/}\par
+00042 \par
+00043 {\cf20 /************************************************************************************************}\par
+00044 {\cf20  * Global Variables}\par
+00045 {\cf20  ************************************************************************************************/}\par
+00046 \par
+00047 {\cf20 /************************************************************************************************}\par
+00048 {\cf20  * Functions Prototypes}\par
+00049 {\cf20  ************************************************************************************************/}\par
+00050 {\cf18 void} Gpio_Init({\cf17 const} GpioConfig_t * {\cf17 const} Config);\par
+00051 {\cf18 void} Gpio_Write(GpioChannel_t channel, GpioPinState_t state);\par
+00052 GpioPinState_t Gpio_Read(GpioChannel_t channel);\par
+00053 {\cf18 void} Gpio_Toggle(GpioChannel_t channel);\par
+00054 {\cf18 void} Gpio_Register_Write(GpioPort_t port);\par
+00055 {\cf17 volatile} GpioPort_t Gpio_Register_Read({\cf18 void});\par
+00056 {\cf18 void} Gpio_Callback_Register(GpioCallbackEvent_t Event, {\cf18 void} (*CallbackFunction)({\cf18 void}));\par
+00057 \par
+00058 {\cf21 #endif }{\cf20 //_GPIO_H_}\par
+00059 {\cf20 /************************************************************************************************}\par
+00060 {\cf20  * EOF}\par
+00061 {\cf20  ************************************************************************************************/}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+D:/projects/PIC/pic12f683_ext_int_hal/hal/drivers/hardware/pic12f683.h File Reference\par \pard\plain 
+{\tc\tcl2 \v D:/projects/PIC/pic12f683_ext_int_hal/hal/drivers/hardware/pic12f683.h}
+{\xe \v D:/projects/PIC/pic12f683_ext_int_hal/hal/drivers/hardware/pic12f683.h}
+{\bkmkstart AAAAAAAACA}
+{\bkmkend AAAAAAAACA}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+PIC12F683 hardware definitions and specifications. }}\par
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid This graph shows which files directly or indirectly include this file:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "pic12f683_8h__dep__incl.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Variables\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+unsigned char const {\b GIE1_BIT_MASK} = (unsigned char) 0x80\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+unsigned char const {\b INTE_BIT_MASK} = (unsigned char) 0x10\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+unsigned char const {\b INTF_BIT_MASK} = (unsigned char) 0x02\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+unsigned char const {\b INTEDG_BIT_MASK} = (unsigned char) 0x40\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+volatile unsigned char *const {\b FSR} = (unsigned char *) 0x04\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+volatile unsigned char *const {\b GPIO} = (unsigned char *) 0x05\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+volatile unsigned char *const {\b INTCON} = (unsigned char *) 0x0B\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+volatile unsigned char *const {\b PIR1} = (unsigned char *) 0x0C\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+volatile unsigned char *const {\b CMCON0} = (unsigned char *) 0x19\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+volatile unsigned char *const {\b ADCON0} = (unsigned char *) 0x1F\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+volatile unsigned char *const {\b OPTION} = (unsigned char *) 0x85\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+volatile unsigned char *const {\b TRISIO} = (unsigned char *) 0x85\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+volatile unsigned char *const {\b PIE1} = (unsigned char *) 0x8C\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+volatile unsigned char *const {\b OSCCON} = (unsigned char *) 0x8F\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+volatile unsigned char *const {\b ANSEL} = (unsigned char *) 0x9F\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+PIC12F683 hardware definitions and specifications. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+This is the hardware definitions for PIC12F683. \par
+}{
+Definition in file {\b pic12f683.h}.}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+pic12f683.h\par \pard\plain 
+{\tc\tcl2 \v D:/projects/PIC/pic12f683_ext_int_hal/hal/drivers/hardware/pic12f683.h}
+{\xe \v D:/projects/PIC/pic12f683_ext_int_hal/hal/drivers/hardware/pic12f683.h}
+{\bkmkstart AAAAAAAAAE}
+{\bkmkend AAAAAAAAAE}
+Go to the documentation of this file.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf20 /************************************************************************************************}\par
+00002 {\cf20  * @Title          :    PIC12F683 hardware definitions and specifications}\par
+00003 {\cf20  * @Filename       :    pic12f683.h}\par
+00004 {\cf20  * @Author         :    Eng. Jonnes F. Nascimento}\par
+00005 {\cf20  * @Origin Date    :    16/12/2021}\par
+00006 {\cf20  * @Version        :    0.0.1}\par
+00007 {\cf20  * @Compiler       :    GCC}\par
+00008 {\cf20  * @Target         :    --}\par
+00009 {\cf20  * @Notes          :    None}\par
+00010 {\cf20  * @Revision Date  :    20/12/2021}\par
+00011 {\cf20  ************************************************************************************************/}\par
+00022 {\cf21 #ifndef _PIC12F683_H}\par
+00023 {\cf21 #define _PIC12F683_H}\par
+00024 \par
+00025 {\cf18 unsigned} {\cf18 char} {\cf17 const} GIE1_BIT_MASK   = ({\cf18 unsigned} char) 0x80;   \par
+00026 {\cf18 unsigned} {\cf18 char} {\cf17 const} INTE_BIT_MASK   = ({\cf18 unsigned} char) 0x10;   \par
+00027 {\cf18 unsigned} {\cf18 char} {\cf17 const} INTF_BIT_MASK   = ({\cf18 unsigned} char) 0x02;   \par
+00028 {\cf18 unsigned} {\cf18 char} {\cf17 const} INTEDG_BIT_MASK = ({\cf18 unsigned} char) 0x40;   \par
+00030 {\cf17 volatile} {\cf18 unsigned} {\cf18 char} * {\cf17 const} FSR    = ({\cf18 unsigned} {\cf18 char} *) 0x04;  \par
+00031 {\cf17 volatile} {\cf18 unsigned} {\cf18 char} * {\cf17 const} GPIO   = ({\cf18 unsigned} {\cf18 char} *) 0x05;  \par
+00032 {\cf17 volatile} {\cf18 unsigned} {\cf18 char} * {\cf17 const} INTCON = ({\cf18 unsigned} {\cf18 char} *) 0x0B;  \par
+00033 {\cf17 volatile} {\cf18 unsigned} {\cf18 char} * {\cf17 const} PIR1   = ({\cf18 unsigned} {\cf18 char} *) 0x0C;  \par
+00034 {\cf17 volatile} {\cf18 unsigned} {\cf18 char} * {\cf17 const} CMCON0 = ({\cf18 unsigned} {\cf18 char} *) 0x19;  \par
+00035 {\cf17 volatile} {\cf18 unsigned} {\cf18 char} * {\cf17 const} ADCON0 = ({\cf18 unsigned} {\cf18 char} *) 0x1F;  \par
+00036 {\cf17 volatile} {\cf18 unsigned} {\cf18 char} * {\cf17 const} OPTION = ({\cf18 unsigned} {\cf18 char} *) 0x85;  \par
+00037 {\cf17 volatile} {\cf18 unsigned} {\cf18 char} * {\cf17 const} TRISIO = ({\cf18 unsigned} {\cf18 char} *) 0x85;  \par
+00038 {\cf17 volatile} {\cf18 unsigned} {\cf18 char} * {\cf17 const} PIE1   = ({\cf18 unsigned} {\cf18 char} *) 0x8C;  \par
+00039 {\cf17 volatile} {\cf18 unsigned} {\cf18 char} * {\cf17 const} OSCCON = ({\cf18 unsigned} {\cf18 char} *) 0x8F;  \par
+00040 {\cf17 volatile} {\cf18 unsigned} {\cf18 char} * {\cf17 const} ANSEL  = ({\cf18 unsigned} {\cf18 char} *) 0x9F;  \par
+00042 {\cf21 #endif }{\cf20 //_PIC12F683_H}\par
+00043 \par
+00044 {\cf20 /************************************************************************************************}\par
+00045 {\cf20  * EOF}\par
+00046 {\cf20  ************************************************************************************************/}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+D:/projects/PIC/pic12f683_ext_int_hal/hal/library/constants.h File Reference\par \pard\plain 
+{\tc\tcl2 \v D:/projects/PIC/pic12f683_ext_int_hal/hal/library/constants.h}
+{\xe \v D:/projects/PIC/pic12f683_ext_int_hal/hal/library/constants.h}
+{\bkmkstart AAAAAAAACB}
+{\bkmkend AAAAAAAACB}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Interface definition for support functions, types and constants. }}\par
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid This graph shows which files directly or indirectly include this file:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "constants_8h__dep__incl.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Enumerations\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+enum {\b State_t} \{ {\b LOW}
+, {\b HIGH}
+, {\b TRI_STATED}
+ \}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Interface definition for support functions, types and constants. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+{\b INTERFACE CHANGE LIST}  \par
+\trowd \trgaph108\trleft-108\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx4374
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx6561
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{Date \cell }{Software Version \cell }{Initials \cell }{Description  \cell }
+\pard \widctlpar\intbl\adjustright
+{\row }
+\trowd \trgaph108\trleft-108\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx4374
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx6561
+\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr \brdrs\brdrw10 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{20/12/2021 \cell }{0.0.1 \cell }{JFN \cell }{Interface Created  \cell }
+\pard \widctlpar\intbl\adjustright
+{\row }
+\pard\plain
+\par
+\par
+\par
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+ \par
+}{
+Definition in file {\b constants.h}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Enumeration Type Documentation\par
+\pard\plain 
+{\xe \v State_t\:constants.h}
+{\xe \v constants.h\:State_t}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+enum {\b State_t}}}
+\par
+{\bkmkstart AAAAAAAACC}
+{\bkmkend AAAAAAAACC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Microcontroller's commons electrical states \par
+}{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Enumerator:\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{\xe \v LOW\:constants.h}
+{\xe \v constants.h\:LOW}
+{\qr LOW{\bkmkstart AAAAAAAACD}
+{\bkmkend AAAAAAAACD}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Low state (0) \par
+}\cell }{\row }
+{\xe \v HIGH\:constants.h}
+{\xe \v constants.h\:HIGH}
+{\qr HIGH{\bkmkstart AAAAAAAACE}
+{\bkmkend AAAAAAAACE}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+High state (1) \par
+}\cell }{\row }
+{\xe \v TRI_STATED\:constants.h}
+{\xe \v constants.h\:TRI_STATED}
+{\qr TRI_STATED{\bkmkstart AAAAAAAACF}
+{\bkmkend AAAAAAAACF}
+\cell }{{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+High Impedance (HiZ) \par
+}\cell }{\row }
+}
+{
+Definition at line {\b 28} of file {\b constants.h}.}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+constants.h\par \pard\plain 
+{\tc\tcl2 \v D:/projects/PIC/pic12f683_ext_int_hal/hal/library/constants.h}
+{\xe \v D:/projects/PIC/pic12f683_ext_int_hal/hal/library/constants.h}
+{\bkmkstart AAAAAAAAAF}
+{\bkmkend AAAAAAAAAF}
+Go to the documentation of this file.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf20 /************************************************************************************************}\par
+00002 {\cf20  * @Title          :    Support functions, types and constants}\par
+00003 {\cf20  * @Filename       :    constants.h}\par
+00004 {\cf20  * @Author         :    Eng. Jonnes F. Nascimento}\par
+00005 {\cf20  * @Origin Date    :    20/12/2021}\par
+00006 {\cf20  * @Version        :    0.0.1}\par
+00007 {\cf20  * @Compiler       :    GCC}\par
+00008 {\cf20  * @Target         :    --}\par
+00009 {\cf20  * @Notes          :    None}\par
+00010 {\cf20  * @Revision Date  :    --}\par
+00011 {\cf20  ************************************************************************************************/}\par
+00022 {\cf21 #ifndef _CONSTANTS_H}\par
+00023 {\cf21 #define _CONSTANTS_H}\par
+00024 \par
+00028 {\cf17 typedef} {\cf17 enum}\par
+00029 \{\par
+00030     LOW,           \par
+00031     HIGH,          \par
+00032     TRI_STATED     \par
+00033 \} State_t;\par
+00034 \par
+00035 {\cf21 #endif }{\cf20 //_CONSTANTS_H}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+D:/projects/PIC/pic12f683_ext_int_hal/main.c File Reference\par \pard\plain 
+{\tc\tcl2 \v D:/projects/PIC/pic12f683_ext_int_hal/main.c}
+{\xe \v D:/projects/PIC/pic12f683_ext_int_hal/main.c}
+{\bkmkstart AAAAAAAACG}
+{\bkmkend AAAAAAAACG}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Main program. }}\par
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <xc.h>}\par
+{\f2 #include "gpio.h"}\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Include dependency graph for main.c:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "main_8c__incl.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macros\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b _XTAL_FREQ}\~ 8000000\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b delay_ms} (uint16_t tempo)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b f_toggle_led} (void)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b main} (void)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Variables\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b uint8_t} {\b fg_blink} = 1\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b GpioPinState_t} {\b pin_4}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b GpioPort_t} {\b gpio_v}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Main program. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+This is the entrypoint of the firmware.\par
+! \par
+}{
+Definition in file {\b main.c}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macro Definition Documentation\par
+\pard\plain 
+{\xe \v _XTAL_FREQ\:main.c}
+{\xe \v main.c\:_XTAL_FREQ}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define _XTAL_FREQ\~ 8000000}}
+\par
+{\bkmkstart AAAAAAAACH}
+{\bkmkend AAAAAAAACH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 76} of file {\b main.c}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v delay_ms\:main.c}
+{\xe \v main.c\:delay_ms}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void delay_ms (uint16_t  {\i tempo})}}
+\par
+{\bkmkstart AAAAAAAACI}
+{\bkmkend AAAAAAAACI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 144} of file {\b main.c}.}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "main_8c_abd056730433b8ad8185fad5e808c829e_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v f_toggle_led\:main.c}
+{\xe \v main.c\:f_toggle_led}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void f_toggle_led (void )}}
+\par
+{\bkmkstart AAAAAAAACJ}
+{\bkmkend AAAAAAAACJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 154} of file {\b main.c}.}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "main_8c_a41ff4a8bbd0dea725d7841bea9cb89f2_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v main\:main.c}
+{\xe \v main.c\:main}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void main (void )}}
+\par
+{\bkmkstart AAAAAAAACK}
+{\bkmkend AAAAAAAACK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 103} of file {\b main.c}.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "main_8c_a6288eba0f8e8ad3ab1544ad731eb7667_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Variable Documentation\par
+\pard\plain 
+{\xe \v fg_blink\:main.c}
+{\xe \v main.c\:fg_blink}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b uint8_t} fg_blink = 1}}
+\par
+{\bkmkstart AAAAAAAACL}
+{\bkmkend AAAAAAAACL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 87} of file {\b main.c}.}\par
+}
+{\xe \v gpio_v\:main.c}
+{\xe \v main.c\:gpio_v}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b GpioPort_t} gpio_v}}
+\par
+{\bkmkstart AAAAAAAACM}
+{\bkmkend AAAAAAAACM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 90} of file {\b main.c}.}\par
+}
+{\xe \v pin_4\:main.c}
+{\xe \v main.c\:pin_4}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b GpioPinState_t} pin_4}}
+\par
+{\bkmkstart AAAAAAAACN}
+{\bkmkend AAAAAAAACN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 89} of file {\b main.c}.}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+D:/projects/PIC/pic12f683_ext_int_hal/main.c\par \pard\plain 
+{\bkmkstart AAAAAAAAAG}
+{\bkmkend AAAAAAAAAG}
+Go to the documentation of this file.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf20 /************************************************************************************************}\par
+00002 {\cf20  * @Title          :    Main function}\par
+00003 {\cf20  * @Filename       :    main.c}\par
+00004 {\cf20  * @Author         :    Eng. Jonnes F. Nascimento}\par
+00005 {\cf20  * @Origin Date    :    16/12/2021}\par
+00006 {\cf20  * @Version        :    0.0.1}\par
+00007 {\cf20  * @Compiler       :    XC8}\par
+00008 {\cf20  * @Target         :    PIC12F683}\par
+00009 {\cf20  * @Notes          :    None}\par
+00010 {\cf20  * @Revision Date  :    30/12/2021}\par
+00011 {\cf20  ************************************************************************************************/}\par
+00048 {\cf20 /* ==============================================================================================}\par
+00049 {\cf20     Configurations}\par
+00050 {\cf20 ================================================================================================*/}\par
+00051 {\cf21 #if defined (__XC8__)}\par
+00052 {\cf21     #pragma config FOSC = INTOSCIO  }{\cf20 // Oscillator Selection bits (INTOSCIO oscillator: I/O function on RA4/OSC2/CLKOUT pin, I/O function on RA5/OSC1/CLKIN)}\par
+00053 {\cf21     #pragma config WDTE = OFF       }{\cf20 // Watchdog Timer Enable bit (WDT disabled)}\par
+00054 {\cf21     #pragma config PWRTE = OFF      }{\cf20 // Power-up Timer Enable bit (PWRT disabled)}\par
+00055 {\cf21     #pragma config MCLRE = ON       }{\cf20 // MCLR Pin Function Select bit (MCLR pin function is MCLR)}\par
+00056 {\cf21     #pragma config CP = OFF         }{\cf20 // Code Protection bit (Program memory code protection is disabled)}\par
+00057 {\cf21     #pragma config CPD = OFF        }{\cf20 // Data Code Protection bit (Data memory code protection is disabled)}\par
+00058 {\cf21     #pragma config BOREN = OFF      }{\cf20 // Brown Out Detect (BOR disabled)}\par
+00059 {\cf21     #pragma config IESO = OFF       }{\cf20 // Internal External Switchover bit (Internal External Switchover mode is disabled)}\par
+00060 {\cf21     #pragma config FCMEN = OFF      }{\cf20 // Fail-Safe Clock Monitor Enabled bit (Fail-Safe Clock Monitor is disabled)}\par
+00061 {\cf21 #else}\par
+00062 {\cf21     #error Configs not defined due compiler is not foreseen}\par
+00063 {\cf21 #endif}\par
+00064 \par
+00065 \par
+00066 {\cf20 /* ==============================================================================================}\par
+00067 {\cf20     Libraries }\par
+00068 {\cf20 ================================================================================================*/}\par
+00069 {\cf21 #include <xc.h>}\par
+00070 {\cf21 #include "gpio.h"}\par
+00071 \par
+00072 \par
+00073 {\cf20 /* ==============================================================================================}\par
+00074 {\cf20     Defines and Macros}\par
+00075 {\cf20 ================================================================================================*/}\par
+00076 {\cf21 #define _XTAL_FREQ 8000000}\par
+00077 \par
+00078 \par
+00079 {\cf20 /* ==============================================================================================}\par
+00080 {\cf20     Constants}\par
+00081 {\cf20 ================================================================================================*/}\par
+00082 \par
+00083 \par
+00084 {\cf20 /* ==============================================================================================}\par
+00085 {\cf20     Global Variables}\par
+00086 {\cf20 ================================================================================================*/}\par
+00087 uint8_t fg_blink = 1;\par
+00088 {\cf20 //unsigned char count;}\par
+00089 GpioPinState_t pin_4;\par
+00090 GpioPort_t gpio_v;\par
+00091 \par
+00092 \par
+00093 {\cf20 /* ==============================================================================================}\par
+00094 {\cf20     Prototypes}\par
+00095 {\cf20 ================================================================================================*/}\par
+00096 {\cf18 void} delay_ms(uint16_t tempo);\par
+00097 {\cf18 void} f_toggle_led({\cf18 void});\par
+00098 \par
+00099 \par
+00100 {\cf20 /* ==============================================================================================}\par
+00101 {\cf20     Main Function}\par
+00102 {\cf20 ================================================================================================*/}\par
+00103 {\cf18 void} main({\cf18 void}) \par
+00104 \{\par
+00105     {\cf20 // register all ISR callback functions}\par
+00106     Gpio_Callback_Register(GPIO_EXTERNAL_INTERRUPT, f_toggle_led);\par
+00107     \par
+00108     {\cf17 const} GpioConfig_t * config = GpioConfigGet();\par
+00109     Gpio_Init(config);\par
+00110     \par
+00111     Gpio_Write(CHANNEL_GP4, GPIO_PIN_STATE_HIGH);\par
+00112     \par
+00113     pin_4 = Gpio_Read(CHANNEL_GP4);\par
+00114         \par
+00115     gpio_v.BIT0 = 1;\par
+00116     gpio_v.BIT1 = 1;\par
+00117     gpio_v.BIT2 = 1;\par
+00118     gpio_v.BIT3 = 1;\par
+00119     gpio_v.BIT4 = 1;\par
+00120     gpio_v.BIT5 = 1;\par
+00121     \par
+00122     Gpio_Register_Write(gpio_v);\par
+00123     \par
+00124     gpio_v = Gpio_Register_Read();\par
+00125     \par
+00126     {\cf19 while} (1)\par
+00127     \{\par
+00128        {\cf19 if} (fg_blink)\par
+00129        \{\par
+00130            Gpio_Toggle(CHANNEL_GP0);\par
+00131            delay_ms(500);\par
+00132        \}\par
+00133        {\cf19 else}\par
+00134        \{           \par
+00135            Gpio_Write(CHANNEL_GP0, GPIO_PIN_STATE_LOW); {\cf20 // always turns off the led pin (GP0)}\par
+00136        \}\par
+00137     \}\par
+00138 \} {\cf20 /* main */}\par
+00139 \par
+00140 \par
+00141 {\cf20 /* ==============================================================================================}\par
+00142 {\cf20     Auxiliary Functions}\par
+00143 {\cf20 ================================================================================================*/}\par
+00144 {\cf18 void} delay_ms(uint16_t tempo)\par
+00145 \{\par
+00146     {\cf19 while} (tempo > 0)\par
+00147     \{\par
+00148         __delay_ms(1);\par
+00149         tempo--;\par
+00150     \}\par
+00151 \}\par
+00152 \par
+00153 \par
+00154 {\cf18 void} f_toggle_led()\par
+00155 \{\par
+00156     fg_blink ^= 1;\par
+00157 \}\par
+00158 \par
+00159 {\cf20 /* ==============================================================================================}\par
+00160 {\cf20     EOF}\par
+00161 {\cf20 ================================================================================================*/}\par
+00162 \par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+D:/projects/PIC/pic12f683_ext_int_hal/README.md File Reference\par \pard\plain 
+{\tc\tcl2 \v D:/projects/PIC/pic12f683_ext_int_hal/README.md}
+{\xe \v D:/projects/PIC/pic12f683_ext_int_hal/README.md}
+{\bkmkstart AAAAAAAACO}
+{\bkmkend AAAAAAAACO}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Index\par 
+\pard\plain 
+{\tc \v Index}
+{\field\fldedit {\*\fldinst INDEX \\c2 \\*MERGEFORMAT}{\fldrslt INDEX}}
+}

@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=gpio.c gpio_config.c main.c
+SOURCEFILES_QUOTED_IF_SPACED=main.c hal/config/gpio/gpio_config.c hal/drivers/gpio/gpio.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/gpio.p1 ${OBJECTDIR}/gpio_config.p1 ${OBJECTDIR}/main.p1
-POSSIBLE_DEPFILES=${OBJECTDIR}/gpio.p1.d ${OBJECTDIR}/gpio_config.p1.d ${OBJECTDIR}/main.p1.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/main.p1 ${OBJECTDIR}/hal/config/gpio/gpio_config.p1 ${OBJECTDIR}/hal/drivers/gpio/gpio.p1
+POSSIBLE_DEPFILES=${OBJECTDIR}/main.p1.d ${OBJECTDIR}/hal/config/gpio/gpio_config.p1.d ${OBJECTDIR}/hal/drivers/gpio/gpio.p1.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/gpio.p1 ${OBJECTDIR}/gpio_config.p1 ${OBJECTDIR}/main.p1
+OBJECTFILES=${OBJECTDIR}/main.p1 ${OBJECTDIR}/hal/config/gpio/gpio_config.p1 ${OBJECTDIR}/hal/drivers/gpio/gpio.p1
 
 # Source Files
-SOURCEFILES=gpio.c gpio_config.c main.c
+SOURCEFILES=main.c hal/config/gpio/gpio_config.c hal/drivers/gpio/gpio.c
 
 
 
@@ -94,22 +94,6 @@ MP_PROCESSOR_OPTION=12F683
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/gpio.p1: gpio.c  nbproject/Makefile-${CND_CONF}.mk 
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/gpio.p1.d 
-	@${RM} ${OBJECTDIR}/gpio.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -maddrqual=require -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/gpio.p1 gpio.c 
-	@-${MV} ${OBJECTDIR}/gpio.d ${OBJECTDIR}/gpio.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/gpio.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
-	
-${OBJECTDIR}/gpio_config.p1: gpio_config.c  nbproject/Makefile-${CND_CONF}.mk 
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/gpio_config.p1.d 
-	@${RM} ${OBJECTDIR}/gpio_config.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -maddrqual=require -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/gpio_config.p1 gpio_config.c 
-	@-${MV} ${OBJECTDIR}/gpio_config.d ${OBJECTDIR}/gpio_config.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/gpio_config.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
-	
 ${OBJECTDIR}/main.p1: main.c  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/main.p1.d 
@@ -118,23 +102,23 @@ ${OBJECTDIR}/main.p1: main.c  nbproject/Makefile-${CND_CONF}.mk
 	@-${MV} ${OBJECTDIR}/main.d ${OBJECTDIR}/main.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/main.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
+${OBJECTDIR}/hal/config/gpio/gpio_config.p1: hal/config/gpio/gpio_config.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}/hal/config/gpio" 
+	@${RM} ${OBJECTDIR}/hal/config/gpio/gpio_config.p1.d 
+	@${RM} ${OBJECTDIR}/hal/config/gpio/gpio_config.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -maddrqual=require -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/hal/config/gpio/gpio_config.p1 hal/config/gpio/gpio_config.c 
+	@-${MV} ${OBJECTDIR}/hal/config/gpio/gpio_config.d ${OBJECTDIR}/hal/config/gpio/gpio_config.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/hal/config/gpio/gpio_config.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
+${OBJECTDIR}/hal/drivers/gpio/gpio.p1: hal/drivers/gpio/gpio.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}/hal/drivers/gpio" 
+	@${RM} ${OBJECTDIR}/hal/drivers/gpio/gpio.p1.d 
+	@${RM} ${OBJECTDIR}/hal/drivers/gpio/gpio.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -maddrqual=require -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/hal/drivers/gpio/gpio.p1 hal/drivers/gpio/gpio.c 
+	@-${MV} ${OBJECTDIR}/hal/drivers/gpio/gpio.d ${OBJECTDIR}/hal/drivers/gpio/gpio.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/hal/drivers/gpio/gpio.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
 else
-${OBJECTDIR}/gpio.p1: gpio.c  nbproject/Makefile-${CND_CONF}.mk 
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/gpio.p1.d 
-	@${RM} ${OBJECTDIR}/gpio.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -maddrqual=require -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/gpio.p1 gpio.c 
-	@-${MV} ${OBJECTDIR}/gpio.d ${OBJECTDIR}/gpio.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/gpio.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
-	
-${OBJECTDIR}/gpio_config.p1: gpio_config.c  nbproject/Makefile-${CND_CONF}.mk 
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/gpio_config.p1.d 
-	@${RM} ${OBJECTDIR}/gpio_config.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -maddrqual=require -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/gpio_config.p1 gpio_config.c 
-	@-${MV} ${OBJECTDIR}/gpio_config.d ${OBJECTDIR}/gpio_config.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/gpio_config.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
-	
 ${OBJECTDIR}/main.p1: main.c  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/main.p1.d 
@@ -142,6 +126,22 @@ ${OBJECTDIR}/main.p1: main.c  nbproject/Makefile-${CND_CONF}.mk
 	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -maddrqual=require -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/main.p1 main.c 
 	@-${MV} ${OBJECTDIR}/main.d ${OBJECTDIR}/main.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/main.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
+${OBJECTDIR}/hal/config/gpio/gpio_config.p1: hal/config/gpio/gpio_config.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}/hal/config/gpio" 
+	@${RM} ${OBJECTDIR}/hal/config/gpio/gpio_config.p1.d 
+	@${RM} ${OBJECTDIR}/hal/config/gpio/gpio_config.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -maddrqual=require -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/hal/config/gpio/gpio_config.p1 hal/config/gpio/gpio_config.c 
+	@-${MV} ${OBJECTDIR}/hal/config/gpio/gpio_config.d ${OBJECTDIR}/hal/config/gpio/gpio_config.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/hal/config/gpio/gpio_config.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
+${OBJECTDIR}/hal/drivers/gpio/gpio.p1: hal/drivers/gpio/gpio.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}/hal/drivers/gpio" 
+	@${RM} ${OBJECTDIR}/hal/drivers/gpio/gpio.p1.d 
+	@${RM} ${OBJECTDIR}/hal/drivers/gpio/gpio.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -maddrqual=require -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/hal/drivers/gpio/gpio.p1 hal/drivers/gpio/gpio.c 
+	@-${MV} ${OBJECTDIR}/hal/drivers/gpio/gpio.d ${OBJECTDIR}/hal/drivers/gpio/gpio.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/hal/drivers/gpio/gpio.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
 endif
 
