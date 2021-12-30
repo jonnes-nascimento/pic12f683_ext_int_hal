@@ -4,11 +4,8 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/D:/projects/PIC/pic12f683_ext_int_hal/main.c</file>
-            <file>file:/D:/projects/PIC/pic12f683_ext_int_hal/gpio.c</file>
-            <file>file:/D:/projects/PIC/pic12f683_ext_int_hal/gpio_config.c</file>
-            <file>file:/D:/projects/PIC/pic12f683_ext_int_hal/gpio_config.h</file>
-            <file>file:/D:/projects/PIC/pic12f683_ext_int_hal/gpio.h</file>
-            <file>file:/D:/projects/PIC/pic12f683_ext_int_hal/pic12f683.h</file>
+            <file>file:/D:/projects/PIC/pic12f683_ext_int_hal/hal/drivers/gpio/gpio.h</file>
+            <file>file:/D:/projects/PIC/pic12f683_ext_int_hal/hal/drivers/gpio/gpio.c</file>
         </group>
     </open-files>
 </project-private>
