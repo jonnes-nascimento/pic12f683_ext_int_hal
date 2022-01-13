@@ -3,6 +3,9 @@
 #		docker build -t jonnes/mplabx:latest .
 #		Linux   -> docker run --rm -it -v "$(PWD)":/home/developer/projects/PIC/pic12f683_ext_int_hal jonnes/mplabx
 #       Windows -> docker run --rm -it -v "%cd%":/home/developer/projects/PIC/pic12f683_ext_int_hal jonnes/mplab
+#
+#       To free space disk:
+#       docker system prune
 
 
 FROM ubuntu:jammy
