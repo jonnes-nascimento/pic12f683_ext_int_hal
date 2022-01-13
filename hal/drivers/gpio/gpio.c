@@ -164,13 +164,16 @@ void Gpio_Init(const GpioConfig_t * const Config)
     *PeripheralInterruptEnable[GPIO_PORT]  = 0x00;
     *PeripheralInterruptRequest[GPIO_PORT] = 0x00;
     
-    for (uint8_t port = 0; port < GPIO_PORT_COUNT; port++)
+    register uint8_t port, 
+                     i;
+    
+    for (port = 0; port < GPIO_PORT_COUNT; port++)
     {
         *GpioPort[port]     = 0x00; /**< Resets all GPIO pins */
         *GpioFunction[port] = 0x00; /**< ANSEL: digital pins as I/O */
                 
         /* Sets the GPIOs */
-        for (uint8_t i = 0; i < GPIO_CHANNEL_COUNT; i++)
+        for (i = 0; i < GPIO_CHANNEL_COUNT; i++)
         {
            switch (Config[i].Function)
            {
