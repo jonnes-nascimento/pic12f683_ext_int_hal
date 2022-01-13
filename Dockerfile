@@ -1,7 +1,9 @@
 # Usage:
 # 
 #		docker build -t jonnes/mplabx:latest .
-#		docker run --rm -it -v "$(PWD):/home/developer/projects/PIC/pic12f683_ext_int_hal" jonnes/mplabx
+#		Linux   -> docker run --rm -it -v "$(PWD)":/home/developer/projects/PIC/pic12f683_ext_int_hal jonnes/mplabx
+#       Windows -> docker run --rm -it -v "%cd%":/home/developer/projects/PIC/pic12f683_ext_int_hal jonnes/mplab
+
 
 FROM ubuntu:jammy
 
